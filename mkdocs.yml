@@ -17,7 +17,7 @@ theme:
   name: material
   language: da
   # custom_dir: overrides
-  favicon: billeder/vialogo.png
+  favicon: billeder/vialogo_white.png
   logo: billeder/vialogo.png
   icon:
     repo: fontawesome/brands/github

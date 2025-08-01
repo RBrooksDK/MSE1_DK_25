@@ -25,7 +25,7 @@ Matematik svarende til A-niveau fra gymnasiet forudsættes. Hvis det er flere å
 
 ## <i class="fas fa-vector-square" style="color:#6CA2C6"></i> Undervisning og kursusstruktur
 
-Kurset starter i uge 35 og slutter 13 uger efter, hvor der dog ikke undervises i uge 42. Vi definerer en session som bestående af fire aktiviteter:
+Kurset starter i uge 36 og slutter 13 uger efter, hvor der dog ikke undervises i uge 42. Vi definerer en session som bestående af fire aktiviteter:
 
 1. **Asynkron** forberedelse, der består af videoer, tutorials og læsning af kapitler fra bogen.
 2. **Synkron** praktisk anvendelse af teorien og gennemgang af eksempler online.
