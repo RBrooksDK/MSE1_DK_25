@@ -18,10 +18,10 @@
         <link rel="prev" href="../M1/">
       
       
-        <link rel="next" href="../M3/">
+        <link rel="next" href="../M4/">
       
       
-      <link rel="icon" href="../../billeder/vialogo.png">
+      <link rel="icon" href="../../billeder/vialogo_white.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
@@ -770,7 +770,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../M3/" class="md-nav__link">
+      <a href="../M3.md" class="md-nav__link">
         
   
   
@@ -1333,7 +1333,117 @@ n = \left(\frac{1.96 \cdot 2}{0.5}\right)^2 = 61,47
 </li>
 </ol>
 <h2 id="undervisning-1-videolektion">Undervisning 1: Videolektion<a class="headerlink" href="#undervisning-1-videolektion" title="Permanent link">&para;</a></h2>
-<p><a href="https://www.youtube.com/watch?v=2v0g3q4x8aA"><img alt="Undervisning 1" src="https://img.youtube.com/vi/2v0g3q4x8aA/0.jpg" /></a></p>
+<p><a href="https://www.youtube.com/watch?v=2v0g3q4x8aA"><img alt="Undervisning 1" src="https://img.youtube.com/vi/2v0g3q4x8aA/0.jpg" /></a></p><style type="text/css">.quiz {
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+/* Set margin-top of first quiz child */
+.quiz > *:first-child {
+  margin-top: 0;
+}
+.hidden {
+  display: none;
+}
+
+form button {
+  background-color: var(--md-primary-fg-color);
+  border: none;
+  color: var(--md-primary-bg-color);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.wrong label {
+  color: red;
+}
+.correct label {
+  color: green;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+fieldset input {
+  margin: 0 10px;
+}
+fieldset label {
+  margin: 0 10px;
+}
+
+label.correct {
+  color: green;
+}
+label.wrong {
+  color: red;
+}
+input[type='radio'].correct {
+  accent-color: green;
+}
+input[type='radio'].wrong {
+  accent-color: red;
+}
+.content {
+  margin: 10px;
+}
+</style><script type="text/javascript" defer>document.querySelectorAll('.quiz').forEach((quiz) => {
+  let form = quiz.querySelector('form');
+  let fieldset = form.querySelector('fieldset');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    let selectedAnswers = form.querySelectorAll('input[name="answer"]:checked');
+    let correctAnswers = fieldset.querySelectorAll(
+      'input[name="answer"][correct]'
+    );
+    // Check if all correct answers are selected
+    let is_correct = selectedAnswers.length === correctAnswers.length;
+    for (let i = 0; i < selectedAnswers.length; i++) {
+      if (!selectedAnswers[i].hasAttribute('correct')) {
+        is_correct = false;
+        break;
+      }
+    }
+    let section = quiz.querySelector('section');
+    if (is_correct) {
+      section.classList.remove('hidden');
+      resetFieldset(fieldset);
+      // Mark all fields with colors
+      const allAnswers = fieldset.querySelectorAll('input[name="answer"]');
+      for (let i = 0; i < allAnswers.length; i++) {
+        if (allAnswers[i].hasAttribute('correct')) {
+          allAnswers[i].parentElement.classList.add('correct');
+        } else {
+          allAnswers[i].parentElement.classList.add('wrong');
+        }
+      }
+    } else {
+      section.classList.add('hidden');
+      resetFieldset(fieldset);
+      // Mark wrong fields with colors
+      for (let i = 0; i < selectedAnswers.length; i++) {
+        if (!selectedAnswers[i].hasAttribute('correct')) {
+          selectedAnswers[i].parentElement.classList.add('wrong');
+        } else {
+          selectedAnswers[i].parentElement.classList.add('correct');
+        }
+      }
+    }
+  });
+});
+
+function resetFieldset(fieldset) {
+  const fieldsetChildren = fieldset.children;
+  for (let i = 0; i < fieldsetChildren.length; i++) {
+    fieldsetChildren[i].classList.remove('wrong');
+    fieldsetChildren[i].classList.remove('correct');
+  }
+}
+</script>
 
 
 
@@ -1388,13 +1498,13 @@ n = \left(\frac{1.96 \cdot 2}{0.5}\right)^2 = 61,47
         
         
           
-          <a href="../M3/" class="md-footer__link md-footer__link--next" aria-label="Næste: M3 - Øvelser tutorials">
+          <a href="../M4/" class="md-footer__link md-footer__link--next" aria-label="Næste: M4 - Undervisning 2">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Næste
               </span>
               <div class="md-ellipsis">
-                M3 - Øvelser tutorials
+                M4 - Undervisning 2
               </div>
             </div>
             <div class="md-footer__button md-icon">

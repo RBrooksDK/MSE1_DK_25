@@ -21,7 +21,7 @@
         <link rel="next" href="../M3/">
       
       
-      <link rel="icon" href="../../billeder/vialogo.png">
+      <link rel="icon" href="../../billeder/vialogo_white.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
@@ -717,6 +717,8 @@
       
         
       
+        
+      
     
     
     
@@ -1275,8 +1277,8 @@ body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 <li><span class="arithmatex">\(\ln \sqrt{x+2}=1\)</span></li>
 <li><span class="arithmatex">\(4 \log _{10}(x-6)=11\)</span></li>
 <li><span class="arithmatex">\(8^{-x}=2^{x-8}\)</span></li>
-<li><span class="arithmatex">\(\left(\frac{1}{4}\right)^{x-1}=4^{2-3 x}\)</span></li>
-</ol>
+<li>
+<p><span class="arithmatex">\(\left(\frac{1}{4}\right)^{x-1}=4^{2-3 x}\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
 <ol>
@@ -1288,6 +1290,8 @@ body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 <li><span class="arithmatex">\(x=\frac{1}{2}\)</span></li>
 </ol>
 </details>
+</li>
+</ol>
 <h4 id="eksempel-2-isoleringsmetoden">Eksempel 2: Isoleringsmetoden<a class="headerlink" href="#eksempel-2-isoleringsmetoden" title="Permanent link">&para;</a></h4>
 <p>Den fejl, der er forbundet med statistisk usikkerhed, er givet ved</p>
 <div class="arithmatex">\[
@@ -1369,8 +1373,146 @@ n = \left(\frac{1.96 \cdot 2}{0.5}\right)^2 = 61,47
 </details>
 </li>
 </ol>
+<h4 id="eksempel-6-komplekse-logaritmeligninger">Eksempel 6: Komplekse logaritmeligninger<a class="headerlink" href="#eksempel-6-komplekse-logaritmeligninger" title="Permanent link">&para;</a></h4>
+<p>Løs ligningerne: </p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\\ e^{2 x}-3 e^x+2=0\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ul>
+<li><span class="arithmatex">\(e^x=1 \Rightarrow x=0\)</span></li>
+<li><span class="arithmatex">\(e^x=2 \Rightarrow x=\ln(2)\)</span></li>
+</ul>
+</details>
+</li>
+<li>
+<p><span class="arithmatex">\(\\ \ln (x+3)+\ln (x+5)=0\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ul>
+<li><span class="arithmatex">\(x = -4 + \sqrt{2}\)</span></li>
+</ul>
+</details>
+</li>
+</ol>
 <h2 id="undervisning-1-videolektion">Undervisning 1: Videolektion<a class="headerlink" href="#undervisning-1-videolektion" title="Permanent link">&para;</a></h2>
-<p><a href="https://www.youtube.com/watch?v=2v0g3q4x8aA"><img alt="Undervisning 1" src="https://img.youtube.com/vi/2v0g3q4x8aA/0.jpg" /></a></p>
+<p align="center">
+    <video width="700" autoplay loop muted controls playsinline preload="metadata">
+        <source src="/MSE1_DK_25/figures/comingsoon.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</p><style type="text/css">.quiz {
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+/* Set margin-top of first quiz child */
+.quiz > *:first-child {
+  margin-top: 0;
+}
+.hidden {
+  display: none;
+}
+
+form button {
+  background-color: var(--md-primary-fg-color);
+  border: none;
+  color: var(--md-primary-bg-color);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.wrong label {
+  color: red;
+}
+.correct label {
+  color: green;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+fieldset input {
+  margin: 0 10px;
+}
+fieldset label {
+  margin: 0 10px;
+}
+
+label.correct {
+  color: green;
+}
+label.wrong {
+  color: red;
+}
+input[type='radio'].correct {
+  accent-color: green;
+}
+input[type='radio'].wrong {
+  accent-color: red;
+}
+.content {
+  margin: 10px;
+}
+</style><script type="text/javascript" defer>document.querySelectorAll('.quiz').forEach((quiz) => {
+  let form = quiz.querySelector('form');
+  let fieldset = form.querySelector('fieldset');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    let selectedAnswers = form.querySelectorAll('input[name="answer"]:checked');
+    let correctAnswers = fieldset.querySelectorAll(
+      'input[name="answer"][correct]'
+    );
+    // Check if all correct answers are selected
+    let is_correct = selectedAnswers.length === correctAnswers.length;
+    for (let i = 0; i < selectedAnswers.length; i++) {
+      if (!selectedAnswers[i].hasAttribute('correct')) {
+        is_correct = false;
+        break;
+      }
+    }
+    let section = quiz.querySelector('section');
+    if (is_correct) {
+      section.classList.remove('hidden');
+      resetFieldset(fieldset);
+      // Mark all fields with colors
+      const allAnswers = fieldset.querySelectorAll('input[name="answer"]');
+      for (let i = 0; i < allAnswers.length; i++) {
+        if (allAnswers[i].hasAttribute('correct')) {
+          allAnswers[i].parentElement.classList.add('correct');
+        } else {
+          allAnswers[i].parentElement.classList.add('wrong');
+        }
+      }
+    } else {
+      section.classList.add('hidden');
+      resetFieldset(fieldset);
+      // Mark wrong fields with colors
+      for (let i = 0; i < selectedAnswers.length; i++) {
+        if (!selectedAnswers[i].hasAttribute('correct')) {
+          selectedAnswers[i].parentElement.classList.add('wrong');
+        } else {
+          selectedAnswers[i].parentElement.classList.add('correct');
+        }
+      }
+    }
+  });
+});
+
+function resetFieldset(fieldset) {
+  const fieldsetChildren = fieldset.children;
+  for (let i = 0; i < fieldsetChildren.length; i++) {
+    fieldsetChildren[i].classList.remove('wrong');
+    fieldsetChildren[i].classList.remove('correct');
+  }
+}
+</script>
 
 
 

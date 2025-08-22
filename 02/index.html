@@ -21,7 +21,7 @@
         <link rel="next" href="M1/">
       
       
-      <link rel="icon" href="../billeder/vialogo.png">
+      <link rel="icon" href="../billeder/vialogo_white.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
@@ -709,7 +709,7 @@
   
   
     <li class="md-nav__item">
-      <a href="M3/" class="md-nav__link">
+      <a href="M3.md" class="md-nav__link">
         
   
   
@@ -1138,10 +1138,10 @@
   
 
 
-<h1 align="center">Grundlæggende aritmetik og funktioner</h1>
+<h1 align="center">Talsystemer og talrepræsentation</h1>
 
-<p>I denne indledende session lægger vi fundamentet for den matematik, der anvendes i softwareudvikling. Vi starter med en gennemgang af kursusstruktur, læringsmål og forventninger. Herefter fokuserer vi på centrale regneregler og de grundlæggende egenskaber ved funktioner, som udgør grundlaget for de mere avancerede emner, der følger senere i kurset.</p>
-<p>Sessionen omfatter forståelse og anvendelse af potensregler, rødder, eksponenter og logaritmer. Vi undersøger desuden definitionen af funktioner samt deres definitions- og værdimængder. Afslutningsvis introduceres begreberne inverse og sammensatte funktioner, som er væsentlige for det videre arbejde i kurset. Der er særlig fokus på logaritmer og deres anvendelse i softwareudvikling, da de spiller en central rolle i mange algoritmer og databehandlingsmetoder.</p>
+<p>I denne session dykker vi ned i talsystemer og deres fundamentale betydning for softwareudvikling. Vi starter med at udforske tallenes verden fra grundlæggende talteori til de forskellige talsystemer, der danner grundlaget for moderne computerberegninger. Vi fokuserer særligt på binær, decimal og hexadecimal notation, som er essentielle i programmering og computerarkitektur.</p>
+<p>Sessionen omfatter en grundig gennemgang af talkonvertering mellem forskellige talsystemer, binær addition og multiplikation, samt positionsnotation. Vi undersøger også de forskellige talklasser som reelle, rationale og irrationale tal og deres egenskaber. Der er særlig fokus på binære operationer og hexadecimal notation, da disse spiller en afgørende rolle i softwareudvikling, datarepræsentation og digital elektronik.</p>
 <div class="grid cards">
 <ul>
 <li>
@@ -1157,7 +1157,7 @@
 <li>
 <p><img :=":" align="right" alt="" src="../billeder/oevelser.webp" style="height:150px;width:150px" /></p>
 <p><strong>M3:</strong> Her finder du de øvelser, som I skal lave enten selv eller i grupper. Der er også en række tutorials, der viser hvordan man kan gribe opgaverne an.</p>
-<p><a href="M3/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> M3: Øvelser</a></p>
+<p><a href="M3.md"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> M3: Øvelser</a></p>
 </li>
 <li>
 <p><img :=":" align="right" alt="" src="../billeder/teaching_1.jpg" style="height:100px;width:150px" /></p>
@@ -1165,7 +1165,117 @@
 <p><a href="M4/"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.22 19.03a.75.75 0 0 1 0-1.06L18.19 13H3.75a.75.75 0 0 1 0-1.5h14.44l-4.97-4.97a.749.749 0 0 1 .326-1.275.75.75 0 0 1 .734.215l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0"/></svg></span> M4: Undervisning 2</a></p>
 </li>
 </ul>
-</div>
+</div><style type="text/css">.quiz {
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+/* Set margin-top of first quiz child */
+.quiz > *:first-child {
+  margin-top: 0;
+}
+.hidden {
+  display: none;
+}
+
+form button {
+  background-color: var(--md-primary-fg-color);
+  border: none;
+  color: var(--md-primary-bg-color);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.wrong label {
+  color: red;
+}
+.correct label {
+  color: green;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+fieldset input {
+  margin: 0 10px;
+}
+fieldset label {
+  margin: 0 10px;
+}
+
+label.correct {
+  color: green;
+}
+label.wrong {
+  color: red;
+}
+input[type='radio'].correct {
+  accent-color: green;
+}
+input[type='radio'].wrong {
+  accent-color: red;
+}
+.content {
+  margin: 10px;
+}
+</style><script type="text/javascript" defer>document.querySelectorAll('.quiz').forEach((quiz) => {
+  let form = quiz.querySelector('form');
+  let fieldset = form.querySelector('fieldset');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    let selectedAnswers = form.querySelectorAll('input[name="answer"]:checked');
+    let correctAnswers = fieldset.querySelectorAll(
+      'input[name="answer"][correct]'
+    );
+    // Check if all correct answers are selected
+    let is_correct = selectedAnswers.length === correctAnswers.length;
+    for (let i = 0; i < selectedAnswers.length; i++) {
+      if (!selectedAnswers[i].hasAttribute('correct')) {
+        is_correct = false;
+        break;
+      }
+    }
+    let section = quiz.querySelector('section');
+    if (is_correct) {
+      section.classList.remove('hidden');
+      resetFieldset(fieldset);
+      // Mark all fields with colors
+      const allAnswers = fieldset.querySelectorAll('input[name="answer"]');
+      for (let i = 0; i < allAnswers.length; i++) {
+        if (allAnswers[i].hasAttribute('correct')) {
+          allAnswers[i].parentElement.classList.add('correct');
+        } else {
+          allAnswers[i].parentElement.classList.add('wrong');
+        }
+      }
+    } else {
+      section.classList.add('hidden');
+      resetFieldset(fieldset);
+      // Mark wrong fields with colors
+      for (let i = 0; i < selectedAnswers.length; i++) {
+        if (!selectedAnswers[i].hasAttribute('correct')) {
+          selectedAnswers[i].parentElement.classList.add('wrong');
+        } else {
+          selectedAnswers[i].parentElement.classList.add('correct');
+        }
+      }
+    }
+  });
+});
+
+function resetFieldset(fieldset) {
+  const fieldsetChildren = fieldset.children;
+  for (let i = 0; i < fieldsetChildren.length; i++) {
+    fieldsetChildren[i].classList.remove('wrong');
+    fieldsetChildren[i].classList.remove('correct');
+  }
+}
+</script>
 
 
 

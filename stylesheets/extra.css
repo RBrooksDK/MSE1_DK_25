@@ -27,8 +27,8 @@
 @font-face {
   font-family: 'VIA Type';
   src: url('../assets/font/VIA Type Bold.otf') format('opentype');
-  font-weight: 600; /* Bold */
-  font-style: bold;
+  font-weight: 700; /* Bold */
+  font-style: normal;
 }
 @font-face {
   font-family: 'VIA Type';

@@ -15,13 +15,13 @@
         <link rel="canonical" href="https://rbrooksdk.github.io/MSE1_DK_25/01/M4/">
       
       
-        <link rel="prev" href="../M3/T1/">
+        <link rel="prev" href="../M3/E1/">
       
       
         <link rel="next" href="../../02/">
       
       
-      <link rel="icon" href="../../billeder/vialogo.png">
+      <link rel="icon" href="../../billeder/vialogo_white.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
@@ -94,6 +94,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#undervisning-2-videolektion" class="md-skip">
+          Gå til indholdet
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -656,6 +661,8 @@
       
         
       
+        
+      
     
     
     
@@ -710,6 +717,19 @@
       
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    M4 - Undervisning 2
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -721,6 +741,32 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Indholdsfortegnelse">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indholdsfortegnelse
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#undervisning-2-videolektion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undervisning 2: Videolektion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1161,6 +1207,23 @@
   
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Indholdsfortegnelse
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#undervisning-2-videolektion" class="md-nav__link">
+    <span class="md-ellipsis">
+      Undervisning 2: Videolektion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -1179,6 +1242,126 @@
 
 
 <h1 align="center">M4: Undervisning 2 - gennemgang af øvelser</h1>
+
+<p>I denne session gennemgår vi øvelserne. Vi vil diskutere de forskellige tilgange, der blev brugt, og hvordan de relaterer til de overordnede læringsmål.</p>
+<p>Efter lektionen uploader jeg optagelsen af sessionen, så alle kan få adgang til den senere.</p>
+<h2 id="undervisning-2-videolektion">Undervisning 2: Videolektion<a class="headerlink" href="#undervisning-2-videolektion" title="Permanent link">&para;</a></h2>
+<p align="center">
+    <video width="700" autoplay loop muted controls playsinline preload="metadata">
+        <source src="/MSE1_DK_25/figures/comingsoon.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</p><style type="text/css">.quiz {
+  border: 1px solid black;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+/* Set margin-top of first quiz child */
+.quiz > *:first-child {
+  margin-top: 0;
+}
+.hidden {
+  display: none;
+}
+
+form button {
+  background-color: var(--md-primary-fg-color);
+  border: none;
+  color: var(--md-primary-bg-color);
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+
+.wrong label {
+  color: red;
+}
+.correct label {
+  color: green;
+}
+
+fieldset {
+  border: none;
+  display: flex;
+  flex-direction: column;
+}
+fieldset input {
+  margin: 0 10px;
+}
+fieldset label {
+  margin: 0 10px;
+}
+
+label.correct {
+  color: green;
+}
+label.wrong {
+  color: red;
+}
+input[type='radio'].correct {
+  accent-color: green;
+}
+input[type='radio'].wrong {
+  accent-color: red;
+}
+.content {
+  margin: 10px;
+}
+</style><script type="text/javascript" defer>document.querySelectorAll('.quiz').forEach((quiz) => {
+  let form = quiz.querySelector('form');
+  let fieldset = form.querySelector('fieldset');
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+    let selectedAnswers = form.querySelectorAll('input[name="answer"]:checked');
+    let correctAnswers = fieldset.querySelectorAll(
+      'input[name="answer"][correct]'
+    );
+    // Check if all correct answers are selected
+    let is_correct = selectedAnswers.length === correctAnswers.length;
+    for (let i = 0; i < selectedAnswers.length; i++) {
+      if (!selectedAnswers[i].hasAttribute('correct')) {
+        is_correct = false;
+        break;
+      }
+    }
+    let section = quiz.querySelector('section');
+    if (is_correct) {
+      section.classList.remove('hidden');
+      resetFieldset(fieldset);
+      // Mark all fields with colors
+      const allAnswers = fieldset.querySelectorAll('input[name="answer"]');
+      for (let i = 0; i < allAnswers.length; i++) {
+        if (allAnswers[i].hasAttribute('correct')) {
+          allAnswers[i].parentElement.classList.add('correct');
+        } else {
+          allAnswers[i].parentElement.classList.add('wrong');
+        }
+      }
+    } else {
+      section.classList.add('hidden');
+      resetFieldset(fieldset);
+      // Mark wrong fields with colors
+      for (let i = 0; i < selectedAnswers.length; i++) {
+        if (!selectedAnswers[i].hasAttribute('correct')) {
+          selectedAnswers[i].parentElement.classList.add('wrong');
+        } else {
+          selectedAnswers[i].parentElement.classList.add('correct');
+        }
+      }
+    }
+  });
+});
+
+function resetFieldset(fieldset) {
+  const fieldsetChildren = fieldset.children;
+  for (let i = 0; i < fieldsetChildren.length; i++) {
+    fieldsetChildren[i].classList.remove('wrong');
+    fieldsetChildren[i].classList.remove('correct');
+  }
+}
+</script>
 
 
 
@@ -1216,7 +1399,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Sidefod" >
         
           
-          <a href="../M3/T1/" class="md-footer__link md-footer__link--prev" aria-label="Forrige: T1 - Regneregler">
+          <a href="../M3/E1/" class="md-footer__link md-footer__link--prev" aria-label="Forrige: E1 - Øvelser">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1226,7 +1409,7 @@
                 Forrige
               </span>
               <div class="md-ellipsis">
-                T1 - Regneregler
+                E1 - Øvelser
               </div>
             </div>
           </a>
