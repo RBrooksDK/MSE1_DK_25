@@ -50,7 +50,7 @@
     Karakterskalaen for kurset er 7-trinsskalaen.
 
 ??? question "Hvordan beregnes den endelige karakter?"
-    Den endelige karakter beregnes på baggrund af eksamen. Eksamenen består af to dele: en Flowlock-eksamen i Wiseflow og en Wiseflow-eksamen uden Flowlock. Del 1 vægter 75% og Del 2 vægter 25% i den endelige karakter. Se venligst afsnittet "Eksamen" i fanen ovenfor for mere information.
+    Den endelige karakter beregnes på baggrund af eksamen. Eksamenen består af to dele: en Flowlock-eksamen i Wiseflow og en Wiseflow-eksamen uden Flowlock. De to dele har ikke særskilte vægtninger, og vurderingen og karakteren gives på baggrund af en helhedsvurdering. Se venligst afsnittet "Eksamen" i fanen ovenfor for mere information.
 
 ??? question "Hvordan foregår reeksamen?"
     Reeksamen kan være mundtlig. Se venligst afsnittet "Eksamen" i fanen ovenfor for mere information.

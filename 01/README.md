@@ -37,8 +37,8 @@ Sessionen omfatter forståelse og anvendelse af potensregler, rødder, eksponent
 - ![](../billeder/oevelser.webp){align=right : style="height:150px;width:150px"}
 
     **M3:** Her finder du de øvelser, som I skal lave enten selv eller i grupper. Der er også en række tutorials, der viser hvordan man kan gribe opgaverne an.
-    
-    [:octicons-arrow-right-24: M3: Øvelser](M3.md)
+
+    [:octicons-arrow-right-24: M3: Øvelser](M3/index.md)
 
 - ![](../billeder/teaching_1.jpg){align=right : style="height:100px;width:150px"}
 

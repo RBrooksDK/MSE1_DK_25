@@ -1,6 +1,6 @@
 <p align="center">
     <h1 align="center">Matematik for Softwareingeniører - 2025</h1>
-    <p align="center">Kursusside for <a href="https://www.via.dk/TMH/Courses/matematik-for-softwareingenioerer-ts-under-opdatering?education=sw">MSE1</a> på VIA</p>
+    <p align="center">Kursusside for <a href="https://www.via.dk/TMH/Courses/matematik-for-softwareingenioerer-ts?education=sw">MSE1</a> på VIA</p>
 </p>
 
 <p align="center">

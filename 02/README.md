@@ -1,23 +1,29 @@
 ---
 tags:
-    - Introduktion
-    - Regneregler
-    - Potenser
-    - Rødder
-    - Eksponenter
-    - Logaritmer
-    - Funktioner
-    - Definitionsmængde
-    - Værdimængde
-    - Inverse funktioner
-    - Sammensatte funktioner
+    - Talsystemer
+    - Talteori
+    - Binær
+    - Decimal
+    - Hexadecimal
+    - Oktal
+    - Talkonvertering
+    - Heltalsaritmetik
+    - Base-2
+    - Base-10
+    - Base-16
+    - Positionsnotation
+    - Binær Addition
+    - Binær Multiplikation
+    - Reelle Tal
+    - Rationale Tal
+    - Irrationale Tal
 ---
 
-<h1 align="center">Grundlæggende aritmetik og funktioner</h1>
+<h1 align="center">Talsystemer og talrepræsentation</h1>
 
-I denne indledende session lægger vi fundamentet for den matematik, der anvendes i softwareudvikling. Vi starter med en gennemgang af kursusstruktur, læringsmål og forventninger. Herefter fokuserer vi på centrale regneregler og de grundlæggende egenskaber ved funktioner, som udgør grundlaget for de mere avancerede emner, der følger senere i kurset.
+I denne session dykker vi ned i talsystemer og deres fundamentale betydning for softwareudvikling. Vi starter med at udforske tallenes verden fra grundlæggende talteori til de forskellige talsystemer, der danner grundlaget for moderne computerberegninger. Vi fokuserer særligt på binær, decimal og hexadecimal notation, som er essentielle i programmering og computerarkitektur.
 
-Sessionen omfatter forståelse og anvendelse af potensregler, rødder, eksponenter og logaritmer. Vi undersøger desuden definitionen af funktioner samt deres definitions- og værdimængder. Afslutningsvis introduceres begreberne inverse og sammensatte funktioner, som er væsentlige for det videre arbejde i kurset. Der er særlig fokus på logaritmer og deres anvendelse i softwareudvikling, da de spiller en central rolle i mange algoritmer og databehandlingsmetoder.
+Sessionen omfatter en grundig gennemgang af talkonvertering mellem forskellige talsystemer, binær addition og multiplikation, samt positionsnotation. Vi undersøger også de forskellige talklasser som reelle, rationale og irrationale tal og deres egenskaber. Der er særlig fokus på binære operationer og hexadecimal notation, da disse spiller en afgørende rolle i softwareudvikling, datarepræsentation og digital elektronik.
 
 
 <div class="grid cards" markdown>
