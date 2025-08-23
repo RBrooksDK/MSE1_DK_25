@@ -22,7 +22,7 @@
       
       
       <link rel="icon" href="../billeder/vialogo_white.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.18">
     
     
       
@@ -1293,117 +1293,7 @@
 <p class="annotate">b. The order of a set is the number of elements in a set. For instance the order of <span class="arithmatex">\({1, 5, 7, 19, 27, 39}\)</span> is 6. Determine the order of the set <span class="arithmatex">\(S\)</span>. (1)</p>
 <ol>
 <li>128</li>
-</ol><style type="text/css">.quiz {
-  border: 1px solid black;
-  padding: 1rem;
-  margin: 1rem 0;
-}
-/* Set margin-top of first quiz child */
-.quiz > *:first-child {
-  margin-top: 0;
-}
-.hidden {
-  display: none;
-}
-
-form button {
-  background-color: var(--md-primary-fg-color);
-  border: none;
-  color: var(--md-primary-bg-color);
-  padding: 0.5rem 1rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 0.8rem;
-}
-
-.wrong label {
-  color: red;
-}
-.correct label {
-  color: green;
-}
-
-fieldset {
-  border: none;
-  display: flex;
-  flex-direction: column;
-}
-fieldset input {
-  margin: 0 10px;
-}
-fieldset label {
-  margin: 0 10px;
-}
-
-label.correct {
-  color: green;
-}
-label.wrong {
-  color: red;
-}
-input[type='radio'].correct {
-  accent-color: green;
-}
-input[type='radio'].wrong {
-  accent-color: red;
-}
-.content {
-  margin: 10px;
-}
-</style><script type="text/javascript" defer>document.querySelectorAll('.quiz').forEach((quiz) => {
-  let form = quiz.querySelector('form');
-  let fieldset = form.querySelector('fieldset');
-  form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    let selectedAnswers = form.querySelectorAll('input[name="answer"]:checked');
-    let correctAnswers = fieldset.querySelectorAll(
-      'input[name="answer"][correct]'
-    );
-    // Check if all correct answers are selected
-    let is_correct = selectedAnswers.length === correctAnswers.length;
-    for (let i = 0; i < selectedAnswers.length; i++) {
-      if (!selectedAnswers[i].hasAttribute('correct')) {
-        is_correct = false;
-        break;
-      }
-    }
-    let section = quiz.querySelector('section');
-    if (is_correct) {
-      section.classList.remove('hidden');
-      resetFieldset(fieldset);
-      // Mark all fields with colors
-      const allAnswers = fieldset.querySelectorAll('input[name="answer"]');
-      for (let i = 0; i < allAnswers.length; i++) {
-        if (allAnswers[i].hasAttribute('correct')) {
-          allAnswers[i].parentElement.classList.add('correct');
-        } else {
-          allAnswers[i].parentElement.classList.add('wrong');
-        }
-      }
-    } else {
-      section.classList.add('hidden');
-      resetFieldset(fieldset);
-      // Mark wrong fields with colors
-      for (let i = 0; i < selectedAnswers.length; i++) {
-        if (!selectedAnswers[i].hasAttribute('correct')) {
-          selectedAnswers[i].parentElement.classList.add('wrong');
-        } else {
-          selectedAnswers[i].parentElement.classList.add('correct');
-        }
-      }
-    }
-  });
-});
-
-function resetFieldset(fieldset) {
-  const fieldsetChildren = fieldset.children;
-  for (let i = 0; i < fieldsetChildren.length; i++) {
-    fieldsetChildren[i].classList.remove('wrong');
-    fieldsetChildren[i].classList.remove('correct');
-  }
-}
-</script>
+</ol>
 
 
 
@@ -1492,7 +1382,8 @@ function resetFieldset(fieldset) {
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
@@ -1540,10 +1431,10 @@ function resetFieldset(fieldset) {
     
     
       
-      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Kopieret til udklipsholderen", "clipboard.copy": "Kopi\u00e9r til udklipsholderen", "search.result.more.one": "1 resultat mere p\u00e5 denne side", "search.result.more.other": "# resultater mere p\u00e5 denne side", "search.result.none": "Ingen resultater fundet", "search.result.one": "1 resultat", "search.result.other": "# resultater", "search.result.placeholder": "Indtast s\u00f8geord", "search.result.term.missing": "Mangler", "select.version": "V\u00e6lg version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["announce.dismiss", "content.code.annotate", "content.code.copy", "content.tooltips", "navigation.expand", "navigation.footer", "navigation.indexes", "navigation.instant", "navigation.instant.prefetch", "navigation.instant.progress", "navigation.prune", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.share", "search.suggest", "toc.follow"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Kopieret til udklipsholderen", "clipboard.copy": "Kopi\u00e9r til udklipsholderen", "search.result.more.one": "1 resultat mere p\u00e5 denne side", "search.result.more.other": "# resultater mere p\u00e5 denne side", "search.result.none": "Ingen resultater fundet", "search.result.one": "1 resultat", "search.result.other": "# resultater", "search.result.placeholder": "Indtast s\u00f8geord", "search.result.term.missing": "Mangler", "select.version": "V\u00e6lg version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../assets/javascripts/bundle.92b07e13.min.js"></script>
       
         <script src="../javascripts/mathjax.js"></script>
       
