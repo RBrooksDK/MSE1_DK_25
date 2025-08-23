@@ -6,7 +6,7 @@
     Ja, du kigger på den lige nu! Denne FAQ er designet til at besvare nogle af de mest almindelige spørgsmål om kurset. Hvis du har et spørgsmål, der ikke besvares her, er du velkommen til at kontakte den kursusansvarlige, [Richard Brooks](mailto: rib@via.dk)
 
 ??? question "Hvad handler kurset om?"
-    Kurset dækker en introduktion til udvalgte emner inden for matematik, der har særlig relevans for softwareingeniører. En dybdegående beskrivelse kan findes i [kursusbeskrivelsen](https://www.via.dk/TMH/Courses/matematik-for-softwareingenioerer-ts-under-opdatering?education=sw) eller ved at gennemgå beskrivelsen af hver session i Sessionsmenuen.
+    Kurset dækker en introduktion til udvalgte emner inden for matematik, der har særlig relevans for softwareingeniører. En dybdegående beskrivelse kan findes i [kursusbeskrivelsen](https://www.via.dk/TMH/Courses/matematik-for-softwareingenioerer-ts?education=sw) eller ved at gennemgå beskrivelsen af hver session i Sessionsmenuen.
 
 ??? question "Hvordan relaterer kurset sig til studieordningen?"
     Kurset relaterer sig primært til studieordningen ved at give et fundament for at forstå og anvende matematik i ingeniørmæssig sammenhæng, især inden for data science og machine learning samt computergrafik.
