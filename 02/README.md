@@ -19,11 +19,11 @@ tags:
     - Irrationale Tal
 ---
 
-<h1 align="center">Talsystemer og talrepræsentation</h1>
+<h1 align="center">Talsystemer</h1>
 
-I denne session dykker vi ned i talsystemer og deres fundamentale betydning for softwareudvikling. Vi starter med at udforske tallenes verden fra grundlæggende talteori til de forskellige talsystemer, der danner grundlaget for moderne +computerberegninger. Vi fokuserer særligt på binær, decimal og hexadecimal notation, som er essentielle i programmering og computerarkitektur.
+I denne session dykker vi ned i talsystemer og deres fundamentale betydning for softwareudvikling. Vi starter med at udforske tallenes verden fra grundlæggende talteori til de forskellige talsystemer, der danner grundlaget for moderne computerberegninger. Vi fokuserer særligt på binær, decimal og hexadecimal notation, som er essentielle i programmering og computerarkitektur.
 
-Sessionen omfatter en grundig gennemgang af talkonvertering mellem forskellige talsystemer, binær addition og multiplikation, samt positionsnotation. Vi undersøger også de forskellige talklasser som reelle, rationale og irrationale tal og deres egenskaber. Der er særlig fokus på binære operationer og hexadecimal notation, da disse spiller en afgørende rolle i softwareudvikling, datarepræsentation og digital elektronik.
+Sessionen omfatter en grundig gennemgang af talkonvertering mellem forskellige talsystemer, binær addition og multiplikation, samt positionsnotation. Der er særlig fokus på binære operationer og hexadecimal notation, da disse spiller en afgørende rolle i softwareudvikling, datarepræsentation og digital elektronik.
 
 
 <div class="grid cards" markdown>
@@ -44,7 +44,7 @@ Sessionen omfatter en grundig gennemgang af talkonvertering mellem forskellige t
 
     **M3:** Her finder du de øvelser, som I skal lave enten selv eller i grupper. Der er også en række tutorials, der viser hvordan man kan gribe opgaverne an.
     
-    [:octicons-arrow-right-24: M3: Øvelser](M3.md)
+    [:octicons-arrow-right-24: M3: Øvelser](M3/index.md)
 
 - ![](../billeder/teaching_1.jpg){align=right : style="height:100px;width:150px"}
 
