@@ -27,10 +27,10 @@ Matematik svarende til A-niveau fra gymnasiet forudsættes. Hvis det er flere å
 
 Kurset starter i uge 36 og slutter 13 uger efter, hvor der dog ikke undervises i uge 42. Vi definerer en session som bestående af fire aktiviteter:
 
-1. **Asynkron** forberedelse, der består af videoer, tutorials og læsning af kapitler fra bogen.
-2. **Synkron** praktisk anvendelse af teorien og gennemgang af eksempler online.
-3. **Asynkron** opgaveregning (fx i selvvalgte grupper).
-4. **Synkron** opgaveløsning og opsamling på de opgaver, der er lavet i (3).
+  1. **M1: Asynkron** forberedelse, der består af videoer, tutorials og læsning af kapitler fra bogen.
+  2. **M2: Synkron** praktisk anvendelse af teorien og gennemgang af eksempler online.
+  3. **M3: Asynkron** opgaveregning (fx i selvvalgte grupper).
+  4. **M4: Synkron** opgaveløsning og opsamling på de opgaver, der er lavet i (3).
 
 Dette gentages fra (1) ved starten af næste session.
 
