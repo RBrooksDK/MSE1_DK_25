@@ -14,6 +14,8 @@ Bogen "Matematik for Softwareingeniører" er den primære lærebog for kurset og
 
 Her er en liste over online ressourcer med links, der dækker de emner, vi skal igennem.
 
+## Kursusemner
+
 ### Grundlæggende Aritmetik og Funktioner
 
 *   [Grundlæggende algebra](https://da.khanacademy.org/math/algebra-basics)
