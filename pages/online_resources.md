@@ -16,85 +16,28 @@ Her er en liste over online ressourcer med links, der dækker de emner, vi skal 
 
 ### Grundlæggende Aritmetik og Funktioner
 
-*   **Khan Academy (Dansk):** En omfattende ressource til at genopfriske og lære grundlæggende matematiske emner.
-    *   [Grundlæggende algebra](https://da.khanacademy.org/math/algebra-basics)
-*   **Introduktion til Injektive, Surjektive og Bijektive Funktioner (Engelsk):** En YouTube-video, der visuelt forklarer de forskellige funktionstyper.
-    *   [Injektive, surjektive og bijektive funktioner](https://www.youtube.com/watch?v=bZred_Ksz2k)
-*   **Logaritmer for begyndere:** En letforståelig introduktion til logaritmer.
-    *   [https://www.webmatematik.dk/lektioner/matematik-a/funktioner/logaritmefunktioner](https://www.webmatematik.dk/lektioner/matematik-a/funktioner/logaritmefunktioner)
-*   **Regneregler for logaritmer:** En oversigt over de vigtigste logaritmeregler.
-    *   [https://matematikcenter.dk/matematik-b/logaritmefunktioner/logaritmeregneregler](https://matematikcenter.dk/matematik-b/logaritmefunktioner/logaritmeregneregler)
+*   [Grundlæggende algebra](https://da.khanacademy.org/math/algebra-basics)
+*   [Injektive, surjektive og bijektive funktioner](https://www.youtube.com/watch?v=bZred_Ksz2k)
+*   [Logaritmer](https://www.webmatematik.dk/lektioner/matematik-c/funktioner/logaritmer)
 
 ### Talsystemer (Binær, Oktal, Hex)
 
-*   **Introduktion til det binære talsystem:** En YouTube-video, der forklarer det binære talsystem og konvertering.
-    *   [https://www.youtube.com/watch?v=P4sA-su7xqA](https://www.youtube.com/watch?v=P4sA-su7xqA)
-*   **Konvertering mellem talsystemer:** Et online værktøj til at konvertere mellem forskellige talsystemer.
-    *   [https://www.digikey.dk/da/resources/conversion-calculators/conversion-calculator-number-systems](https://www.digikey.dk/da/resources/conversion-calculators/conversion-calculator-number-systems)
-*   **Excel-funktioner til talsystemer:** Microsofts guide til at bruge Excel til at konvertere mellem talsystemer.
-    *   [https://support.microsoft.com/da-dk/office/konvertere-tal-til-forskellige-talsystemer-43c2333b-9a22-4299-a9a3-11b3b24fd2e8](https://support.microsoft.com/da-dk/office/konvertere-tal-til-forskellige-talsystemer-43c2333b-9a22-4299-a9a3-11b3b24fd2e8)
+*   [Positional Number Systems](https://www.youtube.com/watch?v=hJ5hsdNFAjo)
 
 ### Mængdelære
 
-*   **Webmatematik - Mængdelære:** En introduktion til mængdelære.
-    *   [https://www.webmatematik.dk/lektioner/matematik-c/maengdelaere/introduktion-til-maengdelaere](https://www.webmatematik.dk/lektioner/matematik-c/maengdelaere/introduktion-til-maengdelaere)
+*   [Set Theory](https://www.youtube.com/watch?v=5ZhNmKb-dqk)
 
 ### Kombinatorik og Sandsynlighedsteori
 
-*   **Webmatematik - Sandsynlighed og kombinatorik:** En sektion, der dækker de grundlæggende begreber.
-    *   [https://www.webmatematik.dk/lektioner/matematik-b/sandsynlighed-og-kombinatorik](https://www.webmatematik.dk/lektioner/matematik-b/sandsynlighed-og-kombinatorik)
-*   **Webmatematik - Kombinatorik:** En mere detaljeret gennemgang af kombinatorik.
-    *   [https://www.webmatematik.dk/lektioner/matematik-b/sandsynlighed-og-kombinatorik/kombinatorik](https://www.webmatematik.dk/lektioner/matematik-b/sandsynlighed-og-kombinatorik/kombinatorik)
+*   [Permuatation](https://youtu.be/DXfQTp4cCBI?si=0UjPOXGeZ4O0OTnm)
+*   [Combinatorics](https://youtu.be/KdxrOsvUEh4?si=Kl-bMztKHUqzyj02)
+*   [Introduction to Probability, Basic Overview - Sample Space, \& Tree Diagrams](https://youtu.be/SkidyDQuupA?si=4-xvNFfGv5XtsUI9)
+*   [Multiplication & Addition Rule - Probability - Mutually Exclusive & Independent Events](https://youtu.be/94AmzeR9n2w?si=DHH89uix-AHQELa6)
+*   [Probability of Mutually Exclusive Events With Venn Diagrams](https://youtu.be/X6usGgwXFyU?si=pmYPhTZXEkGlT6cK)
+
 
 ### Betingede Sandsynligheder og Bayes' Teorem
-
-*   **Bayes' sætning - intro og eksempel:** En YouTube-video, der introducerer Bayes' sætning med et eksempel.
-    *   [https://www.youtube.com/watch?v=O8m0bY2b6Ew](https://www.youtube.com/watch?v=O8m0bY2b6Ew)
-*   **Matematiksider.dk - Bayes' fantastiske formel:** En dybdegående artikel om Bayes' formel og dens anvendelser.
-    *   [http://matematiksider.dk/bayes.html](http://matematiksider.dk/bayes.html)
-*   **Lex.dk - Betinget sandsynlighed:** En artikel, der definerer betinget sandsynlighed og Bayes' formel.
-    *   [https://denstoredanske.lex.dk/betinget_sandsynlighed_-_Bayes'_formel](https://denstoredanske.lex.dk/betinget_sandsynlighed_-_Bayes'_formel)
-*   **Wikipedia - Bayes' teorem:** En artikel, der forklarer den matematiske baggrund for Bayes' teorem.
-    *   [https://da.wikipedia.org/wiki/Bayes'_teorem](https://da.wikipedia.org/wiki/Bayes'_teorem)
-
-### Beskrivende Statistik
-
-*   **Webmatematik - Statistik:** En omfattende sektion om statistik, herunder beskrivende statistik.
-    *   [https://www.webmatematik.dk/lektioner/matematik-c/statistik](https://www.webmatematik.dk/lektioner/matematik-c/statistik)
-*   **Systime - Beskrivende statistik:** Et uddrag fra en matematikbog, der dækker deskriptorer og diagrammer.
-    *   [https://mat-b.systime.dk/index.php?id=191](https://mat-b.systime.dk/index.php?id=191)
-
-### Introduktion til lineær algebra
-
-*   **Khan Academy - Linear Algebra (Engelsk):** En komplet videoserie, der dækker alt inden for lineær algebra.
-    *   [https://www.khanacademy.org/math/linear-algebra](https://www.khanacademy.org/math/linear-algebra)
-*   **3Blue1Brown - Essence of linear algebra (Engelsk):** En YouTube-playliste, der giver en fantastisk visuel og intuitiv forståelse af lineær algebra.
-    *   [https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab)
-
-### Vektorer og matricer
-
-*   **Webmatematik - Vektorer i planen:** En sektion, der dækker det grundlæggende om vektorer.
-    *   [https://www.webmatematik.dk/lektioner/matematik-b/vektorer-i-planen](https://www.webmatematik.dk/lektioner/matematik-b/vektorer-i-planen)
-*   **Webmatematik - Vektorregning:** En side med regneregler for vektorer.
-    *   [https://www.webmatematik.dk/lektioner/matematik-b/vektorer-i-planen/regneregler-for-vektorer](https://www.webmatematik.dk/lektioner/matematik-b/vektorer-i-planen/regneregler-for-vektorer)
-
-### Matrixalgebra og determinanter
-
-*   **Webmatematik - Matvicer:** En introduktion til matricer og matrixregning.
-    *   [https://www.webmatematik.dk/lektioner/matematik-a/vektorer-og-matricer/matricer](https://www.webmatematik.dk/lektioner/matematik-a/vektorer-og-matricer/matricer)
-*   **Webmatematik - Determinant:** En side, der forklarer, hvordan man beregner determinanten for en matrix.
-    *   [https://www.webmatematik.dk/lektioner/matematik-a/vektorer-og-matricer/determinant](https://www.webmatematik.dk/lektioner/matematik-a/vektorer-og-matricer/determinant)
-
-### Differentiering af simple funktioner
-
-*   **Webmatematik - Differentialregning:** En omfattende sektion, der dækker alle aspekter af differentiering.
-    *   [https://www.webmatematik.dk/lektioner/matematik-b/differentialregning](https://www.webmatematik.dk/lektioner/matematik-b/differentialregning)
-*   **Khan Academy - Differentialregning (Engelsk):** En videoserie med øvelser, der dækker alt fra de grundlæggende koncepter til mere avancerede emner.
-    *   [https://www.khanacademy.org/math/differential-calculus](https://www.khanacademy.org/math/differential-calculus)
-
-### Gradienter og partiel afledte
-
-*   **Khan Academy - Multivariable Calculus (Engelsk):** En sektion, der dækker partiel afledning og gradienter.
-    *   [https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives](https://www.khanacademy.org/math/multivariable-calculus/multivariable-derivatives)
-*   **StatQuest with Josh Starmer - Gradient Descent (Engelsk):** En YouTube-video, der på en pædagogisk måde forklarer, hvad en gradient er i kontekst af machine learning.
-    *   [https://www.youtube.com/watch?v=s-com6uDNar](https://www.youtube.com/watch?v=s-com6uDNar)
+   
+*   [Conditional Probability With Venn Diagrams & Contingency Tables](https://youtu.be/sqDVrXq_eh0?si=TwL4oCLmQjYkCzjf)
+*   [Bayes' Theorem of Probability With Tree Diagrams \& Venn Diagrams](https://youtu.be/OByl4RJxnKA?si=Wc0c9uDtoDK_PDuE)
