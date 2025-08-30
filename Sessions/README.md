@@ -14,7 +14,7 @@ Klik på en session til venstre (eller nedenfor) for at få adgang til en plan f
 | 06      | Uge 40              | [Beskrivende Statistik](/MSE1_DK_25/06/) |
 | 07      | Uge 41              | [Introduktion til lineær algebra](/MSE1_DK_25/07/) |
 | 08      | Uge 43              | [Vektorer og matricer](/MSE1_DK_25/08/) |
-| 09      | Uge 44              | [Matrix algebra og determinanter](/MSE1_DK_25/09/) |
+| 09      | Uge 44              | [Matrixalgebra og determinanter](/MSE1_DK_25/09/) |
 | 10      | Uge 45              | [Differentiering af simple funktioner](/MSE1_DK_25/10/) |
 | 11      | Uge 46              | [Gradienter og partiel afledte](/MSE1_DK_25/11/) |
 | 12      | Uge 47              | [Afslutning og spørgetime](/MSE1_DK_25/12/) |
