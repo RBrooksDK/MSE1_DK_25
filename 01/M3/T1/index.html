@@ -1125,7 +1125,7 @@
   
   
   <span class="md-ellipsis">
-    09 Matrix algebra og determinanter
+    09 Matrixalgebra og determinanter
     
   </span>
   
@@ -1466,18 +1466,20 @@
 <li><strong>M</strong>ultiplikation og <strong>D</strong>ivision (fra venstre mod højre)</li>
 <li><strong>A</strong>ddition og <strong>S</strong>ubtraktion (fra venstre mod højre)</li>
 </ol>
-<p><strong>Eksempel på Regningsarternes Hierarki:</strong>
-Beregn værdien af udtrykket: <span class="arithmatex">\(5 + 3 \cdot 2^2 - (8/4)\)</span></p>
-<p><strong>Løsning:</strong>
-1.  <strong>Parentes:</strong> Først udfører vi operationen inden i parentesen: <span class="arithmatex">\(8/4 = 2\)</span>.
-    Udtrykket bliver: <span class="arithmatex">\(5 + 3 \cdot 2^2 - 2\)</span>
-2.  <strong>Eksponent:</strong> Dernæst beregner vi eksponenten: <span class="arithmatex">\(2^2 = 4\)</span>.
-    Udtrykket bliver: <span class="arithmatex">\(5 + 3 \cdot 4 - 2\)</span>
-3.  <strong>Multiplikation:</strong> Nu udfører vi multiplikationen: <span class="arithmatex">\(3 \cdot 4 = 12\)</span>.
-    Udtrykket bliver: <span class="arithmatex">\(5 + 12 - 2\)</span>
-4.  <strong>Addition/Subtraktion:</strong> Til sidst udfører vi addition og subtraktion fra venstre mod højre:
+<p><strong>Eksempel på Regningsarternes Hierarki:</strong></p>
+<p>Beregn værdien af udtrykket: <span class="arithmatex">\(5 + 3 \cdot 2^2 - (8/4)\)</span></p>
+<p><strong>Løsning:</strong></p>
+<ol>
+<li><strong>Parentes:</strong> Først udfører vi operationen inden i parentesen: <span class="arithmatex">\(8/4 = 2\)</span>.
+    Udtrykket bliver: <span class="arithmatex">\(5 + 3 \cdot 2^2 - 2\)</span></li>
+<li><strong>Eksponent:</strong> Dernæst beregner vi eksponenten: <span class="arithmatex">\(2^2 = 4\)</span>.
+    Udtrykket bliver: <span class="arithmatex">\(5 + 3 \cdot 4 - 2\)</span></li>
+<li><strong>Multiplikation:</strong> Nu udfører vi multiplikationen: <span class="arithmatex">\(3 \cdot 4 = 12\)</span>.
+    Udtrykket bliver: <span class="arithmatex">\(5 + 12 - 2\)</span></li>
+<li><strong>Addition/Subtraktion:</strong> Til sidst udfører vi addition og subtraktion fra venstre mod højre:
     <span class="arithmatex">\(5 + 12 = 17\)</span>
-    <span class="arithmatex">\(17 - 2 = 15\)</span></p>
+    <span class="arithmatex">\(17 - 2 = 15\)</span></li>
+</ol>
 <p><strong>Resultat:</strong> <span class="arithmatex">\(15\)</span></p>
 <h2 id="2-grundlggende-algebraiske-regneregler">2. Grundlæggende Algebraiske Regneregler<a class="headerlink" href="#2-grundlggende-algebraiske-regneregler" title="Permanent link">&para;</a></h2>
 <p>Disse regler er fundamentale for at omarrangere og simplificere udtryk:</p>
@@ -1501,96 +1503,142 @@ Beregn værdien af udtrykket: <span class="arithmatex">\(5 + 3 \cdot 2^2 - (8/4)
 </ul>
 <h2 id="3-simplificering-af-algebraiske-udtryk">3. Simplificering af Algebraiske Udtryk<a class="headerlink" href="#3-simplificering-af-algebraiske-udtryk" title="Permanent link">&para;</a></h2>
 <p>At simplificere betyder at skrive et udtryk så simpelt som muligt, ofte ved at kombinere 'like terms'. 'Like terms' er led, der har samme variabler opløftet til de samme potenser.</p>
-<p><strong>Eksempel på Simplificering af Algebraisk Udtryk:</strong>
-Simplificer udtrykket: <span class="arithmatex">\(4(x+3) - (2x-5)\)</span></p>
-<p><strong>Løsning:</strong>
-1.  <strong>Fjern parenteser:</strong> Anvend den distributive lov for den første parentes, og skift fortegn for alle led i den anden parentes på grund af minustegnet foran:
-    <span class="arithmatex">\(<span class="arithmatex">\(4 \cdot x + 4 \cdot 3 - 2x - (-5)\)</span>\)</span>
-    <span class="arithmatex">\(<span class="arithmatex">\(4x + 12 - 2x + 5\)</span>\)</span>
-2.  <strong>Saml 'like terms':</strong> Identificer og kombiner led med <span class="arithmatex">\(x\)</span> og konstante led:
-    <span class="arithmatex">\(<span class="arithmatex">\((4x - 2x) + (12 + 5)\)</span>\)</span>
-    <span class="arithmatex">\(<span class="arithmatex">\(2x + 17\)</span>\)</span></p>
+<p><strong>Eksempel på Simplificering af Algebraisk Udtryk:</strong></p>
+<p>Simplificer udtrykket: <span class="arithmatex">\(4(x+3) - (2x-5)\)</span></p>
+<p><strong>Løsning:</strong></p>
+<ol>
+<li>
+<p><strong>Fjern parenteser:</strong> Anvend den distributive lov for den første parentes, og skift fortegn for alle led i den anden parentes på grund af minustegnet foran:</p>
+<div class="arithmatex">\[4 \cdot x + 4 \cdot 3 - 2x - (-5)\]</div>
+<div class="arithmatex">\[4x + 12 - 2x + 5\]</div>
+</li>
+<li>
+<p><strong>Saml 'like terms':</strong> Identificer og kombiner led med <span class="arithmatex">\(x\)</span> og konstante led:</p>
+<div class="arithmatex">\[(4x - 2x) + (12 + 5)\]</div>
+<div class="arithmatex">\[2x + 17\]</div>
+</li>
+</ol>
 <p><strong>Resultat:</strong> <span class="arithmatex">\(2x + 17\)</span></p>
 <h2 id="4-lsning-af-linere-ligninger">4. Løsning af Lineære Ligninger<a class="headerlink" href="#4-lsning-af-linere-ligninger" title="Permanent link">&para;</a></h2>
 <p>En lineær ligning er en ligning, hvor den højeste potens af variablen er 1 (f.eks. <span class="arithmatex">\(x\)</span>). Målet er at isolere variablen.</p>
-<p><strong>Fremgangsmåde:</strong>
-1.  Fjern parenteser (hvis der er nogen).
-2.  Saml variable led på den ene side af lighedstegnet og konstante led på den anden.
-3.  Udfør addition/subtraktion.
-4.  Udfør multiplikation/division for at isolere variablen.</p>
-<p><strong>Eksempel på Løsning af Lineær Ligning:</strong>
-Løs ligningen: <span class="arithmatex">\(3x - 7 = 2x + 1\)</span></p>
-<p><strong>Løsning:</strong>
-1.  <strong>Flyt variable led til den ene side</strong> (f.eks. venstre side) ved at subtrahere <span class="arithmatex">\(2x\)</span> fra begge sider:
-    <span class="arithmatex">\(<span class="arithmatex">\(3x - 2x - 7 = 1\)</span>\)</span>
-    <span class="arithmatex">\(<span class="arithmatex">\(x - 7 = 1\)</span>\)</span>
-2.  <strong>Flyt konstante led til den anden side</strong> (højre side) ved at addere <span class="arithmatex">\(7\)</span> til begge sider:
-    <span class="arithmatex">\(<span class="arithmatex">\(x = 1 + 7\)</span>\)</span>
-    <span class="arithmatex">\(<span class="arithmatex">\(x = 8\)</span>\)</span></p>
+<p><strong>Fremgangsmåde:</strong></p>
+<ol>
+<li>Fjern parenteser (hvis der er nogen).</li>
+<li>Saml variable led på den ene side af lighedstegnet og konstante led på den anden.</li>
+<li>Udfør addition/subtraktion.</li>
+<li>Udfør multiplikation/division for at isolere variablen.</li>
+</ol>
+<p><strong>Eksempel på Løsning af Lineær Ligning:</strong></p>
+<p>Løs ligningen: <span class="arithmatex">\(3x - 7 = 2x + 1\)</span></p>
+<p><strong>Løsning:</strong></p>
+<ol>
+<li>
+<p><strong>Flyt variable led til den ene side</strong> (f.eks. venstre side) ved at subtrahere <span class="arithmatex">\(2x\)</span> fra begge sider:</p>
+<div class="arithmatex">\[3x - 2x - 7 = 1\]</div>
+<div class="arithmatex">\[x - 7 = 1\]</div>
+</li>
+<li>
+<p><strong>Flyt konstante led til den anden side</strong> (højre side) ved at addere <span class="arithmatex">\(7\)</span> til begge sider:</p>
+<div class="arithmatex">\[x = 1 + 7\]</div>
+<div class="arithmatex">\[x = 8\]</div>
+</li>
+</ol>
 <p><strong>Resultat:</strong> <span class="arithmatex">\(x = 8\)</span></p>
 <h2 id="5-lsning-af-simple-kvadratiske-ligninger">5. Løsning af Simple Kvadratiske Ligninger<a class="headerlink" href="#5-lsning-af-simple-kvadratiske-ligninger" title="Permanent link">&para;</a></h2>
 <p>Simple kvadratiske ligninger kan løses ved at isolere <span class="arithmatex">\(x^2\)</span> og tage kvadratroden af begge sider.</p>
-<p><strong>Fremgangsmåde for <span class="arithmatex">\(x^2 = k\)</span>:</strong>
-1.  Isoler <span class="arithmatex">\(x^2\)</span>.
-2.  Tag kvadratroden på begge sider: <span class="arithmatex">\(x = \pm \sqrt{k}\)</span>. Husk både den positive og negative løsning!
-3.  Hvis <span class="arithmatex">\(k &lt; 0\)</span>, er der ingen reelle løsninger.</p>
-<p><strong>Fremgangsmåde for <span class="arithmatex">\((ax+b)^2 = k\)</span>:</strong>
-1.  Tag kvadratroden på begge sider: <span class="arithmatex">\(ax+b = \pm \sqrt{k}\)</span>.
-2.  Løs de to resulterende lineære ligninger.</p>
-<p><strong>Eksempel på Løsning af en Simpel Kvadratisk Ligning:</strong>
-Løs ligningen: <span class="arithmatex">\((x-3)^2 = 16\)</span></p>
-<p><strong>Løsning:</strong>
-1.  <strong>Tag kvadratroden på begge sider</strong> af ligningen. Husk både den positive og negative rod:
-    <span class="arithmatex">\(<span class="arithmatex">\(x-3 = \pm \sqrt{16}\)</span>\)</span>
-    <span class="arithmatex">\(<span class="arithmatex">\(x-3 = \pm 4\)</span>\)</span>
-2.  <strong>Del op i to separate lineære ligninger</strong> og løs hver især:
-    a) Første tilfælde (positiv rod):
-       <span class="arithmatex">\(x-3 = 4\)</span>
-       <span class="arithmatex">\(x = 4 + 3\)</span>
-       <span class="arithmatex">\(x = 7\)</span>
-    b) Andet tilfælde (negativ rod):
-       <span class="arithmatex">\(x-3 = -4\)</span>
-       <span class="arithmatex">\(x = -4 + 3\)</span>
-       <span class="arithmatex">\(x = -1\)</span></p>
+<p><strong>Fremgangsmåde for <span class="arithmatex">\(x^2 = k\)</span>:</strong></p>
+<ol>
+<li>Isoler <span class="arithmatex">\(x^2\)</span>.</li>
+<li>Tag kvadratroden på begge sider: <span class="arithmatex">\(x = \pm \sqrt{k}\)</span>. Husk både den positive og negative løsning!</li>
+<li>Hvis <span class="arithmatex">\(k &lt; 0\)</span>, er der ingen reelle løsninger.</li>
+</ol>
+<p><strong>Fremgangsmåde for <span class="arithmatex">\((ax+b)^2 = k\)</span>:</strong></p>
+<ol>
+<li>Tag kvadratroden på begge sider: <span class="arithmatex">\(ax+b = \pm \sqrt{k}\)</span>.</li>
+<li>Løs de to resulterende lineære ligninger.</li>
+</ol>
+<p><strong>Eksempel på Løsning af en Simpel Kvadratisk Ligning:</strong></p>
+<p>Løs ligningen: <span class="arithmatex">\((x-3)^2 = 16\)</span></p>
+<p><strong>Løsning:</strong></p>
+<ol>
+<li>
+<p><strong>Tag kvadratroden på begge sider</strong> af ligningen. Husk både den positive og negative rod:</p>
+<div class="arithmatex">\[x-3 = \pm \sqrt{16}\]</div>
+<div class="arithmatex">\[x-3 = \pm 4\]</div>
+</li>
+<li>
+<p><strong>Del op i to separate lineære ligninger</strong> og løs hver især:</p>
+<p>a) Første tilfælde (positiv rod):
+   <span class="arithmatex">\(x-3 = 4\)</span>
+   <span class="arithmatex">\(x = 4 + 3\)</span>
+   <span class="arithmatex">\(x = 7\)</span></p>
+<p>b) Andet tilfælde (negativ rod):
+   <span class="arithmatex">\(x-3 = -4\)</span>
+   <span class="arithmatex">\(x = -4 + 3\)</span>
+   <span class="arithmatex">\(x = -1\)</span></p>
+</li>
+</ol>
 <p><strong>Resultat:</strong> <span class="arithmatex">\(x = 7\)</span> og <span class="arithmatex">\(x = -1\)</span></p>
 <h2 id="6-isolering-af-en-variabel-i-en-formel">6. Isolering af en Variabel i en Formel<a class="headerlink" href="#6-isolering-af-en-variabel-i-en-formel" title="Permanent link">&para;</a></h2>
 <p>Ofte skal du omarrangere en formel for at isolere en bestemt variabel. Følg de samme principper som for ligningsløsning, men behandl andre variable som om de var kendte tal.</p>
-<p><strong>Eksempel på Isolering af Variabel i en Formel:</strong>
-Gør <span class="arithmatex">\(k\)</span> til subjekt i formlen: <span class="arithmatex">\(E = \frac{1}{2}mv^2 + k\)</span></p>
-<p><strong>Løsning:</strong>
-1.  Målet er at få <span class="arithmatex">\(k\)</span> til at stå alene på den ene side af lighedstegnet. Start med at flytte leddet <span class="arithmatex">\(\frac{1}{2}mv^2\)</span> til den anden side ved at subtrahere det fra begge sider af ligningen:
-    <span class="arithmatex">\(<span class="arithmatex">\(E - \frac{1}{2}mv^2 = k\)</span>\)</span>
-2.  Variablen <span class="arithmatex">\(k\)</span> er nu isoleret.</p>
+<p><strong>Eksempel på Isolering af Variabel i en Formel:</strong></p>
+<p>Gør <span class="arithmatex">\(k\)</span> til subjekt i formlen: <span class="arithmatex">\(E = \frac{1}{2}mv^2 + k\)</span></p>
+<p><strong>Løsning:</strong></p>
+<ol>
+<li>
+<p>Målet er at få <span class="arithmatex">\(k\)</span> til at stå alene på den ene side af lighedstegnet. Start med at flytte leddet <span class="arithmatex">\(\frac{1}{2}mv^2\)</span> til den anden side ved at subtrahere det fra begge sider af ligningen:</p>
+<div class="arithmatex">\[E - \frac{1}{2}mv^2 = k\]</div>
+</li>
+<li>
+<p>Variablen <span class="arithmatex">\(k\)</span> er nu isoleret.</p>
+</li>
+</ol>
 <p><strong>Resultat:</strong> <span class="arithmatex">\(k = E - \frac{1}{2}mv^2\)</span></p>
 <h2 id="7-algebraiske-brker-og-ligninger-med-brker">7. Algebraiske Brøker og Ligninger med Brøker<a class="headerlink" href="#7-algebraiske-brker-og-ligninger-med-brker" title="Permanent link">&para;</a></h2>
 <p>Arbejde med brøker i algebra er essentielt, og det følger de samme regler som numeriske brøker.</p>
 <ul>
-<li><strong>Addition/Subtraktion:</strong> Kræver en fællesnævner. Find den mindste fælles multiplum (MFM) af nævnerne.
-    <span class="arithmatex">\(<span class="arithmatex">\(\frac{A}{B} + \frac{C}{D} = \frac{A \cdot D}{B \cdot D} + \frac{C \cdot B}{D \cdot B} = \frac{AD + CB}{BD}\)</span>\)</span></li>
-<li><strong>Multiplikation:</strong> Tæller gange tæller, nævner gange nævner.
-    <span class="arithmatex">\(<span class="arithmatex">\(\frac{A}{B} \cdot \frac{C}{D} = \frac{AC}{BD}\)</span>\)</span></li>
-<li><strong>Division:</strong> Gang med den reciprokke værdi.
-    <span class="arithmatex">\(<span class="arithmatex">\(\frac{A}{B} \div \frac{C}{D} = \frac{A}{B} \cdot \frac{D}{C} = \frac{AD}{BC}\)</span>\)</span></li>
+<li>
+<p><strong>Addition/Subtraktion:</strong> Kræver en fællesnævner. Find den mindste fælles multiplum (MFM) af nævnerne.</p>
+<div class="arithmatex">\[\frac{A}{B} + \frac{C}{D} = \frac{A \cdot D}{B \cdot D} + \frac{C \cdot B}{D \cdot B} = \frac{AD + CB}{BD}\]</div>
+</li>
+<li>
+<p><strong>Multiplikation:</strong> Tæller gange tæller, nævner gange nævner.</p>
+<div class="arithmatex">\[\frac{A}{B} \cdot \frac{C}{D} = \frac{AC}{BD}\]</div>
+</li>
+<li>
+<p><strong>Division:</strong> Gang med den reciprokke værdi.</p>
+<div class="arithmatex">\[\frac{A}{B} \div \frac{C}{D} = \frac{A}{B} \cdot \frac{D}{C} = \frac{AD}{BC}\]</div>
+</li>
 </ul>
-<p><strong>Løsning af ligninger med brøker:</strong>
-1.  <strong>Definitionsmængde:</strong> Start med at identificere, hvilke værdier af variablen der vil gøre en nævner lig nul. Disse værdier er <em>ikke</em> en del af definitionsmængden og kan derfor ikke være gyldige løsninger.
-2.  Find den mindste fællesnævner (MFN) for <em>alle</em> brøker i ligningen.
-3.  Gang <em>alle</em> led i ligningen med MFN. Dette vil fjerne alle nævnere.
-4.  Løs den resulterende ligning (som ofte vil være lineær eller kvadratisk).
-5.  <strong>Tjek løsninger:</strong> Sammenlign dine fundne løsninger med de værdier, der blev udelukket fra definitionsmængden. En løsning er kun gyldig, hvis den ikke gør nogen nævner lig nul.</p>
-<p><strong>Eksempel på Løsning af Ligning med Algebraiske Brøker:</strong>
-Løs ligningen: <span class="arithmatex">\(\frac{x}{3} + \frac{x}{2} = 5\)</span></p>
-<p><strong>Løsning:</strong>
-1.  <strong>Definitionsmængde:</strong> Da der ikke er variable i nævnerne (kun konstanterne 3 og 2), er definitionsmængden alle reelle tal (<span class="arithmatex">\(\mathbb{R}\)</span>). Der er ingen værdier, der kan gøre nævnerne lig nul.
-2.  <strong>Find den mindste fællesnævner (MFN):</strong> For nævnerne 3 og 2 er MFN lig med 6.
-3.  <strong>Gang alle led i ligningen med MFN (6):</strong>
-    <span class="arithmatex">\(<span class="arithmatex">\(6 \cdot \left(\frac{x}{3}\right) + 6 \cdot \left(\frac{x}{2}\right) = 6 \cdot 5\)</span>\)</span>
-    <span class="arithmatex">\(<span class="arithmatex">\(2x + 3x = 30\)</span>\)</span>
-4.  <strong>Saml 'like terms' og løs den lineære ligning:</strong>
-    <span class="arithmatex">\(<span class="arithmatex">\(5x = 30\)</span>\)</span>
-    <span class="arithmatex">\(<span class="arithmatex">\(x = \frac{30}{5}\)</span>\)</span>
-    <span class="arithmatex">\(<span class="arithmatex">\(x = 6\)</span>\)</span>
-5.  <strong>Tjek løsning:</strong> Løsningen <span class="arithmatex">\(x=6\)</span> er gyldig, da den er en del af definitionsmængden.</p>
+<p><strong>Løsning af ligninger med brøker:</strong></p>
+<ol>
+<li><strong>Definitionsmængde:</strong> Start med at identificere, hvilke værdier af variablen der vil gøre en nævner lig nul. Disse værdier er <em>ikke</em> en del af definitionsmængden og kan derfor ikke være gyldige løsninger.</li>
+<li>Find den mindste fællesnævner (MFN) for <em>alle</em> brøker i ligningen.</li>
+<li>Gang <em>alle</em> led i ligningen med MFN. Dette vil fjerne alle nævnere.</li>
+<li>Løs den resulterende ligning (som ofte vil være lineær eller kvadratisk).</li>
+<li><strong>Tjek løsninger:</strong> Sammenlign dine fundne løsninger med de værdier, der blev udelukket fra definitionsmængden. En løsning er kun gyldig, hvis den ikke gør nogen nævner lig nul.</li>
+</ol>
+<p><strong>Eksempel på Løsning af Ligning med Algebraiske Brøker:</strong></p>
+<p>Løs ligningen: <span class="arithmatex">\(\frac{x}{3} + \frac{x}{2} = 5\)</span></p>
+<p><strong>Løsning:</strong></p>
+<ol>
+<li><strong>Definitionsmængde:</strong> Da der ikke er variable i nævnerne (kun konstanterne 3 og 2), er definitionsmængden alle reelle tal (<span class="arithmatex">\(\mathbb{R}\)</span>). Der er ingen værdier, der kan gøre nævnerne lig nul.</li>
+<li><strong>Find den mindste fællesnævner (MFN):</strong> For nævnerne 3 og 2 er MFN lig med 6.</li>
+<li>
+<p><strong>Gang alle led i ligningen med MFN (6):</strong></p>
+<div class="arithmatex">\[6 \cdot \left(\frac{x}{3}\right) + 6 \cdot \left(\frac{x}{2}\right) = 6 \cdot 5\]</div>
+<div class="arithmatex">\[2x + 3x = 30\]</div>
+</li>
+<li>
+<p><strong>Saml 'like terms' og løs den lineære ligning:</strong></p>
+<div class="arithmatex">\[5x = 30\]</div>
+<div class="arithmatex">\[x = \frac{30}{5}\]</div>
+<div class="arithmatex">\[x = 6\]</div>
+</li>
+<li>
+<p><strong>Tjek løsning:</strong> Løsningen <span class="arithmatex">\(x=6\)</span> er gyldig, da den er en del af definitionsmængden.</p>
+</li>
+</ol>
 <p><strong>Resultat:</strong> <span class="arithmatex">\(x = 6\)</span></p>
 <h2 id="opsummering">Opsummering<a class="headerlink" href="#opsummering" title="Permanent link">&para;</a></h2>
 <p>I denne tutorial har du genopfrisket de grundlæggende regneregler og teknikker inden for algebra. Husk altid regningsarternes hierarki, når du udfører beregninger. Øv dig i at simplificere udtryk og løse ligninger ved at isolere den ukendte variabel. Vær særligt opmærksom på håndtering af brøker og deres definitionsmængder, da dette er en hyppig kilde til fejl. Disse færdigheder er fundamentale og vil være afgørende for din succes i de efterfølgende matematiske emner og i din softwareudvikling.</p>
