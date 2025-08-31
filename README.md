@@ -34,7 +34,7 @@ Kurset starter i uge 36 og slutter 13 uger efter, hvor der dog ikke undervises i
 
 Dette gentages fra (1) ved starten af næste session.
 
-Der er ingen obligatoriske afleveringer. Hvert af de fire aktiviteter forventes at tage 2 timer, hvilket giver i alt 8 timer pr. uge. Det er vigtigt at deltage aktivt i alle aktiviteter for at få det optimale udbytte af kurset.
+Der er ingen obligatoriske afleveringer. Hver af de fire aktiviteter forventes at tage 2 timer, hvilket giver i alt 8 timer pr. uge. Det er vigtigt at deltage aktivt i alle aktiviteter for at få det optimale udbytte af kurset.
 
 ## <i class="fas fa-wave-square" style="color:#6CA2C6"></i> Kursusindhold og læringsmål
 
