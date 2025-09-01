@@ -6,8 +6,8 @@ I denne session skal I forberede jer til den anden undervisning. I skal lave øv
 
 - ![](/MSE1_DK_25/billeder/tutorial.png){align=right : style="height:150px;width:150px"}
     
-    **T1:** Her finder du tutorials om regneregler for eksponenter og logaritmer samt isoleringsmetoden.
-    
+    **T1:** Her finder du tutorials om udvidede regneregler for sandsynligheder og Bayes' sætning.
+
     <span style="display:block; height:1em;"></span>
 
     [:octicons-arrow-right-24: T1: Tutorials](T1.md)
