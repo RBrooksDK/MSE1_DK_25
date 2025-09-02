@@ -2,6 +2,8 @@
 
 <h1 align="center">Kursusvideoer</h1>
 
+### 1. Grundlæggende aritmetik og funktioner
+
 #### 1.1. Aritmetik
 
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
