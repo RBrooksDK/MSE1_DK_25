@@ -1819,6 +1819,31 @@ body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 </ol>
 </li>
 </ol>
+<h4 id="velse-8-oktal">Øvelse 8: Oktal<a class="headerlink" href="#velse-8-oktal" title="Permanent link">&para;</a></h4>
+<p>I hver underopgave skal du udføre den første konvertering og betegne resultatet som x. Derefter skal du konvertere x yderligere til det ønskede talsystem.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\((1101011)_2 \longrightarrow x_8 \longrightarrow x_{10}\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\((153)_8\)</span> = <span class="arithmatex">\(107_{10}\)</span></p>
+</details>
+</li>
+<li>
+<p><span class="arithmatex">\((782)_{10} \longrightarrow x_8 \longrightarrow x_2\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\((1416)_8\)</span> = <span class="arithmatex">\(1100001110_2\)</span></p>
+</details>
+</li>
+<li>
+<p><span class="arithmatex">\(\left(5 B_7\right)_{16} \rightarrow x_2 \rightarrow x_8\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\((10110110111)_2\)</span> = <span class="arithmatex">\((2667)_8\)</span></p>
+</details>
+</li>
+</ol>
 <h3 id="udfordringsvelser">Udfordringsøvelser<a class="headerlink" href="#udfordringsvelser" title="Permanent link">&para;</a></h3>
 <h4 id="udfordringsvelse-1-binre-brker">Udfordringsøvelse 1: Binære brøker<a class="headerlink" href="#udfordringsvelse-1-binre-brker" title="Permanent link">&para;</a></h4>
 <ol>
@@ -1967,6 +1992,103 @@ body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 <summary>&nbsp;</summary>
 <p><span class="arithmatex">\(0000100000010011011000000001101_2\)</span></p>
 </details>
+</li>
+</ol>
+<h4 id="udfordringsvelse-3-shannons-entropi">Udfordringsøvelse 3: Shannons Entropi<a class="headerlink" href="#udfordringsvelse-3-shannons-entropi" title="Permanent link">&para;</a></h4>
+<p>I informationsteori er Shannons entropi et mål for usikkerheden i et sæt af mulige udfald. Den er defineret som:</p>
+<div class="arithmatex">\[H(X) = -\sum_{i=1}^{n} p(x_i) \log_2 p(x_i)\]</div>
+<p>hvor <span class="arithmatex">\(H(X)\)</span> er entropien af den tilfældige variabel <span class="arithmatex">\(X\)</span>, <span class="arithmatex">\(p(x_i)\)</span> er sandsynligheden for udfald <span class="arithmatex">\(x_i\)</span>, og summen tages over alle mulige udfald. Bemærk, at på grund af base 2 i logaritmen vil svaret være i bits, men du kan også beregne det i andre enheder.</p>
+<p>Du kan også tænke på det som et mål for den gennemsnitlige mængde information produceret af en stokastisk datakilde.</p>
+<p>Bemærk: Når vi taler om flere kast eller andre hændelser i træk, antages det altid, at disse hændelser er uafhængige, medmindre andet er angivet.</p>
+<ol>
+<li>
+<p>Beregn entropien af et fair møntkast. (2 lige sandsynlige udfald, 50% chance for krone, 50% chance for plat)</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>1 bit</p>
+</details>
+</li>
+<li>
+<p>Beregn entropien af et biased 70:30 møntkast med en præcision på 4 decimaler. (2 udfald, 70% chance for krone, 30% chance for plat)</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>0.8813 bits</p>
+</details>
+</li>
+<li>
+<p>Beregn entropien af at rulle en fair sekssidet terning. (6 lige sandsynlige udfald, hver med &#8537; chance)</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>2.5850 bits</p>
+</details>
+</li>
+<li>
+<p>Beregn den samlede entropi af 100 biased 1:99 møntkast. (1% chance for krone, 99% chance for plat)</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>ca. 8 bits (8.0793)</p>
+</details>
+</li>
+</ol>
+<h4 id="udfordringsvelse-4-entropi-anvendelse">Udfordringsøvelse 4: Entropi anvendelse<a class="headerlink" href="#udfordringsvelse-4-entropi-anvendelse" title="Permanent link">&para;</a></h4>
+<p>Almindelige nemme-at-implementere strategier for at lagre en serie af hændelsesresultater inkluderer at lagre et tal, der repræsenterer resultatet af hændelsen for hver hændelse, eller at lagre en liste af bits, der repræsenterer de mulige udfald med kun det endelige udfaldsbit sat til 1. Som du ved nu, er disse strategier måske ikke de mest effektive måder at lagre information på, især når udfaldene af hændelserne ikke er lige sandsynlige. I denne øvelse skal du prøve at tænke på kreative løsninger til at optimere sådanne problemer.</p>
+<ol>
+<li>
+<p>Hvis du havde 128 møntkast, og alle ville resultere i krone, undtagen præcis ét, der ville resultere i plat, hvad er den mindste mængde plads i bits, som du kunne lagre resultatet af alle kast i? (rækkefølge betyder noget)</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>7 bits</p>
+</details>
+</li>
+<li>
+<p>Hvad er nogle strategier, der bruger så lidt plads som muligt, når du lagrer udfaldene? Sigte efter at opnå det teoretiske minimum eller i det mindste så lidt som muligt.</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>For eksempel at lagre kun positionen af platten som et 7-bit tal (1-128). På denne måde kan vi rekonstruere alle 128 kastresultater ved for eksempel at gå fra 1 til 128 og tjekke, om positionen matcher det lagrede tal. Hvis ja, kan vi udskrive plat, ellers krone.</p>
+</details>
+</li>
+<li>
+<p>Gentag det samme for kun 100 møntkast, hvad er den mindste mængde plads i bits, som du kunne lagre resultatet af alle kast i? (rækkefølge betyder noget)</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>6.6439 bits</p>
+</details>
+</li>
+<li>
+<p>De fleste digitale systemer i det virkelige liv bruger binære tal til at lagre information. For hver ciffer er der 2 mulige tilstande. Kan informationen om de 100 kast nævnt tidligere lagres med perfekt effektivitet i binær? (Hint: tænk på antallet af udfald, din lagring kan repræsentere, og hvad det betyder at være effektiv i disse termer)</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>Nej. Vi kan kun bruge et naturligt antal bits, og enten kan vi repræsentere flere eller færre end 100 udfald. At være effektiv i dette tilfælde betyder at kunne repræsentere præcis 100 udfald uden spildt plads.</p>
+</details>
+</li>
+<li>
+<p>Hvilket talsystem kunne du bruge i stedet for at lagre informationen mere effektivt? (Hint: prøv at ændre base af logaritmen, når du beregner entropien, søg efter hele tal resultater)</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>Base 10 og base 100 opnår begge den samme perfekte effektivitet i dette tilfælde. Begge kan repræsentere 100 udfald med et helt antal cifre (ingen rest betyder ingen spildt plads).</p>
+</details>
+</li>
+</ol>
+<h4 id="udfordringsvelse-5-entropi-avanceret">Udfordringsøvelse 5: Entropi Avanceret<a class="headerlink" href="#udfordringsvelse-5-entropi-avanceret" title="Permanent link">&para;</a></h4>
+<p>I den sidste øvelse var det garanteret at få præcis ét plat i serien af møntkast. Nu dropper vi den garanti og beregner i stedet entropien af en serie af 100 biased møntkast (99% chance for krone, 1% chance for plat).</p>
+<ol>
+<li>
+<p>Beregn entropien af en serie af 100 biased møntkast.</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>ca. 8 bits (8.0793)</p>
+</details>
+</li>
+<li>
+<p>Forestil dig, at vi ville fortsætte med at kaste mønten for evigt. Kan du bruge en lignende strategi til at lagre disse udfald sammenlignet med den tidligere øvelse? Ville det have den samme effektivitet?</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>Ja, så længe du tager højde for, at vi må fortsætte med at tilføje til denne lagring. Et eksempel på en strategi ville være at lagre tallene i 9-bit blokke, der repræsenterer, hvor mange krone der er kastet mellem platene. Hvis tallet er for stort, fylder vi blot blokken med 1'er og afslutter den i den næste blok på 9 bits.</p>
+<p>Effektiviteten ville nærme sig at være den samme, husk at entropien handler om gennemsnit, og over tid ville vi nærme os det teoretiske minimum eller potentialet af vores strategi, men vi kan ikke garantere, at de næste par kast ikke bare er plat, hvilket hæmmer vores pladsbesparende strategier.</p>
+</details>
+</li>
+<li>
+<p>Prøv at lave et par af disse uretfærdige kast i en tilfældig talgenerator og prøv at bruge din strategi. Ville du spare plads sammenlignet med fx. at lagre hvert kast som én bit? (hvis ikke, prøv at fortsætte og se, om det forbedres)</p>
 </li>
 </ol>
 
