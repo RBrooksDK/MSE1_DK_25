@@ -1649,133 +1649,132 @@ body[data-md-color-scheme] .md-content ol       { list-style-type: lower-alpha; 
 body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 </style>
 
-<h4 id="eksempel-1-ls-ligninger-vha-regneregler-for-eksponenter-og-logaritmer">Eksempel 1: Løs ligninger vha. regneregler for eksponenter og logaritmer<a class="headerlink" href="#eksempel-1-ls-ligninger-vha-regneregler-for-eksponenter-og-logaritmer" title="Permanent link">&para;</a></h4>
-<p>Løs følgende ligninger:</p>
+<h4 id="eksempel-1-mngdeoperationer-og-kardinalitet">Eksempel 1: Mængdeoperationer og Kardinalitet<a class="headerlink" href="#eksempel-1-mngdeoperationer-og-kardinalitet" title="Permanent link">&para;</a></h4>
+<p>Betragt mængderne <span class="arithmatex">\(A=\{1, 3, 5, 7, 9\}\)</span>, <span class="arithmatex">\(B=\{2, 3, 5, 7, 11\}\)</span>, og <span class="arithmatex">\(C=\{1, 2, 3, 4, 5\}\)</span> med universalmængden <span class="arithmatex">\(U=\{1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11\}\)</span>.</p>
 <ol>
-<li><span class="arithmatex">\(\frac{1}{x+1}=\frac{1}{2 x}\)</span></li>
-<li><span class="arithmatex">\(\frac{y+5}{y-7}-2=-\frac{y+7}{y-5}\)</span></li>
-<li><span class="arithmatex">\(\ln \sqrt{x+2}=1\)</span></li>
-<li><span class="arithmatex">\(4 \log _{10}(x-6)=11\)</span></li>
-<li><span class="arithmatex">\(8^{-x}=2^{x-8}\)</span></li>
-<li>
-<p><span class="arithmatex">\(\left(\frac{1}{4}\right)^{x-1}=4^{2-3 x}\)</span></p>
+<li>Bestem <span class="arithmatex">\(A \cup B\)</span> og <span class="arithmatex">\(|A \cup B|\)</span></li>
+<li>Bestem <span class="arithmatex">\(A \cap B\)</span> og <span class="arithmatex">\(|A \cap B|\)</span></li>
+<li>Bestem <span class="arithmatex">\(A \setminus B\)</span> og <span class="arithmatex">\(|A \setminus B|\)</span></li>
+<li>Bestem <span class="arithmatex">\(A^c\)</span> (komplementet af <span class="arithmatex">\(A\)</span>)</li>
+<li>Bestem <span class="arithmatex">\(A \oplus B\)</span> (symmetrisk forskel)</li>
+</ol>
 <details class="answer">
 <summary>&nbsp;</summary>
 <ol>
-<li><span class="arithmatex">\(x=1\)</span></li>
-<li><span class="arithmatex">\(y=6\)</span></li>
-<li><span class="arithmatex">\(x=e^2-2\)</span></li>
-<li><span class="arithmatex">\(x=10^{\frac{11}{4}}+6\)</span></li>
-<li><span class="arithmatex">\(x=2\)</span></li>
-<li><span class="arithmatex">\(x=\frac{1}{2}\)</span></li>
+<li><span class="arithmatex">\(A \cup B = \{1, 2, 3, 5, 7, 9, 11\}\)</span> og <span class="arithmatex">\(|A \cup B| = 7\)</span></li>
+<li><span class="arithmatex">\(A \cap B = \{3, 5, 7\}\)</span> og <span class="arithmatex">\(|A \cap B| = 3\)</span></li>
+<li><span class="arithmatex">\(A \setminus B = \{1, 9\}\)</span> og <span class="arithmatex">\(|A \setminus B| = 2\)</span></li>
+<li><span class="arithmatex">\(A^c = \{2, 4, 6, 8, 10, 11\}\)</span></li>
+<li><span class="arithmatex">\(A \oplus B = \{1, 2, 9, 11\}\)</span></li>
 </ol>
 </details>
-</li>
-</ol>
-<h4 id="eksempel-2-isoleringsmetoden">Eksempel 2: Isoleringsmetoden<a class="headerlink" href="#eksempel-2-isoleringsmetoden" title="Permanent link">&para;</a></h4>
-<p>Den fejl, der er forbundet med statistisk usikkerhed, er givet ved</p>
-<div class="arithmatex">\[
-E=Z_{1-\alpha} \frac{\sigma}{\sqrt{n}}
-\]</div>
-<p>hvor <span class="arithmatex">\(Z_{1-\alpha}\)</span> er z-scoren forbundet med den standard normale fordeling, <span class="arithmatex">\(\sigma\)</span> er standardafvigelsen, og <span class="arithmatex">\(n\)</span> er stikprøvestørrelsen.</p>
+<h4 id="eksempel-2-delmngder-og-potensmngde">Eksempel 2: Delmængder og Potensmængde<a class="headerlink" href="#eksempel-2-delmngder-og-potensmngde" title="Permanent link">&para;</a></h4>
+<p>Lad <span class="arithmatex">\(S = \{a, b, c\}\)</span>.</p>
 <ol>
-<li>
-<p>Omarranger ovenstående formel, så stikprøvestørrelsen, <span class="arithmatex">\(n\)</span> bliver subjektet:</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(n = \left(\frac{Z_{1-\alpha} \cdot \sigma}{E}\right)^2\)</span></p>
-</details>
-</li>
-<li>
-<p>Antag en z-score på 1,96 og en standardafvigelse på 2. Hvilken stikprøvestørrelse er nødvendig for at have en fejl på højst 0,5?</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<div class="arithmatex">\[ 
-n = \left(\frac{1.96 \cdot 2}{0.5}\right)^2 = 61,47
-\]</div>
-<p>Stikprøvestørrelsen skal derfor være mindst 62 (afrundet opad).</p>
-</details>
-</li>
+<li>Bestem alle delmængder af <span class="arithmatex">\(S\)</span></li>
+<li>Bestem kardinaliteten af potensmængden <span class="arithmatex">\(\mathcal{P}(S)\)</span></li>
+<li>Hvor mange delmængder indeholder elementet <span class="arithmatex">\(a\)</span>?</li>
+<li>Er <span class="arithmatex">\(\{a, b\}\)</span> en egentlig delmængde af <span class="arithmatex">\(S\)</span>?</li>
 </ol>
-<h4 id="eksempel-3-definitionsmngde-og-vrdimngde">Eksempel 3: Definitionsmængde og værdimængde<a class="headerlink" href="#eksempel-3-definitionsmngde-og-vrdimngde" title="Permanent link">&para;</a></h4>
-<p>Bestem definitionsmængden og værdimængden for hver af de reelle funktioner nedenfor. Det er en god idé at plotte funktionerne ved hjælp af software (f.eks. Geogebra, WolframAlpha osv.):</p>
+<details class="answer">
+<summary>&nbsp;</summary>
 <ol>
-<li><span class="arithmatex">\(\\ f(x)=\frac{1}{x-5}\)</span></li>
-<li>
-<p><span class="arithmatex">\(g(x)=\sqrt{2 x-4}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p>a.  Definitionsmængde: <span class="arithmatex">\(\mathbb{R} \backslash\{5\}\)</span>; Værdimængde: <span class="arithmatex">\(\mathbb{R} \backslash\{0\}\)</span></p>
-<p>b.  Definitionsmængde: <span class="arithmatex">\(\mathbb{R}_{\geq 2}\)</span>; Værdimængde: <span class="arithmatex">\(\mathbb{R}_{\geq 0}\)</span></p>
-</details>
-</li>
+<li><span class="arithmatex">\(\mathcal{P}(S) = \{\emptyset, \{a\}, \{b\}, \{c\}, \{a,b\}, \{a,c\}, \{b,c\}, \{a,b,c\}\}\)</span></li>
+<li><span class="arithmatex">\(|\mathcal{P}(S)| = 2^3 = 8\)</span></li>
+<li><span class="arithmatex">\(2^{3-1} = 4\)</span> delmængder indeholder <span class="arithmatex">\(a\)</span>: <span class="arithmatex">\(\{a\}, \{a,b\}, \{a,c\}, \{a,b,c\}\)</span></li>
+<li>Ja, <span class="arithmatex">\(\{a, b\} \subset S\)</span> da <span class="arithmatex">\(\{a, b\} \subseteq S\)</span> og <span class="arithmatex">\(\{a, b\} \neq S\)</span></li>
 </ol>
-<h4 id="eksempel-4-sammensatte-funktioner">Eksempel 4: Sammensatte funktioner<a class="headerlink" href="#eksempel-4-sammensatte-funktioner" title="Permanent link">&para;</a></h4>
-<p>Find hver af de følgende sammensatte funktioner:</p>
+</details>
+<h4 id="eksempel-3-mngdeidentiteter-og-bevis">Eksempel 3: Mængdeidentiteter og Bevis<a class="headerlink" href="#eksempel-3-mngdeidentiteter-og-bevis" title="Permanent link">&para;</a></h4>
+<p>Vis følgende mængdeidentiteter ved hjælp af mængdeidentiteter:</p>
 <ol>
-<li>
-<p><span class="arithmatex">\(\\ g \circ f\)</span> når <span class="arithmatex">\(f(x)=3 x+1\)</span> og <span class="arithmatex">\(g(x)=x^2\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=9 x^2+1+6 x\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(f \circ g\)</span> når <span class="arithmatex">\(f(x)=x^2+1\)</span> og <span class="arithmatex">\(g(x)=\frac{1}{x}\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((f \circ g)(x)=\frac{1}{x^2}+1\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\\ g \circ f\)</span> når <span class="arithmatex">\(f\)</span> og <span class="arithmatex">\(g\)</span> er defineret som i øvelse (b).</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=\frac{1}{x^2+1}\)</span></p>
-</details>
-</li>
+<li><span class="arithmatex">\(A \cup (A \cap B) = A\)</span> (absorption)</li>
+<li><span class="arithmatex">\((A \cup B)^c = A^c \cap B^c\)</span> (De Morgans lov)</li>
+<li><span class="arithmatex">\(A \oplus B = (A \cup B) \setminus (A \cap B)\)</span></li>
 </ol>
-<h4 id="eksempel-5-inverse-funktioner">Eksempel 5: Inverse funktioner<a class="headerlink" href="#eksempel-5-inverse-funktioner" title="Permanent link">&para;</a></h4>
-<p>Find den inverse funktion:</p>
+<details class="answer">
+<summary>&nbsp;</summary>
 <ol>
-<li>
-<p><span class="arithmatex">\(\\ f(x)=\frac{6}{5-x}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=5-\frac{6}{x}\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\\ f(x)=-\ln (1-2 x)+1\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=\left(1-e^{1-x}\right) / 2\)</span></p>
-</details>
-</li>
+<li><strong>Absorption:</strong> <span class="arithmatex">\(A \cup (A \cap B) = (A \cup A) \cap (A \cup B) = A \cap (A \cup B) = A\)</span></li>
+<li><strong>De Morgans:</strong> <span class="arithmatex">\((A \cup B)^c = \{x \in U \mid x \notin (A \cup B)\} = \{x \in U \mid x \notin A \text{ og } x \notin B\} = A^c \cap B^c\)</span></li>
+<li><strong>Symmetrisk forskel:</strong> <span class="arithmatex">\(A \oplus B = (A \setminus B) \cup (B \setminus A) = (A \cap B^c) \cup (B \cap A^c) = (A \cup B) \cap (A^c \cup B^c) = (A \cup B) \setminus (A \cap B)\)</span></li>
 </ol>
-<h4 id="eksempel-6-komplekse-logaritmeligninger">Eksempel 6: Komplekse logaritmeligninger<a class="headerlink" href="#eksempel-6-komplekse-logaritmeligninger" title="Permanent link">&para;</a></h4>
-<p>Løs ligningerne: </p>
+</details>
+<h4 id="eksempel-4-medlemsskabstabeller">Eksempel 4: Medlemsskabstabeller<a class="headerlink" href="#eksempel-4-medlemsskabstabeller" title="Permanent link">&para;</a></h4>
+<p>Brug medlemsskabstabeller til at vise at <span class="arithmatex">\(A \cup (A \cap B) = A\)</span>:</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<table>
+<thead>
+<tr>
+<th><span class="arithmatex">\(A\)</span></th>
+<th><span class="arithmatex">\(B\)</span></th>
+<th><span class="arithmatex">\(A \cap B\)</span></th>
+<th><span class="arithmatex">\(A \cup (A \cap B)\)</span></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+</tr>
+<tr>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>1</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>Da kolonnen for <span class="arithmatex">\(A \cup (A \cap B)\)</span> er identisk med kolonnen for <span class="arithmatex">\(A\)</span>, beviser vi identiteten.</p>
+</details>
+<h4 id="eksempel-5-intervalnotation-og-set-builder-notation">Eksempel 5: Intervalnotation og Set-Builder Notation<a class="headerlink" href="#eksempel-5-intervalnotation-og-set-builder-notation" title="Permanent link">&para;</a></h4>
+<p>Konverter mellem intervalnotation og set-builder notation:</p>
 <ol>
-<li>
-<p><span class="arithmatex">\(\\ e^{2 x}-3 e^x+2=0\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ul>
-<li><span class="arithmatex">\(e^x=1 \Rightarrow x=0\)</span></li>
-<li><span class="arithmatex">\(e^x=2 \Rightarrow x=\ln(2)\)</span></li>
-</ul>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\\ \ln (x+3)+\ln (x+5)=0\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ul>
-<li><span class="arithmatex">\(x = -4 + \sqrt{2}\)</span></li>
-</ul>
-</details>
-</li>
+<li><span class="arithmatex">\(\{x \in \mathbb{R} \mid -3 \leq x &lt; 5\}\)</span></li>
+<li><span class="arithmatex">\((-\infty, 2] \cup (7, \infty)\)</span></li>
+<li><span class="arithmatex">\(\{x \in \mathbb{R} \mid |x| &gt; 4\}\)</span></li>
 </ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li><span class="arithmatex">\([-3, 5)\)</span></li>
+<li><span class="arithmatex">\(\{x \in \mathbb{R} \mid x \leq 2 \text{ eller } x &gt; 7\}\)</span></li>
+<li><span class="arithmatex">\((-\infty, -4) \cup (4, \infty)\)</span></li>
+</ol>
+</details>
+<h4 id="eksempel-6-anvendelse-i-softwareudvikling">Eksempel 6: Anvendelse i Softwareudvikling<a class="headerlink" href="#eksempel-6-anvendelse-i-softwareudvikling" title="Permanent link">&para;</a></h4>
+<p>En database indeholder brugere med følgende egenskaber:
+- <span class="arithmatex">\(A\)</span> = brugere der kan Python
+- <span class="arithmatex">\(B\)</span> = brugere der kan Java<br />
+- <span class="arithmatex">\(C\)</span> = brugere der kan JavaScript</p>
+<ol>
+<li>Hvad repræsenterer <span class="arithmatex">\(A \cap B \cap C\)</span>?</li>
+<li>Hvad repræsenterer <span class="arithmatex">\((A \cup B) \setminus C\)</span>?</li>
+<li>Hvad repræsenterer <span class="arithmatex">\(A \oplus B\)</span>?</li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>Brugere der kan alle tre sprog (Python, Java og JavaScript)</li>
+<li>Brugere der kan Python eller Java, men ikke JavaScript</li>
+<li>Brugere der kan præcis ét af sprogene Python eller Java (ikke begge)</li>
+</ol>
+</details>
 <h2 id="undervisning-1-videolektion">Undervisning 1: Videolektion<a class="headerlink" href="#undervisning-1-videolektion" title="Permanent link">&para;</a></h2>
 <p align="center">
     <video width="700" autoplay loop muted controls playsinline preload="metadata">
