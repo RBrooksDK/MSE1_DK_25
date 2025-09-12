@@ -70,11 +70,112 @@
     </iframe>
 </div>
 
-#### Undervisning 1.1.
+#### Undervisning 1.1. Trainee - Gennemgang af eksempler
 
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
     <iframe 
         src="https://drive.google.com/file/d/1l-xVmn7wRvbYQPzj3xiJNuhzhG2p8fhf/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### Undervisning 1.2. Trainee - Gennemgang af øvelser
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1Uze0KEJaJhkcLBBqnpufBkiEsBdSDxVz/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+### 2. Talsystemer
+
+#### 2.1. Positionssystemer
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/14gUuFZgr1Vz1z_SGXnciW92NqIYvy2Vf/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### 2.2. Det binære system
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/13zv4amW3HI-It29GXcoUkWzbw2b4t7Ki/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### 2.3. Binære operationer
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1QqZGuVHtW10QvvPFYYlvtAXdR4QLWAAj/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### 2.4. Oktal og hexadecimal
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1o7T36T2zQGz1GyJynUs8u9CSteqxf572/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### 2.5. Konvertering mellem systemer
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1J3MPmrP4jJQrNXT0cUhEKfT34j0wtujF/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### Undervisning 2 Dansk Software - Klasseundervisning
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1w6Ew72GFLQ35MjHxcVVH9lHhVJbJpIQA/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### Undervisning 2.1. Trainee - Gennemgang af eksempler
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1JZIRkhCAmYbTTYXBbuPB1bLqd3Mu-u-t/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### Undervisning 2.2. Trainee - Gennemgang af øvelser
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1w6Ew72GFLQ35MjHxcVVH9lHhVJbJpIQA/preview" 
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
         allow="autoplay; encrypted-media" 
         allowfullscreen>
