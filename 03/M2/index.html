@@ -1686,18 +1686,35 @@ body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 </ol>
 </details>
 <h4 id="eksempel-3-mngdeidentiteter-og-bevis">Eksempel 3: Mængdeidentiteter og Bevis<a class="headerlink" href="#eksempel-3-mngdeidentiteter-og-bevis" title="Permanent link">&para;</a></h4>
-<p>Vis følgende mængdeidentiteter ved hjælp af mængdeidentiteter:</p>
+<p>Vis følgende mængdeidentiteter ved hjælp af de kendte love:</p>
 <ol>
-<li><span class="arithmatex">\(A \cup (A \cap B) = A\)</span> (absorption)</li>
-<li><span class="arithmatex">\((A \cup B)^c = A^c \cap B^c\)</span> (De Morgans lov)</li>
-<li><span class="arithmatex">\(A \oplus B = (A \cup B) \setminus (A \cap B)\)</span></li>
+<li>
+<p><span class="arithmatex">\((A \cup B) \cap (A \cup C) = A \cup (B \cap C)\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((A \cap B) \cup (A \cap B^c) = A\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\((A \cup B)^c \cup A = A \cup B^c\)</span></p>
+</li>
 </ol>
 <details class="answer">
 <summary>&nbsp;</summary>
 <ol>
-<li><strong>Absorption:</strong> <span class="arithmatex">\(A \cup (A \cap B) = (A \cup A) \cap (A \cup B) = A \cap (A \cup B) = A\)</span></li>
-<li><strong>De Morgans:</strong> <span class="arithmatex">\((A \cup B)^c = \{x \in U \mid x \notin (A \cup B)\} = \{x \in U \mid x \notin A \text{ og } x \notin B\} = A^c \cap B^c\)</span></li>
-<li><strong>Symmetrisk forskel:</strong> <span class="arithmatex">\(A \oplus B = (A \setminus B) \cup (B \setminus A) = (A \cap B^c) \cup (B \cap A^c) = (A \cup B) \cap (A^c \cup B^c) = (A \cup B) \setminus (A \cap B)\)</span></li>
+<li>
+<p><strong>Distributiv lov:</strong> <span class="arithmatex">\((A \cup B) \cap (A \cup C) = A \cup (B \cap C)\)</span></p>
+</li>
+<li>
+<p><strong>Distributiv lov:</strong> <span class="arithmatex">\((A \cap B) \cup (A \cap B^c) = A \cap (B \cup B^c)\)</span><br />
+<strong>Komplementlov:</strong> <span class="arithmatex">\(= A \cap U\)</span><br />
+<strong>Identitetslov:</strong> <span class="arithmatex">\(= A\)</span></p>
+</li>
+<li>
+<p><strong>De Morgan:</strong> <span class="arithmatex">\((A \cup B)^c \cup A = (A^c \cap B^c) \cup A\)</span><br />
+<strong>Distributiv lov:</strong> <span class="arithmatex">\(= (A^c \cup A) \cap (B^c \cup A)\)</span><br />
+<strong>Komplementlov:</strong> <span class="arithmatex">\(= U \cap (A \cup B^c)\)</span><br />
+<strong>Identitetslov:</strong> <span class="arithmatex">\(= A \cup B^c\)</span></p>
+</li>
 </ol>
 </details>
 <h4 id="eksempel-4-medlemsskabstabeller">Eksempel 4: Medlemsskabstabeller<a class="headerlink" href="#eksempel-4-medlemsskabstabeller" title="Permanent link">&para;</a></h4>
@@ -1758,10 +1775,14 @@ body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 </ol>
 </details>
 <h4 id="eksempel-6-anvendelse-i-softwareudvikling">Eksempel 6: Anvendelse i Softwareudvikling<a class="headerlink" href="#eksempel-6-anvendelse-i-softwareudvikling" title="Permanent link">&para;</a></h4>
-<p>En database indeholder brugere med følgende egenskaber:
-- <span class="arithmatex">\(A\)</span> = brugere der kan Python
-- <span class="arithmatex">\(B\)</span> = brugere der kan Java<br />
-- <span class="arithmatex">\(C\)</span> = brugere der kan JavaScript</p>
+<p>En database indeholder brugere med følgende egenskaber:</p>
+<ul>
+<li><span class="arithmatex">\(A\)</span> = brugere der kan Python</li>
+<li><span class="arithmatex">\(B\)</span> = brugere der kan Java  </li>
+<li><span class="arithmatex">\(C\)</span> = brugere der kan JavaScript  </li>
+</ul>
+<!-- list break -->
+
 <ol>
 <li>Hvad repræsenterer <span class="arithmatex">\(A \cap B \cap C\)</span>?</li>
 <li>Hvad repræsenterer <span class="arithmatex">\((A \cup B) \setminus C\)</span>?</li>
