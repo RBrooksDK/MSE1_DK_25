@@ -1,5 +1,3 @@
-
-
 <h1 align="center">Kursusvideoer</h1>
 
 ### 1. Grundlæggende aritmetik og funktioner
@@ -92,6 +90,8 @@
     </iframe>
 </div>
 
+<hr>
+
 ### 2. Talsystemer
 
 #### 2.1. Positionssystemer
@@ -176,6 +176,98 @@
 <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
     <iframe 
         src="https://drive.google.com/file/d/1w6Ew72GFLQ35MjHxcVVH9lHhVJbJpIQA/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+<hr>
+
+### 3. Mængder
+
+#### 3.1. Hvad er en mængde?
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1uJGf-WDeYhzTO580_I2dyTEvibkvg7bV/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### 3.2. Et par vigtige mængder
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1aMpE_GRE-zqC9Pb6KSHPq6DK29NsmcmV/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### 3.3. Venn diagrammer og delmængder
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1woZdlWjZjicPwCkTXQvgHEHmdZpvI8a7/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### 3.4. Mængdeoperationer
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1Rj78bajPj44cGCzXZRUysX3BxJITcKo5/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### 3.5. Medlemskabstabeller og mængdeidentiteter
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1HLLibYdz-cGSD_TZmEYQkTp9NTKNby0b/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### 3.6. Kartesiske produkter og tupler
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1yH3bnSd4HpopVpVzASI-qDNHcP1zVspQ/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### Undervisning 3 Dansk Software - Klasseundervisning
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/128VC3NO1woPge2IgQLNw_-qt5vtI--yX/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
+
+#### Undervisning 3.1. Trainee - Gennemgang af eksempler
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1WxTtN_FeVhNixeVA2PmvfJyUqVzqGChw/preview" 
         style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
         allow="autoplay; encrypted-media" 
         allowfullscreen>
