@@ -273,3 +273,14 @@
         allowfullscreen>
     </iframe>
 </div>
+
+#### Undervisning 3.2. Trainee - Gennemgang af øvelser
+
+<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
+    <iframe 
+        src="https://drive.google.com/file/d/1DYeK63sgjn2ZkL-qTfyYchYPf_5W1R0L/preview" 
+        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
+        allow="autoplay; encrypted-media" 
+        allowfullscreen>
+    </iframe>
+</div>
