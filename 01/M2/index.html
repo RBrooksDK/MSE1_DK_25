@@ -684,15 +684,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#undervisning-1-videolektion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Undervisning 1: Videolektion
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1611,15 +1602,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#undervisning-1-videolektion" class="md-nav__link">
-    <span class="md-ellipsis">
-      Undervisning 1: Videolektion
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -1642,7 +1624,7 @@
 <h1 align="center">M2: Undervisning 1 - gennemgang af eksempler</h1>
 
 <p>Til undervisningen gennemgår jeg eksempler, der understøtter og eksemplificerer de emner, vi har dækket i videoerne. Det er vigtigt at forstå, hvordan disse koncepter anvendes i praksis, og hvordan de kan hjælpe dig med at løse problemer inden for softwareudvikling. Denne session foregår synkront på Teams og I kan under undervisningen stille spørgsmål og deltage aktivt i diskussionen. Det er en god mulighed for at få afklaret eventuelle tvivlsspørgsmål og få en dybere forståelse af emnerne. Videoen lægges op efterfølgende, så du kan se den igen, hvis du ønsker det.</p>
-<h2 id="eksempler">Eksempler<a class="headerlink" href="#eksempler" title="Permanent link">&para;</a></h2>
+<h3 id="eksempler">Eksempler<a class="headerlink" href="#eksempler" title="Permanent link">&para;</a></h3>
 <p>Det er ikke et krav, at I har kigget på eksemplerne før undervisningen, men det kan være en fordel. I vil også kunne finde videoen fra undervisningen nedenfor, når den er klar. Jeg gennemgår følgende eksempler.</p>
 <p><a href="https://drive.google.com/file/d/17rR6Mvbgyg06SThYp4L56Q9XGVwYnZdx/view?usp=sharing">Eksempler fra undervisning 1</a></p>
 <style>
@@ -1658,134 +1640,105 @@ body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 <li><span class="arithmatex">\(\ln \sqrt{x+2}=1\)</span></li>
 <li><span class="arithmatex">\(4 \log _{10}(x-6)=11\)</span></li>
 <li><span class="arithmatex">\(8^{-x}=2^{x-8}\)</span></li>
-<li>
-<p><span class="arithmatex">\(\left(\frac{1}{4}\right)^{x-1}=4^{2-3 x}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ol>
-<li><span class="arithmatex">\(x=1\)</span></li>
-<li><span class="arithmatex">\(y=6\)</span></li>
-<li><span class="arithmatex">\(x=e^2-2\)</span></li>
-<li><span class="arithmatex">\(x=10^{\frac{11}{4}}+6\)</span></li>
-<li><span class="arithmatex">\(x=2\)</span></li>
-<li><span class="arithmatex">\(x=\frac{1}{2}\)</span></li>
+<li><span class="arithmatex">\(\left(\frac{1}{4}\right)^{x-1}=4^{2-3 x}\)</span></li>
 </ol>
-</details>
-</li>
-</ol>
+<p>??? answer "&nbsp;"</p>
+<div class="language-text highlight"><pre><span></span><code>  1. $x=1$
+  2. $y=6$
+  3. $x=e^2-2$
+  4. $x=10^{\frac{11}{4}}+6$
+  5. $x=2$
+  6. $x=\frac{1}{2}$
+</code></pre></div>
 <h4 id="eksempel-2-isoleringsmetoden">Eksempel 2: Isoleringsmetoden<a class="headerlink" href="#eksempel-2-isoleringsmetoden" title="Permanent link">&para;</a></h4>
 <p>Den fejl, der er forbundet med statistisk usikkerhed, er givet ved</p>
-<div class="arithmatex">\[
-E=Z_{1-\alpha} \frac{\sigma}{\sqrt{n}}
-\]</div>
-<p>hvor <span class="arithmatex">\(Z_{1-\alpha}\)</span> er z-scoren forbundet med den standard normale fordeling, <span class="arithmatex">\(\sigma\)</span> er standardafvigelsen, og <span class="arithmatex">\(n\)</span> er stikprøvestørrelsen.</p>
+<p>$$
+E=Z_{1-\alpha} \frac{\sigma}{\sqrt{n}}</p>
+<p>$$</p>
+<p>hvor <span class="arithmatex">\(Z_{1-\alpha}\)</span> er z-scoren forbundet med den standard normale fordeling, <span class="arithmatex">\(\sigma\)</span> er standardafvigelsen, og <span class="arithmatex">\(n\)</span> er stikprøvestørrelsen.1. Omarranger ovenstående formel, så stikprøvestørrelsen, <span class="arithmatex">\(n\)</span> bliver subjektet:</p>
+<p>??? answer "&nbsp;"</p>
+<div class="language-text highlight"><pre><span></span><code>$n = \left(\frac{Z_{1-\alpha} \cdot \sigma}{E}\right)^2$
+</code></pre></div>
 <ol>
 <li>
-<p>Omarranger ovenstående formel, så stikprøvestørrelsen, <span class="arithmatex">\(n\)</span> bliver subjektet:</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(n = \left(\frac{Z_{1-\alpha} \cdot \sigma}{E}\right)^2\)</span></p>
-</details>
-</li>
-<li>
 <p>Antag en z-score på 1,96 og en standardafvigelse på 2. Hvilken stikprøvestørrelse er nødvendig for at have en fejl på højst 0,5?</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<div class="arithmatex">\[ 
-n = \left(\frac{1.96 \cdot 2}{0.5}\right)^2 = 61,47
-\]</div>
-<p>Stikprøvestørrelsen skal derfor være mindst 62 (afrundet opad).</p>
-</details>
+<p>??? answer "&nbsp;"</p>
+<p>$$ 
+   n = \left(\frac{1.96 \cdot 2}{0.5}\right)^2 = 61,47
+   $$</p>
+<p>Stikprøvestørrelsen skal derfor være mindst 62 (afrundet opad).
+   #### Eksempel 3: Definitionsmængde og værdimængde</p>
 </li>
 </ol>
-<h4 id="eksempel-3-definitionsmngde-og-vrdimngde">Eksempel 3: Definitionsmængde og værdimængde<a class="headerlink" href="#eksempel-3-definitionsmngde-og-vrdimngde" title="Permanent link">&para;</a></h4>
 <p>Bestem definitionsmængden og værdimængden for hver af de reelle funktioner nedenfor. Det er en god idé at plotte funktionerne ved hjælp af software (f.eks. Geogebra, WolframAlpha osv.):</p>
 <ol>
 <li><span class="arithmatex">\(\\ f(x)=\frac{1}{x-5}\)</span></li>
 <li>
 <p><span class="arithmatex">\(g(x)=\sqrt{2 x-4}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
+<p>??? answer "&nbsp;"</p>
 <p>a.  Definitionsmængde: <span class="arithmatex">\(\mathbb{R} \backslash\{5\}\)</span>; Værdimængde: <span class="arithmatex">\(\mathbb{R} \backslash\{0\}\)</span></p>
-<p>b.  Definitionsmængde: <span class="arithmatex">\(\mathbb{R}_{\geq 2}\)</span>; Værdimængde: <span class="arithmatex">\(\mathbb{R}_{\geq 0}\)</span></p>
-</details>
+<p>b.  Definitionsmængde: <span class="arithmatex">\(\mathbb{R}_{\geq 2}\)</span>; Værdimængde: <span class="arithmatex">\(\mathbb{R}_{\geq 0}\)</span>
+   #### Eksempel 4: Sammensatte funktioner</p>
 </li>
 </ol>
-<h4 id="eksempel-4-sammensatte-funktioner">Eksempel 4: Sammensatte funktioner<a class="headerlink" href="#eksempel-4-sammensatte-funktioner" title="Permanent link">&para;</a></h4>
-<p>Find hver af de følgende sammensatte funktioner:</p>
-<ol>
-<li>
-<p><span class="arithmatex">\(\\ g \circ f\)</span> når <span class="arithmatex">\(f(x)=3 x+1\)</span> og <span class="arithmatex">\(g(x)=x^2\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=9 x^2+1+6 x\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(f \circ g\)</span> når <span class="arithmatex">\(f(x)=x^2+1\)</span> og <span class="arithmatex">\(g(x)=\frac{1}{x}\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((f \circ g)(x)=\frac{1}{x^2}+1\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\\ g \circ f\)</span> når <span class="arithmatex">\(f\)</span> og <span class="arithmatex">\(g\)</span> er defineret som i øvelse (b).</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=\frac{1}{x^2+1}\)</span></p>
-</details>
-</li>
-</ol>
-<h4 id="eksempel-5-inverse-funktioner">Eksempel 5: Inverse funktioner<a class="headerlink" href="#eksempel-5-inverse-funktioner" title="Permanent link">&para;</a></h4>
-<p>Find den inverse funktion:</p>
-<ol>
-<li>
-<p><span class="arithmatex">\(\\ f(x)=\frac{6}{5-x}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=5-\frac{6}{x}\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\\ f(x)=-\ln (1-2 x)+1\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=\left(1-e^{1-x}\right) / 2\)</span></p>
-</details>
-</li>
-</ol>
-<h4 id="eksempel-6-komplekse-logaritmeligninger">Eksempel 6: Komplekse logaritmeligninger<a class="headerlink" href="#eksempel-6-komplekse-logaritmeligninger" title="Permanent link">&para;</a></h4>
-<p>Løs ligningerne: </p>
-<ol>
-<li>
-<p><span class="arithmatex">\(\\ e^{2 x}-3 e^x+2=0\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ul>
-<li><span class="arithmatex">\(e^x=1 \Rightarrow x=0\)</span></li>
-<li><span class="arithmatex">\(e^x=2 \Rightarrow x=\ln(2)\)</span></li>
-</ul>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\\ \ln (x+3)+\ln (x+5)=0\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ul>
-<li><span class="arithmatex">\(x = -4 + \sqrt{2}\)</span></li>
-</ul>
-</details>
-</li>
-</ol>
-<h2 id="undervisning-1-videolektion">Undervisning 1: Videolektion<a class="headerlink" href="#undervisning-1-videolektion" title="Permanent link">&para;</a></h2>
-<div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;">
-    <iframe 
-        src="https://drive.google.com/file/d/1l-xVmn7wRvbYQPzj3xiJNuhzhG2p8fhf/preview" 
-        style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;" 
-        allow="autoplay; encrypted-media" 
-        allowfullscreen>
-    </iframe>
-</div>
+<p>Find hver af de følgende sammensatte funktioner:1. <span class="arithmatex">\(\\ g \circ f\)</span> når <span class="arithmatex">\(f(x)=3 x+1\)</span> og <span class="arithmatex">\(g(x)=x^2\)</span>.</p>
+<div class="language-text highlight"><pre><span></span><code>  ??? answer &quot;&amp;nbsp;&quot;
+
+   $(g \circ f)(x)=9 x^2+1+6 x$
+
+  2. $f \circ g$ når $f(x)=x^2+1$ og $g(x)=\frac{1}{x}$.
+
+     ??? answer &quot;&amp;nbsp;&quot;
+
+      $(f \circ g)(x)=\frac{1}{x^2}+1$
+
+     3. $\\ g \circ f$ når $f$ og $g$ er defineret som i øvelse (b).
+
+        ??? answer &quot;&amp;nbsp;&quot;
+
+         $(g \circ f)(x)=\frac{1}{x^2+1}$
+     #### Eksempel 5: Inverse funktioner
+
+     Find den inverse funktion:
+
+     1. $\\ f(x)=\frac{6}{5-x}$
+
+        ??? answer &quot;&amp;nbsp;&quot;
+
+         $f^{-1}(x)=5-\frac{6}{x}$
+
+        2. $\\ f(x)=-\ln (1-2 x)+1$
+
+           ??? answer &quot;&amp;nbsp;&quot;
+
+            $f^{-1}(x)=\left(1-e^{1-x}\right) / 2$
+        #### Eksempel 6: Komplekse logaritmeligninger
+
+        Løs ligningerne:
+
+        1. $\\ e^{2 x}-3 e^x+2=0$
+
+           ??? answer &quot;&amp;nbsp;&quot;
+
+            * \(e^x=1 \Rightarrow x=0\)
+            * \(e^x=2 \Rightarrow x=\ln(2)\)
+
+           2. $\\ \ln (x+3)+\ln (x+5)=0$
+
+              ??? answer &quot;&amp;nbsp;&quot;
+
+               * $x = -4 + \sqrt{2}$
+           ## Undervisning 1: Videolektion
+
+           &lt;div style=&quot;position: relative; width: 100%; height: 0; padding-bottom: 56.25%; overflow: hidden;&quot;&gt;
+               &lt;iframe 
+                   src=&quot;https://drive.google.com/file/d/1l-xVmn7wRvbYQPzj3xiJNuhzhG2p8fhf/preview&quot; 
+                   style=&quot;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;&quot; 
+                   allow=&quot;autoplay; encrypted-media&quot; 
+                   allowfullscreen&gt;
+               &lt;/iframe&gt;
+           &lt;/div&gt;
+</code></pre></div>
 
 
 
