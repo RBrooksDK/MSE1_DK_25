@@ -2,16 +2,12 @@
 tags:
     - Betingede sandsynligheder
     - Bayes' Teorem
-    - Betinget sandsynlighed
     - Uafhængighed
     - Total sandsynlighed
     - Bayes' regel
     - A priori sandsynlighed
     - A posteriori sandsynlighed
-    - Sandsynlighedstræer
     - Betingede hændelser
-    - Stokastisk uafhængighed
-    - Betinget uafhængighed
 ---
 
 <h1 align="center">Betingede sandsynligheder og Bayes' Teorem</h1>
