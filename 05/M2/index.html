@@ -1649,133 +1649,128 @@ body[data-md-color-scheme] .md-content ol       { list-style-type: lower-alpha; 
 body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 </style>
 
-<h4 id="eksempel-1-ls-ligninger-vha-regneregler-for-eksponenter-og-logaritmer">Eksempel 1: Løs ligninger vha. regneregler for eksponenter og logaritmer<a class="headerlink" href="#eksempel-1-ls-ligninger-vha-regneregler-for-eksponenter-og-logaritmer" title="Permanent link">&para;</a></h4>
-<p>Løs følgende ligninger:</p>
-<ol>
-<li><span class="arithmatex">\(\frac{1}{x+1}=\frac{1}{2 x}\)</span></li>
-<li><span class="arithmatex">\(\frac{y+5}{y-7}-2=-\frac{y+7}{y-5}\)</span></li>
-<li><span class="arithmatex">\(\ln \sqrt{x+2}=1\)</span></li>
-<li><span class="arithmatex">\(4 \log _{10}(x-6)=11\)</span></li>
-<li><span class="arithmatex">\(8^{-x}=2^{x-8}\)</span></li>
-<li>
-<p><span class="arithmatex">\(\left(\frac{1}{4}\right)^{x-1}=4^{2-3 x}\)</span></p>
+<h4 id="eksempel-1-betinget-sandsynlighed-med-terninger">Eksempel 1: Betinget Sandsynlighed med Terninger<a class="headerlink" href="#eksempel-1-betinget-sandsynlighed-med-terninger" title="Permanent link">&para;</a></h4>
+<p>Vi kaster to terninger. Hvad er sandsynligheden for at summen er 8, givet at den første terning viser 3?</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<ol>
-<li><span class="arithmatex">\(x=1\)</span></li>
-<li><span class="arithmatex">\(y=6\)</span></li>
-<li><span class="arithmatex">\(x=e^2-2\)</span></li>
-<li><span class="arithmatex">\(x=10^{\frac{11}{4}}+6\)</span></li>
-<li><span class="arithmatex">\(x=2\)</span></li>
-<li><span class="arithmatex">\(x=\frac{1}{2}\)</span></li>
-</ol>
+<p>Lad <span class="arithmatex">\(A\)</span> = "summen er 8" og <span class="arithmatex">\(B\)</span> = "første terning viser 3"</p>
+<p><span class="arithmatex">\(P(B) = \frac{1}{6}\)</span> (første terning viser 3)</p>
+<p><span class="arithmatex">\(P(A \cap B) = \frac{1}{36}\)</span> (kun (3,5) giver sum 8 når første terning er 3)</p>
+<p><span class="arithmatex">\(P(A|B) = \frac{P(A \cap B)}{P(B)} = \frac{\frac{1}{36}}{\frac{1}{6}} = \frac{1}{6}\)</span></p>
 </details>
-</li>
-</ol>
-<h4 id="eksempel-2-isoleringsmetoden">Eksempel 2: Isoleringsmetoden<a class="headerlink" href="#eksempel-2-isoleringsmetoden" title="Permanent link">&para;</a></h4>
-<p>Den fejl, der er forbundet med statistisk usikkerhed, er givet ved</p>
-<div class="arithmatex">\[
-E=Z_{1-\alpha} \frac{\sigma}{\sqrt{n}}
-\]</div>
-<p>hvor <span class="arithmatex">\(Z_{1-\alpha}\)</span> er z-scoren forbundet med den standard normale fordeling, <span class="arithmatex">\(\sigma\)</span> er standardafvigelsen, og <span class="arithmatex">\(n\)</span> er stikprøvestørrelsen.</p>
-<ol>
-<li>
-<p>Omarranger ovenstående formel, så stikprøvestørrelsen, <span class="arithmatex">\(n\)</span> bliver subjektet:</p>
+<h4 id="eksempel-2-loven-om-total-sandsynlighed-produktionslinje">Eksempel 2: Loven om Total Sandsynlighed - Produktionslinje<a class="headerlink" href="#eksempel-2-loven-om-total-sandsynlighed-produktionslinje" title="Permanent link">&para;</a></h4>
+<p>En fabrik har tre produktionslinjer A, B og C. Linje A producerer 40% af produkterne med 2% defekte. Linje B producerer 35% med 3% defekte. Linje C producerer 25% med 1% defekte.</p>
+<p>Hvad er sandsynligheden for at et tilfældigt produkt er defekt?</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p><span class="arithmatex">\(n = \left(\frac{Z_{1-\alpha} \cdot \sigma}{E}\right)^2\)</span></p>
+<p>Lad <span class="arithmatex">\(D\)</span> = "produkt er defekt" og <span class="arithmatex">\(L_i\)</span> = "produkt kommer fra linje <span class="arithmatex">\(i\)</span>"</p>
+<p><span class="arithmatex">\(P(L_A) = 0.4\)</span>, <span class="arithmatex">\(P(D|L_A) = 0.02\)</span>
+<span class="arithmatex">\(P(L_B) = 0.35\)</span>, <span class="arithmatex">\(P(D|L_B) = 0.03\)</span><br />
+<span class="arithmatex">\(P(L_C) = 0.25\)</span>, <span class="arithmatex">\(P(D|L_C) = 0.01\)</span></p>
+<p>Ved loven om total sandsynlighed:
+<span class="arithmatex">\(P(D) = P(D|L_A) \cdot P(L_A) + P(D|L_B) \cdot P(L_B) + P(D|L_C) \cdot P(L_C)\)</span></p>
+<p><span class="arithmatex">\(P(D) = 0.02 \cdot 0.4 + 0.03 \cdot 0.35 + 0.01 \cdot 0.25 = 0.008 + 0.0105 + 0.0025 = 0.021\)</span></p>
 </details>
-</li>
-<li>
-<p>Antag en z-score på 1,96 og en standardafvigelse på 2. Hvilken stikprøvestørrelse er nødvendig for at have en fejl på højst 0,5?</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<div class="arithmatex">\[ 
-n = \left(\frac{1.96 \cdot 2}{0.5}\right)^2 = 61,47
-\]</div>
-<p>Stikprøvestørrelsen skal derfor være mindst 62 (afrundet opad).</p>
-</details>
-</li>
-</ol>
-<h4 id="eksempel-3-definitionsmngde-og-vrdimngde">Eksempel 3: Definitionsmængde og værdimængde<a class="headerlink" href="#eksempel-3-definitionsmngde-og-vrdimngde" title="Permanent link">&para;</a></h4>
-<p>Bestem definitionsmængden og værdimængden for hver af de reelle funktioner nedenfor. Det er en god idé at plotte funktionerne ved hjælp af software (f.eks. Geogebra, WolframAlpha osv.):</p>
-<ol>
-<li><span class="arithmatex">\(\\ f(x)=\frac{1}{x-5}\)</span></li>
-<li>
-<p><span class="arithmatex">\(g(x)=\sqrt{2 x-4}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p>a.  Definitionsmængde: <span class="arithmatex">\(\mathbb{R} \backslash\{5\}\)</span>; Værdimængde: <span class="arithmatex">\(\mathbb{R} \backslash\{0\}\)</span></p>
-<p>b.  Definitionsmængde: <span class="arithmatex">\(\mathbb{R}_{\geq 2}\)</span>; Værdimængde: <span class="arithmatex">\(\mathbb{R}_{\geq 0}\)</span></p>
-</details>
-</li>
-</ol>
-<h4 id="eksempel-4-sammensatte-funktioner">Eksempel 4: Sammensatte funktioner<a class="headerlink" href="#eksempel-4-sammensatte-funktioner" title="Permanent link">&para;</a></h4>
-<p>Find hver af de følgende sammensatte funktioner:</p>
-<ol>
-<li>
-<p><span class="arithmatex">\(\\ g \circ f\)</span> når <span class="arithmatex">\(f(x)=3 x+1\)</span> og <span class="arithmatex">\(g(x)=x^2\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=9 x^2+1+6 x\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(f \circ g\)</span> når <span class="arithmatex">\(f(x)=x^2+1\)</span> og <span class="arithmatex">\(g(x)=\frac{1}{x}\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((f \circ g)(x)=\frac{1}{x^2}+1\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\\ g \circ f\)</span> når <span class="arithmatex">\(f\)</span> og <span class="arithmatex">\(g\)</span> er defineret som i øvelse (b).</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=\frac{1}{x^2+1}\)</span></p>
-</details>
-</li>
-</ol>
-<h4 id="eksempel-5-inverse-funktioner">Eksempel 5: Inverse funktioner<a class="headerlink" href="#eksempel-5-inverse-funktioner" title="Permanent link">&para;</a></h4>
-<p>Find den inverse funktion:</p>
-<ol>
-<li>
-<p><span class="arithmatex">\(\\ f(x)=\frac{6}{5-x}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=5-\frac{6}{x}\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\\ f(x)=-\ln (1-2 x)+1\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=\left(1-e^{1-x}\right) / 2\)</span></p>
-</details>
-</li>
-</ol>
-<h4 id="eksempel-6-komplekse-logaritmeligninger">Eksempel 6: Komplekse logaritmeligninger<a class="headerlink" href="#eksempel-6-komplekse-logaritmeligninger" title="Permanent link">&para;</a></h4>
-<p>Løs ligningerne: </p>
-<ol>
-<li>
-<p><span class="arithmatex">\(\\ e^{2 x}-3 e^x+2=0\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
+<h4 id="eksempel-3-bayes-teorem-spam-filtrering">Eksempel 3: Bayes' Teorem - Spam-filtrering<a class="headerlink" href="#eksempel-3-bayes-teorem-spam-filtrering" title="Permanent link">&para;</a></h4>
+<p>En email-system har følgende statistikker:</p>
 <ul>
-<li><span class="arithmatex">\(e^x=1 \Rightarrow x=0\)</span></li>
-<li><span class="arithmatex">\(e^x=2 \Rightarrow x=\ln(2)\)</span></li>
+<li>20% af alle emails er spam</li>
+<li>90% af spam emails indeholder ordet "gratis"</li>
+<li>5% af normale emails indeholder ordet "gratis"</li>
 </ul>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\\ \ln (x+3)+\ln (x+5)=0\)</span></p>
+<p>Hvad er sandsynligheden for at en email er spam, givet at den indeholder ordet "gratis"?</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<ul>
-<li><span class="arithmatex">\(x = -4 + \sqrt{2}\)</span></li>
-</ul>
+<p>Lad <span class="arithmatex">\(S\)</span> = "email er spam" og <span class="arithmatex">\(G\)</span> = "email indeholder 'gratis'"</p>
+<p><span class="arithmatex">\(P(S) = 0.2\)</span>, <span class="arithmatex">\(P(G|S) = 0.9\)</span>, <span class="arithmatex">\(P(G|S^c) = 0.05\)</span></p>
+<p>Først finder vi <span class="arithmatex">\(P(G)\)</span> ved loven om total sandsynlighed:
+<span class="arithmatex">\(P(G) = P(G|S) \cdot P(S) + P(G|S^c) \cdot P(S^c) = 0.9 \cdot 0.2 + 0.05 \cdot 0.8 = 0.18 + 0.04 = 0.22\)</span></p>
+<p>Ved Bayes' teorem:
+<span class="arithmatex">\(P(S|G) = \frac{P(G|S) \cdot P(S)}{P(G)} = \frac{0.9 \cdot 0.2}{0.22} = \frac{0.18}{0.22} \approx 0.818\)</span></p>
+<p>Der er 81.8% sandsynlighed for at emailen er spam.</p>
 </details>
-</li>
+<h4 id="eksempel-4-uafhngighed-kortspil">Eksempel 4: Uafhængighed - Kortspil<a class="headerlink" href="#eksempel-4-uafhngighed-kortspil" title="Permanent link">&para;</a></h4>
+<p>Vi trækker to kort fra et standard kortspil (52 kort) uden tilbagelægning. Lad <span class="arithmatex">\(A\)</span> = "første kort er rødt" og <span class="arithmatex">\(B\)</span> = "andet kort er hjerter".</p>
+<p>Er <span class="arithmatex">\(A\)</span> og <span class="arithmatex">\(B\)</span> uafhængige?</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(P(A) = \frac{26}{52} = \frac{1}{2}\)</span> (halvdelen af kortene er røde)</p>
+<p><span class="arithmatex">\(P(B) = \frac{13}{52} = \frac{1}{4}\)</span> (en fjerdedel er hjerter)</p>
+<p><span class="arithmatex">\(P(A \cap B)\)</span> = sandsynligheden for at første kort er rødt OG andet kort er hjerter.
+Dette kan ske på to måder:
+- Første kort er hjerter, andet kort er hjerter: <span class="arithmatex">\(\frac{13}{52} \cdot \frac{12}{51}\)</span>
+- Første kort er spar, andet kort er hjerter: <span class="arithmatex">\(\frac{13}{52} \cdot \frac{13}{51}\)</span></p>
+<p><span class="arithmatex">\(P(A \cap B) = \frac{13}{52} \cdot \frac{12}{51} + \frac{13}{52} \cdot \frac{13}{51} = \frac{13}{52} \cdot \frac{25}{51} = \frac{325}{2652}\)</span></p>
+<p><span class="arithmatex">\(P(A) \cdot P(B) = \frac{1}{2} \cdot \frac{1}{4} = \frac{1}{8} = \frac{331.5}{2652}\)</span></p>
+<p>Da <span class="arithmatex">\(P(A \cap B) \neq P(A) \cdot P(B)\)</span>, er <span class="arithmatex">\(A\)</span> og <span class="arithmatex">\(B\)</span> <strong>ikke</strong> uafhængige.</p>
+</details>
+<h4 id="eksempel-5-kontingenstabel-studerende-og-fag">Eksempel 5: Kontingenstabel - Studerende og Fag<a class="headerlink" href="#eksempel-5-kontingenstabel-studerende-og-fag" title="Permanent link">&para;</a></h4>
+<p>En undersøgelse af 300 studerende gav følgende resultater:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Matematik</th>
+<th>Fysik</th>
+<th>Kemi</th>
+<th>Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Mand</td>
+<td>45</td>
+<td>30</td>
+<td>25</td>
+<td>100</td>
+</tr>
+<tr>
+<td>Kvinde</td>
+<td>60</td>
+<td>40</td>
+<td>100</td>
+<td>200</td>
+</tr>
+<tr>
+<td>Total</td>
+<td>105</td>
+<td>70</td>
+<td>125</td>
+<td>300</td>
+</tr>
+</tbody>
+</table>
+<p>Find følgende sandsynligheder:</p>
+<ol>
+<li>Sandsynligheden for at en tilfældig studerende er kvinde</li>
+<li>Sandsynligheden for at en studerende studerer matematik, givet at de er kvinde</li>
+<li>Sandsynligheden for at en studerende er mand, givet at de studerer fysik</li>
 </ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>a) <span class="arithmatex">\(P(\text{Kvinde}) = \frac{200}{300} = \frac{2}{3}\)</span></p>
+<p>b) <span class="arithmatex">\(P(\text{Matematik}|\text{Kvinde}) = \frac{60}{200} = \frac{3}{10}\)</span></p>
+<p>c) <span class="arithmatex">\(P(\text{Mand}|\text{Fysik}) = \frac{30}{70} = \frac{3}{7}\)</span></p>
+</details>
+<h4 id="eksempel-6-kompleks-bayes-teorem-medicinsk-test">Eksempel 6: Kompleks Bayes' Teorem - Medicinsk Test<a class="headerlink" href="#eksempel-6-kompleks-bayes-teorem-medicinsk-test" title="Permanent link">&para;</a></h4>
+<p>En medicinsk test for en sjælden sygdom har følgende egenskaber:</p>
+<ul>
+<li>Sygdommen forekommer hos 0.5% af befolkningen</li>
+<li>Testen er positiv hos 98% af dem der har sygdommen</li>
+<li>Testen er positiv hos 3% af dem der ikke har sygdommen</li>
+</ul>
+<p>En person får et positivt testresultat. Hvad er sandsynligheden for at personen faktisk har sygdommen?</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p>Lad <span class="arithmatex">\(S\)</span> = "person har sygdommen" og <span class="arithmatex">\(T^+\)</span> = "test er positiv"</p>
+<p><span class="arithmatex">\(P(S) = 0.005\)</span>, <span class="arithmatex">\(P(T^+|S) = 0.98\)</span>, <span class="arithmatex">\(P(T^+|S^c) = 0.03\)</span></p>
+<p>Først finder vi <span class="arithmatex">\(P(T^+)\)</span> ved loven om total sandsynlighed:
+<span class="arithmatex">\(P(T^+) = P(T^+|S) \cdot P(S) + P(T^+|S^c) \cdot P(S^c)\)</span>
+<span class="arithmatex">\(P(T^+) = 0.98 \cdot 0.005 + 0.03 \cdot 0.995 = 0.0049 + 0.02985 = 0.03475\)</span></p>
+<p>Ved Bayes' teorem:
+<span class="arithmatex">\(P(S|T^+) = \frac{P(T^+|S) \cdot P(S)}{P(T^+)} = \frac{0.98 \cdot 0.005}{0.03475} = \frac{0.0049}{0.03475} \approx 0.141\)</span></p>
+<p>Der er kun 14.1% sandsynlighed for at personen faktisk har sygdommen, selv med et positivt testresultat!</p>
+</details>
 <h2 id="undervisning-1-videolektion">Undervisning 1: Videolektion<a class="headerlink" href="#undervisning-1-videolektion" title="Permanent link">&para;</a></h2>
 <p align="center">
     <video width="700" autoplay loop muted controls playsinline preload="metadata">
