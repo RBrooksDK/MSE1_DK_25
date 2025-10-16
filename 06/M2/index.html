@@ -1649,130 +1649,361 @@ body[data-md-color-scheme] .md-content ol       { list-style-type: lower-alpha; 
 body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 </style>
 
-<h4 id="eksempel-1-ls-ligninger-vha-regneregler-for-eksponenter-og-logaritmer">Eksempel 1: Løs ligninger vha. regneregler for eksponenter og logaritmer<a class="headerlink" href="#eksempel-1-ls-ligninger-vha-regneregler-for-eksponenter-og-logaritmer" title="Permanent link">&para;</a></h4>
-<p>Løs følgende ligninger:</p>
+<h4 id="eksempel-1-datatyper-og-grundlggende-begreber">Eksempel 1: Datatyper og grundlæggende begreber<a class="headerlink" href="#eksempel-1-datatyper-og-grundlggende-begreber" title="Permanent link">&para;</a></h4>
+<p>Klassificér følgende som kvalitativ eller kvantitativ data. Hvis kvantitativ, angiv om det er diskret eller kontinuert:</p>
 <ol>
-<li><span class="arithmatex">\(\frac{1}{x+1}=\frac{1}{2 x}\)</span></li>
-<li><span class="arithmatex">\(\frac{y+5}{y-7}-2=-\frac{y+7}{y-5}\)</span></li>
-<li><span class="arithmatex">\(\ln \sqrt{x+2}=1\)</span></li>
-<li><span class="arithmatex">\(4 \log _{10}(x-6)=11\)</span></li>
-<li><span class="arithmatex">\(8^{-x}=2^{x-8}\)</span></li>
+<li>Antal kodelinjer i en funktion</li>
+<li>CPU-temperatur i grader Celsius</li>
+<li>Prioritet på en bug (lav, medium, høj, kritisk)</li>
+<li>Hukommelsesforbrug i MB</li>
 <li>
-<p><span class="arithmatex">\(\left(\frac{1}{4}\right)^{x-1}=4^{2-3 x}\)</span></p>
+<p>Programmeringssprog brugt i et projekt</p>
 <details class="answer">
 <summary>&nbsp;</summary>
 <ol>
-<li><span class="arithmatex">\(x=1\)</span></li>
-<li><span class="arithmatex">\(y=6\)</span></li>
-<li><span class="arithmatex">\(x=e^2-2\)</span></li>
-<li><span class="arithmatex">\(x=10^{\frac{11}{4}}+6\)</span></li>
-<li><span class="arithmatex">\(x=2\)</span></li>
-<li><span class="arithmatex">\(x=\frac{1}{2}\)</span></li>
+<li>Kvantitativ, diskret</li>
+<li>Kvantitativ, kontinuert</li>
+<li>Kvalitativ</li>
+<li>Kvantitativ, kontinuert</li>
+<li>Kvalitativ</li>
 </ol>
 </details>
 </li>
 </ol>
-<h4 id="eksempel-2-isoleringsmetoden">Eksempel 2: Isoleringsmetoden<a class="headerlink" href="#eksempel-2-isoleringsmetoden" title="Permanent link">&para;</a></h4>
-<p>Den fejl, der er forbundet med statistisk usikkerhed, er givet ved</p>
-<div class="arithmatex">\[
-E=Z_{1-\alpha} \frac{\sigma}{\sqrt{n}}
-\]</div>
-<p>hvor <span class="arithmatex">\(Z_{1-\alpha}\)</span> er z-scoren forbundet med den standard normale fordeling, <span class="arithmatex">\(\sigma\)</span> er standardafvigelsen, og <span class="arithmatex">\(n\)</span> er stikprøvestørrelsen.</p>
+<h4 id="eksempel-2-centrale-malinger">Eksempel 2: Centrale målinger<a class="headerlink" href="#eksempel-2-centrale-malinger" title="Permanent link">&para;</a></h4>
+<p>Følgende datasæt viser responstider (i millisekunder) for 15 API-kald:</p>
+<p>{120, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 350}</p>
 <ol>
+<li>Beregn middelværdien</li>
+<li>Beregn medianen</li>
+<li>Beregn typetallet</li>
 <li>
-<p>Omarranger ovenstående formel, så stikprøvestørrelsen, <span class="arithmatex">\(n\)</span> bliver subjektet:</p>
+<p>Hvilken af disse målinger påvirkes mest af den høje værdi (350 ms)?</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p><span class="arithmatex">\(n = \left(\frac{Z_{1-\alpha} \cdot \sigma}{E}\right)^2\)</span></p>
-</details>
-</li>
-<li>
-<p>Antag en z-score på 1,96 og en standardafvigelse på 2. Hvilken stikprøvestørrelse er nødvendig for at have en fejl på højst 0,5?</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<div class="arithmatex">\[ 
-n = \left(\frac{1.96 \cdot 2}{0.5}\right)^2 = 61,47
-\]</div>
-<p>Stikprøvestørrelsen skal derfor være mindst 62 (afrundet opad).</p>
+<ol>
+<li>Middelværdi: <span class="arithmatex">\(\bar{x} = \frac{2510}{15} = 167.33\)</span> ms</li>
+<li>Median: 165 ms (8. værdi når datasættet er sorteret)</li>
+<li>Typetal: Ingen (alle værdier forekommer kun én gang)</li>
+<li>Middelværdien påvirkes mest af outlieren (350 ms). Uden outlieren ville middelværdien være ca. 160 ms.</li>
+</ol>
 </details>
 </li>
 </ol>
-<h4 id="eksempel-3-definitionsmngde-og-vrdimngde">Eksempel 3: Definitionsmængde og værdimængde<a class="headerlink" href="#eksempel-3-definitionsmngde-og-vrdimngde" title="Permanent link">&para;</a></h4>
-<p>Bestem definitionsmængden og værdimængden for hver af de reelle funktioner nedenfor. Det er en god idé at plotte funktionerne ved hjælp af software (f.eks. Geogebra, WolframAlpha osv.):</p>
+<h4 id="eksempel-3-spredning-og-variabilitet">Eksempel 3: Spredning og variabilitet<a class="headerlink" href="#eksempel-3-spredning-og-variabilitet" title="Permanent link">&para;</a></h4>
+<p>For det samme datasæt som i Eksempel 2:</p>
+<p>{120, 135, 140, 145, 150, 155, 160, 165, 170, 175, 180, 185, 190, 195, 350}</p>
 <ol>
-<li><span class="arithmatex">\(\\ f(x)=\frac{1}{x-5}\)</span></li>
+<li>Beregn variationsbredden</li>
+<li>Beregn første kvartil (Q1) og tredje kvartil (Q3)</li>
+<li>Beregn interkvartilbredden (IQR)</li>
 <li>
-<p><span class="arithmatex">\(g(x)=\sqrt{2 x-4}\)</span></p>
+<p>Er der outliers ifølge 1.5 × IQR-reglen?</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p>a.  Definitionsmængde: <span class="arithmatex">\(\mathbb{R} \backslash\{5\}\)</span>; Værdimængde: <span class="arithmatex">\(\mathbb{R} \backslash\{0\}\)</span></p>
-<p>b.  Definitionsmængde: <span class="arithmatex">\(\mathbb{R}_{\geq 2}\)</span>; Værdimængde: <span class="arithmatex">\(\mathbb{R}_{\geq 0}\)</span></p>
+<ol>
+<li>Variationsbredde = 350 - 120 = 230 ms</li>
+<li>Q1 = 145 ms (25%-percentil), Q3 = 185 ms (75%-percentil)</li>
+<li>IQR = 185 - 145 = 40 ms</li>
+<li>Nedre grænse: Q1 - 1.5 × IQR = 145 - 60 = 85 ms
+   Øvre grænse: Q3 + 1.5 × IQR = 185 + 60 = 245 ms
+   Ja, 350 ms er en outlier (&gt; 245 ms)</li>
+</ol>
 </details>
 </li>
 </ol>
-<h4 id="eksempel-4-sammensatte-funktioner">Eksempel 4: Sammensatte funktioner<a class="headerlink" href="#eksempel-4-sammensatte-funktioner" title="Permanent link">&para;</a></h4>
-<p>Find hver af de følgende sammensatte funktioner:</p>
+<h4 id="eksempel-4-frekvensfordeling">Eksempel 4: Frekvensfordeling<a class="headerlink" href="#eksempel-4-frekvensfordeling" title="Permanent link">&para;</a></h4>
+<p>En softwaretest registrerede antal fejl fundet pr. dag i løbet af 20 dage:</p>
+<p>{2, 3, 2, 5, 3, 2, 4, 3, 2, 6, 3, 2, 4, 3, 5, 2, 3, 4, 2, 3}</p>
+<ol>
+<li>Lav en frekvenstabel</li>
+<li>Hvad er typetallet?</li>
+<li>
+<p>Beregn den relative frekvens for hver værdi</p>
+<details class="answer">
+<summary>&nbsp;</summary>
 <ol>
 <li>
-<p><span class="arithmatex">\(\\ g \circ f\)</span> når <span class="arithmatex">\(f(x)=3 x+1\)</span> og <span class="arithmatex">\(g(x)=x^2\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=9 x^2+1+6 x\)</span></p>
-</details>
+<p>Frekvenstabel:</p>
+<table>
+<thead>
+<tr>
+<th>Antal fejl</th>
+<th>Frekvens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>7</td>
+</tr>
+<tr>
+<td>3</td>
+<td>7</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
 </li>
 <li>
-<p><span class="arithmatex">\(f \circ g\)</span> når <span class="arithmatex">\(f(x)=x^2+1\)</span> og <span class="arithmatex">\(g(x)=\frac{1}{x}\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((f \circ g)(x)=\frac{1}{x^2}+1\)</span></p>
-</details>
+<p>Typetal: 2 og 3 (begge forekommer 7 gange - bimodal fordeling)</p>
 </li>
 <li>
-<p><span class="arithmatex">\(\\ g \circ f\)</span> når <span class="arithmatex">\(f\)</span> og <span class="arithmatex">\(g\)</span> er defineret som i øvelse (b).</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=\frac{1}{x^2+1}\)</span></p>
+<p>Relative frekvenser:</p>
+<table>
+<thead>
+<tr>
+<th>Antal fejl</th>
+<th>Relativ frekvens</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2</td>
+<td>7/20 = 0.35</td>
+</tr>
+<tr>
+<td>3</td>
+<td>7/20 = 0.35</td>
+</tr>
+<tr>
+<td>4</td>
+<td>3/20 = 0.15</td>
+</tr>
+<tr>
+<td>5</td>
+<td>2/20 = 0.10</td>
+</tr>
+<tr>
+<td>6</td>
+<td>1/20 = 0.05</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
 </details>
 </li>
 </ol>
-<h4 id="eksempel-5-inverse-funktioner">Eksempel 5: Inverse funktioner<a class="headerlink" href="#eksempel-5-inverse-funktioner" title="Permanent link">&para;</a></h4>
-<p>Find den inverse funktion:</p>
+<h4 id="eksempel-6-empirisk-regel-og-normalfordeling">Eksempel 6: Empirisk regel og normalfordeling<a class="headerlink" href="#eksempel-6-empirisk-regel-og-normalfordeling" title="Permanent link">&para;</a></h4>
+<p>Et system logger responstider med middelværdi = 200 ms og standardafvigelse = 30 ms. Antag at dataene er cirka normalfordelte.</p>
+<ol>
+<li>Inden for hvilket interval ligger cirka 68.3% af responstiderne?</li>
+<li>Inden for hvilket interval ligger cirka 95.4% af responstiderne?</li>
+<li>Hvis en responstid er 290 ms, hvor mange standardafvigelser er det fra middelværdien?</li>
+<li>
+<p>Er en responstid på 290 ms usædvanlig ifølge den empiriske regel?</p>
+<details class="answer">
+<summary>&nbsp;</summary>
 <ol>
 <li>
-<p><span class="arithmatex">\(\\ f(x)=\frac{6}{5-x}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=5-\frac{6}{x}\)</span></p>
-</details>
+<p>Cirka 68.3% ligger inden for <span class="arithmatex">\(\bar{x} \pm s\)</span>: [200 - 30, 200 + 30] = [170, 230] ms</p>
 </li>
 <li>
-<p><span class="arithmatex">\(\\ f(x)=-\ln (1-2 x)+1\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=\left(1-e^{1-x}\right) / 2\)</span></p>
+<p>Cirka 95.4% ligger inden for <span class="arithmatex">\(\bar{x} \pm 2s\)</span>: [200 - 60, 200 + 60] = [140, 260] ms</p>
+</li>
+<li>
+<p><span class="arithmatex">\(z = \frac{290 - 200}{30} = \frac{90}{30} = 3\)</span> standardafvigelser over middelværdien</p>
+</li>
+<li>
+<p>Ja, 290 ms er usædvanlig da det ligger 3 standardafvigelser fra middelværdien. Kun ca. 0.3% af dataene forventes at ligge udenfor ±3 standardafvigelser.</p>
+</li>
+</ol>
 </details>
 </li>
 </ol>
-<h4 id="eksempel-6-komplekse-logaritmeligninger">Eksempel 6: Komplekse logaritmeligninger<a class="headerlink" href="#eksempel-6-komplekse-logaritmeligninger" title="Permanent link">&para;</a></h4>
-<p>Løs ligningerne: </p>
+<h4 id="eksempel-7-lsning-af-ogive-kumuleret-relativ-frekvens">Eksempel 7: Læsning af ogive (kumuleret relativ frekvens)<a class="headerlink" href="#eksempel-7-lsning-af-ogive-kumuleret-relativ-frekvens" title="Permanent link">&para;</a></h4>
+<p><img alt="Ogive Diagram" src="../M3/src/Ex03.png" /></p>
+<p>Se diagrammet ovenfor, der viser den kumulerede relative frekvens for levetiden af lamper (i timer). Brug diagrammet til at besvare følgende spørgsmål:</p>
 <ol>
+<li>Hvad er den omtrentlige medianlevetid for lamperne?</li>
+<li>Hvad er 10. percentil (P10)? Forklar hvad dette tal betyder.</li>
+<li>Estimér interkvartilområdet (IQR).</li>
+<li>Hvor stor en andel af lamperne har en levetid på mere end 1200 timer?</li>
 <li>
-<p><span class="arithmatex">\(\\ e^{2 x}-3 e^x+2=0\)</span></p>
+<p>Hvis en fabrik ønsker at garantere, at mindst 95% af lamperne holder i X timer, hvad skal X være?</p>
 <details class="answer">
 <summary>&nbsp;</summary>
+<ol>
+<li>
+<p>Medianen (50. percentil) aflæses ved kumuleret relativ frekvens = 0.50. Fra grafen: median ≈ <strong>1000 timer</strong></p>
+</li>
+<li>
+<p>P10 aflæses ved kumuleret relativ frekvens = 0.10. Fra grafen: P10 ≈ <strong>850 timer</strong></p>
+<p>Dette betyder at <strong>10% af lamperne</strong> har en levetid under 850 timer (eller 90% holder længere end 850 timer)</p>
+</li>
+<li>
+<p>Q1 (ved 0.25) ≈ 900 timer</p>
+<p>Q3 (ved 0.75) ≈ 1100 timer</p>
+<p>IQR = Q3 - Q1 ≈ 1100 - 900 = <strong>200 timer</strong></p>
+</li>
+<li>
+<p>Ved 1200 timer aflæses kumuleret relativ frekvens ≈ 0.90, hvilket betyder at 90% har en levetid under 1200 timer</p>
+<p>Derfor har <strong>cirka 10%</strong> af lamperne en levetid på mere end 1200 timer (1 - 0.90 = 0.10)</p>
+</li>
+<li>
+<p>95% af lamperne skal holde mindst X timer betyder, at kun 5% må fejle før X timer (kumuleret frekvens = 0.05)</p>
+<p>Fra grafen aflæses ved 0.05: X ≈ <strong>750 timer</strong></p>
+<p>Fabrikken bør derfor garantere maksimalt 750 timers levetid for at sikre 95% succes</p>
+</li>
+</ol>
+</details>
+</li>
+</ol>
+<h4 id="eksempel-8-python-komplet-dataanalyse">Eksempel 8: Python - Komplet dataanalyse<a class="headerlink" href="#eksempel-8-python-komplet-dataanalyse" title="Permanent link">&para;</a></h4>
+<p>Følgende datasæt viser antal commits pr. dag over 30 dage:</p>
+<p>{3, 5, 4, 6, 5, 4, 7, 5, 6, 4, 5, 8, 5, 6, 4, 5, 7, 6, 5, 4, 6, 5, 7, 5, 6, 4, 5, 8, 6, 15}</p>
+<ol>
+<li>Beregn middelværdi, median og typetal</li>
+<li>Beregn variationsbredde (område eller range), stikprøvevarians og stikprøvestandardafvigelse</li>
+<li>Find Q1, Q3 og IQR</li>
+<li>Identificér eventuelle outliers ved hjælp af 1.5 × IQR-reglen</li>
+<li>
+<p>Vurder om dataene er cirka normalfordelte ved hjælp af den empiriske regel</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>
+<p><strong>Centrale målinger:</strong></p>
 <ul>
-<li><span class="arithmatex">\(e^x=1 \Rightarrow x=0\)</span></li>
-<li><span class="arithmatex">\(e^x=2 \Rightarrow x=\ln(2)\)</span></li>
+<li>Middelværdi: <span class="arithmatex">\(\bar{x} = \frac{171}{30} = 5.70\)</span> commits</li>
+<li>Median: 5 (gennemsnit af 15. og 16. værdi når sorteret)</li>
+<li>Typetal: 5 (forekommer 9 gange)</li>
 </ul>
-</details>
 </li>
 <li>
-<p><span class="arithmatex">\(\\ \ln (x+3)+\ln (x+5)=0\)</span></p>
+<p><strong>Spredning:</strong></p>
+<ul>
+<li>Variationsbredde: 15 - 3 = 12 commits</li>
+<li>Stikprøvevarians: <span class="arithmatex">\(s^2 \approx 4.08\)</span></li>
+<li>Stikprøvestandardafvigelse: <span class="arithmatex">\(s \approx 2.02\)</span> commits</li>
+</ul>
+</li>
+<li>
+<p><strong>Kvartiler:</strong></p>
+<ul>
+<li>Q1 = 4 (25%-percentil)</li>
+<li>Q3 = 6 (75%-percentil)</li>
+<li>IQR = 6 - 4 = 2 commits</li>
+</ul>
+</li>
+<li>
+<p><strong>Outliers:</strong></p>
+<ul>
+<li>Nedre grænse: Q1 - 1.5 × IQR = 4 - 3 = 1</li>
+<li>Øvre grænse: Q3 + 1.5 × IQR = 6 + 3 = 9</li>
+<li>15 &gt; 9, så 15 er en outlier</li>
+</ul>
+</li>
+<li>
+<p><strong>Normalitetstjek:</strong></p>
+<ul>
+<li>Inden for 1 SD (3.68 til 7.72): 27/30 = 90% (forventet: 68.3%)</li>
+<li>Inden for 2 SD (1.66 til 9.74): 29/30 = 96.7% (forventet: 95.4%)</li>
+<li>Dataene følger ikke helt den empiriske regel, delvist pga. outlieren</li>
+</ul>
+</li>
+</ol>
+</details>
+</li>
+</ol>
+<h4 id="eksempel-9-python-boxplot-og-outlier-analyse">Eksempel 9: Python - Boxplot og outlier-analyse<a class="headerlink" href="#eksempel-9-python-boxplot-og-outlier-analyse" title="Permanent link">&para;</a></h4>
+<p>En database logger svartider (i sekunder) for queries. Et sample af 25 queries giver:</p>
+<p>{0.5, 0.6, 0.7, 0.8, 0.9, 1.0, 1.1, 1.2, 1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0, 2.1, 2.2, 2.3, 2.4, 2.5, 2.6, 2.7, 5.0, 8.5}</p>
+<ol>
+<li>Beregn de fem-tal oversigt (minimum, Q1, median, Q3, maksimum)</li>
+<li>Identificér milde og ekstreme outliers</li>
+<li>Forklar hvad outliers kunne indikere i denne sammenhæng</li>
+<li>
+<p>Vurder om fordelingen er symmetrisk eller skæv</p>
 <details class="answer">
 <summary>&nbsp;</summary>
+<ol>
+<li>
+<p><strong>Fem-tal oversigt:</strong></p>
 <ul>
-<li><span class="arithmatex">\(x = -4 + \sqrt{2}\)</span></li>
+<li>Minimum: 0.5 s</li>
+<li>Q1: 1.1 s (25%-percentil, værdi nr. 7)</li>
+<li>Median: 1.7 s (50%-percentil, værdi nr. 13)</li>
+<li>Q3: 2.3 s (75%-percentil, værdi nr. 19)</li>
+<li>Maksimum: 8.5 s</li>
 </ul>
+</li>
+<li>
+<p><strong>Outliers:</strong></p>
+<ul>
+<li>IQR = Q3 - Q1 = 2.3 - 1.1 = 1.2 s</li>
+<li>Milde outliers: &lt; Q1 - 1.5 × IQR = 1.1 - 1.8 = -0.7 eller &gt; Q3 + 1.5 × IQR = 2.3 + 1.8 = 4.1</li>
+<li>Ekstreme outliers: &lt; Q1 - 3 × IQR = 1.1 - 3.6 = -2.5 eller &gt; Q3 + 3 × IQR = 2.3 + 3.6 = 5.9</li>
+<li>Milde outliers: 5.0 (mellem 4.1 og 5.9)</li>
+<li>Ekstreme outliers: 8.5 (&gt; 5.9)</li>
+</ul>
+</li>
+<li>
+<p><strong>Fortolkning:</strong></p>
+<ul>
+<li>Outliers kan indikere problematiske queries, fx:<ul>
+<li>Ineffektive SQL statements</li>
+<li>Manglende indekser på tabeller</li>
+<li>Database locks eller konkurrence</li>
+<li>Netværksproblemer</li>
+</ul>
+</li>
+<li>De er ikke nødvendigvis fejl, men kræver nærmere undersøgelse</li>
+</ul>
+</li>
+<li>
+<p><strong>Skævhed:</strong></p>
+<ul>
+<li>Fordelingen er højreskæv (positively skewed)</li>
+<li>Den øvre whisker (8.5 - 2.3 = 6.2) er meget længere end den nedre (1.1 - 0.5 = 0.6)</li>
+<li>Der er outliers på den høje side, men ikke på den lave side</li>
+</ul>
+</li>
+</ol>
+</details>
+</li>
+</ol>
+<h4 id="eksempel-10-skvhed-og-tolkning-af-boxplot">Eksempel 10: Skævhed og tolkning af boxplot<a class="headerlink" href="#eksempel-10-skvhed-og-tolkning-af-boxplot" title="Permanent link">&para;</a></h4>
+<p><img alt="Box Plot" src="../M3/src/example10.png" /></p>
+<p>Brug boxplottet ovenfor til at besvare følgende spørgsmål.</p>
+<ol>
+<li>Hvad er median-løbetiden for deltagerne?</li>
+<li>Inden for hvilket tidsinterval gennemførte de midterste 50% af løberne? (Dvs. fra Q1 til Q3)</li>
+<li>Baseret på boxplottets form og tilstedeværelsen af outliers, er fordelingen af løbetider højre-skæv, venstre-skæv eller symmetrisk? Hvad fortæller dette dig om forholdet mellem middelværdi (genemsnit) og median?</li>
+<li>Hvor stor en procentdel af løberne var hurtigere end 24 minutter?</li>
+<li>
+<p>Løbsarrangøren overvejer at give en præmie til "de hurtigste 25% af løberne". Hvilken tid skulle en løber slå for at have en chance for at vinde denne præmie? Giv en kort begrundelse for dit svar.</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>
+<p>Ca. 28 minutter</p>
+</li>
+<li>
+<p>Ca. mellem 24 og 31 minutter.</p>
+</li>
+<li>
+<p>Øvre: 41.5; nedre: 13.5. Der er to outliers, ca. 48 og 55 minutter. Højre-skæv. Middelværdi &gt; median.</p>
+</li>
+<li>
+<p>25%</p>
+</li>
+<li>
+<p>Under 24 minutter.</p>
+</li>
+</ol>
 </details>
 </li>
 </ol>
