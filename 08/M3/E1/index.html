@@ -1621,7 +1621,7 @@
   
 
 
-<h1 align="center">Øvelser 1:<br>Vektorer og matricer</h1>
+<h1 align="center">Øvelser 8:<br>Vektorer og matricer</h1>
 
 <p>I skal lave øvelserne inden timerne torsdag. I kan med fordel lave dem i grupper og diskutere dem indbyrdes. Det er vigtigt, at I forstår opgaverne og kan forklare dem til hinanden. På torsdag diskuterer vi opgaverne, og I skal være klar til at præsentere dem for klassen.</p>
 <style>
@@ -1629,77 +1629,88 @@ body[data-md-color-scheme] .md-content ol       { list-style-type: lower-alpha; 
 body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 </style>
 
-<h4 id="velse-1-repetition">Øvelse 1: Repetition<a class="headerlink" href="#velse-1-repetition" title="Permanent link">&para;</a></h4>
-<p>Du får den udvidede matrix</p>
+<h4 id="velse-1-genopfriskning">Øvelse 1: Genopfriskning<a class="headerlink" href="#velse-1-genopfriskning" title="Permanent link">&para;</a></h4>
+<p>Du får den augmenterede matrix</p>
 <p><span class="arithmatex">\(A =\begin{bmatrix}
     1 &amp;  -2 &amp;  0 &amp;  -1 &amp; 1\\
     -4 &amp;  8 &amp;  2 &amp;  4 &amp; -8\\
     -2 &amp;  4 &amp;  0 &amp;  1 &amp;  -2
-\end{bmatrix}\)</span>
-​</p>
-<p class="annotate">a. Hvad er størrelsen af matrixen? (1)</p>
+\end{bmatrix}\)</span>​</p>
+<ol>
+<li>
+<p class="annotate">Hvad er størrelsen af matrixen? (1)</p>
 <ol>
 <li><span class="arithmatex">\(3\times5\)</span></li>
 </ol>
-<p>b. Reducer matrixen til echelon form (enten for hånd eller ved at lave separate rækkeoperationer i Python)</p>
+</li>
+<li>
+<p>Reducer matrixen til echelonform (enten manuelt eller ved at udføre separate rækkeoperationer i Python)</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p>Bemærk. Der er mange måder at reducere matrixen til echelon form på. Her er en måde at gøre det på.</p>
+<p>Bemærk. Der er mange måder at reducere matrixen til echelonform på. Her er en måde at gøre det på.</p>
 <p><span class="arithmatex">\(\begin{bmatrix}
     1 &amp;  -2 &amp;  0 &amp;  -1 &amp; 1 \\
     0 &amp;  0 &amp;  2 &amp;  0 &amp; -4 \\
     0 &amp;  0 &amp;  0 &amp;  -1 &amp;  0
 \end{bmatrix}\)</span></p>
 </details>
-<p>c. Brug echelon formen til at finde de grundlæggende variable og de frie variable</p>
+</li>
+<li>
+<p>Brug echelonformen til at finde de basale variable og frie variable</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p>De grundlæggende variable er <span class="arithmatex">\(x_1\)</span>, <span class="arithmatex">\(x_3\)</span> og <span class="arithmatex">\(x_4\)</span> og den frie variabel er <span class="arithmatex">\(x_2\)</span></p>
+<p>De basale variable er <span class="arithmatex">\(x_1\)</span>, <span class="arithmatex">\(x_3\)</span> og <span class="arithmatex">\(x_4\)</span> og den frie variabel er <span class="arithmatex">\(x_2\)</span></p>
 </details>
-<p>d. Find den generelle løsning til systemet og skriv de grundlæggende variable i termer af de frie variable</p>
+</li>
+<li>
+<p>Find den generelle løsning til systemet og skriv de basale variable i forhold til de frie variable</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p>Udtryk <span class="arithmatex">\(x_1, x_3\)</span> og <span class="arithmatex">\(x_4\)</span> i termer af den frie variabel <span class="arithmatex">\(x_2\)</span> :
-1. Fra række 1: <span class="arithmatex">\(x_1-2 x_2=1 \Rightarrow x_1=2 x_2+1\)</span>
-2. Fra række 2: <span class="arithmatex">\(x_3=-2\)</span>
-3. Fra række 3: <span class="arithmatex">\(x_4=0\)</span></p>
+<p>Udtryk <span class="arithmatex">\(x_1, x_3\)</span>, og <span class="arithmatex">\(x_4\)</span> i forhold til den frie variabel <span class="arithmatex">\(x_2\)</span> :
+1. Fra Række 1: <span class="arithmatex">\(x_1-2 x_2=1 \Rightarrow x_1=2 x_2+1\)</span>
+2. Fra Række 2: <span class="arithmatex">\(x_3=-2\)</span>
+3. Fra Række 3: <span class="arithmatex">\(x_4=0\)</span></p>
 </details>
-<p>e. Marker hver af følgende udsagn som SAND eller FALSK</p>
-<p class="annotate">(i)  Matrixen A beskriver et system af fem ligninger og tre variable (1)</p>
+</li>
+<li>
+<p>Markér hver af følgende udsagn som SAND eller FALSK</p>
+<p class="annotate">(i)  Matrix A beskriver et system af fem ligninger og tre variable (1)</p>
 <ol>
 <li>FALSK</li>
 </ol>
-<p class="annotate">(ii)  Matrixen A beskriver et konsistent system af ligninger (1)</p>
+<p class="annotate">(ii)  Matrix A beskriver et konsistent system af ligninger (1)</p>
 <ol>
 <li>SAND</li>
 </ol>
-<p class="annotate">(iii)  En 3x5 udvidet matrix kan ikke have en unik løsning (1)</p>
+<p class="annotate">(iii)  En 3x5 augmenteret matrix kan ikke have en unik løsning (1)</p>
 <ol>
-<li>
-<p class="annotate">SAND
-(iv)  En 3x5 udvidet matrix vil altid være konsistent (1)</p>
-</li>
-<li>
-<p>FALSK</p>
+<li>SAND</li>
+</ol>
+<p class="annotate">(iv)  En 3x5 augmenteret matrix vil altid være konsistent (1)</p>
+<ol>
+<li>FALSK</li>
+</ol>
 </li>
 </ol>
 <h4 id="velse-2-matrix-og-vektorligninger">Øvelse 2: Matrix- og vektorligninger<a class="headerlink" href="#velse-2-matrix-og-vektorligninger" title="Permanent link">&para;</a></h4>
-<p>For hvert af følgende systemer af lineære ligninger skriv det som (i) en udvidet matrix (ii) en vektorligning og (iii) en matrixligning.</p>
-<p>a. <span class="arithmatex">\(\begin{cases}
+<p>For hvert af følgende systemer af lineære ligninger, skriv det som (i) en augmenteret matrix (ii) en vektorligning og (iii) en matrixligning.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\begin{cases}
     2x_1 +3x_2 - 4x_3 =8\\
     -x_2 +x_3 + 2x_4 = -2\\
     -x_1 + 2x_4 = 3
-\end{cases}\)</span></p>
+    \end{cases}\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p>(i) Udvidet matrix:
+<p>(i) Augmenteret matrix:
 <span class="arithmatex">\(\begin{bmatrix}
     2 &amp; 3 &amp; -4 &amp; 0 &amp;  8\\
     0 &amp; -1&amp;  1 &amp; 2 &amp; -2\\
     -1&amp; 0 &amp; 0 &amp; 2 &amp; 3 
 \end{bmatrix}\)</span></p>
 <p>(ii) Vektorligning:
-<span class="arithmatex">\(x_1\begin{bmatrix}2\\ 0\\ -1\end{bmatrix} + x_2\begin{bmatrix}3\\ -1\\ 0\end{bmatrix}+ x_3\begin{bmatrix}-4\\ 1\\ 0\end{bmatrix}+ x_4\begin{bmatrix}0\\ 2\\ 2\end{bmatrix}=\begin{bmatrix}8\\ -2\\ 3\end{bmatrix}\)</span></p>
+<span class="arithmatex">\(x_1\begin{bmatrix}2\\\ 0\\\ -1\end{bmatrix} + x_2\begin{bmatrix}3\\\ -1\\\ 0\end{bmatrix}+ x_3\begin{bmatrix}-4\\\ 1\\\ 0\end{bmatrix}+ x_4\begin{bmatrix}0\\\ 2\\\ 2\end{bmatrix}=\begin{bmatrix}8\\\ -2\\\ 3\end{bmatrix}\)</span></p>
 <p>(iii) Matrixligning:
 <span class="arithmatex">\(\begin{bmatrix}
     2 &amp; 3 &amp; -4 &amp; 0 \\
@@ -1714,13 +1725,15 @@ body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
     8\\-2\\3
 \end{bmatrix}\)</span></p>
 </details>
-<p>b. <span class="arithmatex">\(\begin{cases}
+</li>
+<li>
+<p><span class="arithmatex">\(\begin{cases}
     x_1 + x_2 = 2\\
     x_1 -x_2 = 4
-\end{cases}\)</span></p>
+    \end{cases}\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p>(i) Udvidet matrix:
+<p>(i) Augmenteret matrix:
 <span class="arithmatex">\(\begin{bmatrix}
     1 &amp; 1 &amp; 2\\
     1 &amp; -1&amp; 4
@@ -1740,14 +1753,16 @@ body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
     2\\4
 \end{bmatrix}\)</span></p>
 </details>
-<p>c.<span class="arithmatex">\(\begin{cases}
+</li>
+<li>
+<p><span class="arithmatex">\(\begin{cases}
     x_1 = 4\\
     x_2 = -1\\
     x_3 = 10
-\end{cases}\)</span></p>
+    \end{cases}\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p>(i) Udvidet matrix:
+<p>(i) Augmenteret matrix:
 <span class="arithmatex">\(\begin{bmatrix}
     1 &amp; 0 &amp; 0 &amp; 4\\
     0 &amp; 1 &amp; 0 &amp; -1\\
@@ -1769,31 +1784,41 @@ body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
     4\\-1\\10
 \end{bmatrix}\)</span></p>
 </details>
+</li>
+</ol>
 <h4 id="velse-3-linere-kombinationer">Øvelse 3: Lineære kombinationer<a class="headerlink" href="#velse-3-linere-kombinationer" title="Permanent link">&para;</a></h4>
 <p>Lad</p>
 <p><span class="arithmatex">\(\mathbf{v}_1=\begin{bmatrix}1\\ -2\\ 4\end{bmatrix}\)</span>, <span class="arithmatex">\(\mathbf{v}_2=\begin{bmatrix}3\\ 0\\ 2\end{bmatrix}\)</span> og <span class="arithmatex">\(\mathbf{v}_3=\begin{bmatrix}-1\\ 5\\ 1\end{bmatrix}\)</span>.</p>
 <p>Beregn de lineære kombinationer nedenfor.</p>
-<p>a. <span class="arithmatex">\(2\mathbf{v}_1+3\mathbf{v}_2+\mathbf{v}_3\)</span></p>
+<ol>
+<li>
+<p><span class="arithmatex">\(2\mathbf{v}_1+3\mathbf{v}_2+\mathbf{v}_3\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
 <p><span class="arithmatex">\(\begin{bmatrix}10\\1\\15\end{bmatrix}\)</span></p>
 </details>
-<p>b. <span class="arithmatex">\(\mathbf{v}_1-\mathbf{v}_3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\mathbf{v}_1-\mathbf{v}_3\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
 <p><span class="arithmatex">\(\begin{bmatrix}2\\-7\\3\end{bmatrix}\)</span></p>
 </details>
-<p>c. <span class="arithmatex">\(\frac{1}{2}\mathbf{v}_1+\frac{3}{2}\mathbf{v}_2+\mathbf{v}_3\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\frac{1}{2}\mathbf{v}_1+\frac{3}{2}\mathbf{v}_2+\mathbf{v}_3\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
 <p><span class="arithmatex">\(\begin{bmatrix}4\\4\\6\end{bmatrix}\)</span></p>
 </details>
-<p>d. Find løsningen til det lineære system beskrevet af den udvidede matrix</p>
+</li>
+<li>
+<p>Find løsningen til det lineære system beskrevet af den augmenterede matrix</p>
 <div class="arithmatex">\[
 \begin{bmatrix}
-     1 &amp; 3 &amp; -1 &amp; 10 \\
-     -2 &amp; 0 &amp; 5 &amp; 1 \\
-     4 &amp; 2 &amp; 1 &amp; 15
+    1 &amp; 3 &amp; -1 &amp; 10 \\
+    -2 &amp; 0 &amp; 5 &amp; 1 \\
+    4 &amp; 2 &amp; 1 &amp; 15
 \end{bmatrix}
 \]</div>
 <details class="answer">
@@ -1804,9 +1829,14 @@ x_2 = 3\\
 x_3 = 1
 \end{cases}\)</span></p>
 </details>
+</li>
+</ol>
 <h4 id="velse-4-parametrisk-vektorform">Øvelse 4: Parametrisk vektorform<a class="headerlink" href="#velse-4-parametrisk-vektorform" title="Permanent link">&para;</a></h4>
-<p>I følgende øvelser er løsningen til et sæt lineære ligninger allerede fundet. Dit job er at skrive løsningen på parametrisk vektorform.</p>
-<p>a. Et system er fundet til at have løsningen</p>
+<p>I følgende øvelser er løsningen til et sæt lineære ligninger allerede fundet. Din opgave
+er at skrive løsningen på parametrisk vektorform.</p>
+<ol>
+<li>
+<p>Et system er fundet at have løsningen</p>
 <div class="arithmatex">\[
 \begin{aligned}
 x_1 &amp;= 4 - x_2 \\
@@ -1814,7 +1844,7 @@ x_2 &amp;= x_2 \\
 x_3 &amp;= -1 + 3x_2
 \end{aligned}
 \]</div>
-<p>hvor <span class="arithmatex">\(x_2\)</span> er en fri variabel. Skriv løsningen på parametrisk vektorform.</p>
+<p>hvor <span class="arithmatex">\(x_2\)</span> er en fri variabel. Skriv løsningen i parametrisk vektorform.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
 <p><span class="arithmatex">\(\left[\begin{array}{l}
@@ -1831,7 +1861,9 @@ x_3
 3
 \end{array}\right]\)</span></p>
 </details>
-<p>b. Et system af ligninger er fundet til at have løsningen</p>
+</li>
+<li>
+<p>Et system af ligninger er fundet at have løsningen</p>
 <div class="arithmatex">\[
 \begin{aligned}
 x_1 &amp;= 5 + 4x_4 \\
@@ -1841,7 +1873,7 @@ x_4 &amp;= x_4 \\
 x_5 &amp;= -8 + x_3 - 7x_4
 \end{aligned}
 \]</div>
-<p>hvor <span class="arithmatex">\(x_3\)</span> og <span class="arithmatex">\(x_4\)</span> er frie variable. Skriv løsningen på parametrisk vektorform.</p>
+<p>hvor <span class="arithmatex">\(x_3\)</span> og <span class="arithmatex">\(x_4\)</span> er frie variable. Skriv løsningen i parametrisk vektorform.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
 <p><span class="arithmatex">\(\left[\begin{array}{l}
@@ -1870,16 +1902,22 @@ x_5
 -7
 \end{array}\right]\)</span></p>
 </details>
+</li>
+</ol>
 <h4 id="velse-5-homogen-ligning">Øvelse 5: Homogen ligning<a class="headerlink" href="#velse-5-homogen-ligning" title="Permanent link">&para;</a></h4>
-<p>Løs den homogene ligning <span class="arithmatex">\(A\mathbf{x}=\mathbf{0}\)</span> for følgende matricer. Skriv løsningen på parametrisk vektorform.</p>
-<p>a. <span class="arithmatex">\(\begin{bmatrix}
+<p>Løs den homogene ligning <span class="arithmatex">\(A\mathbf{x}=\mathbf{0}\)</span> for følgende matricer. Skriv løsningen i parametrisk vektorform.</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\begin{bmatrix}
     4 &amp; -8\\
     -3 &amp; 6\end{bmatrix}\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
 <p><span class="arithmatex">\(\mathbf{x}=x_2\left[\begin{array}{l}2 \\ 1\end{array}\right]\)</span></p>
 </details>
-<p>b. <span class="arithmatex">\(\begin{bmatrix}
+</li>
+<li>
+<p><span class="arithmatex">\(\begin{bmatrix}
     4 &amp; -9 &amp; 1 \\
     2 &amp; -5 &amp; 1 \\
     -3 &amp; 1 &amp; 5 \end{bmatrix}\)</span></p>
@@ -1887,71 +1925,84 @@ x_5
 <summary>&nbsp;</summary>
 <p><span class="arithmatex">\(\mathbf{x}=x_3\left[\begin{array}{l}2 \\ 1 \\ 1\end{array}\right]\)</span></p>
 </details>
-<p>c.<span class="arithmatex">\(\begin{bmatrix}
-2 &amp; -10 &amp; 6 \\
-1 &amp; -5 &amp; 3
-\end{bmatrix}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\begin{bmatrix}
+    2 &amp; -10 &amp; 6 \\
+    1 &amp; -5 &amp; 3
+    \end{bmatrix}\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
 <p><span class="arithmatex">\(\mathbf{x}=x_2\left[\begin{array}{l}5 \\ 1 \\ 0\end{array}\right]+x_3\left[\begin{array}{c}-3 \\ 0 \\ 1\end{array}\right]\)</span></p>
+<p><span class="arithmatex">\(\mathbf{x}=x_2\left[\begin{array}{l}5 \\\ 1 \\\ 0\end{array}\right]+x_3\left[\begin{array}{c}-3 \\\ 0 \\\ 1\end{array}\right]\)</span></p>
 </details>
-<p><span class="arithmatex">\(\mathbf{x}=x_2\left[\begin{array}{l}5 \\ 1 \\ 0\end{array}\right]+x_3\left[\begin{array}{c}-3 \\ 0 \\ 1\end{array}\right]\)</span></p>
-<p>d. For øvelserne (a)-&copy; giv en geometrisk fortolkning af løsningsmængden.</p>
+</li>
+<li>
+<p>For øvelserne a)-c) giv en geometrisk fortolkning af løsningsmængden.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p>(a) Løsningsmængden er en linje i <span class="arithmatex">\(\mathbb{R}^2\)</span>, da den har én fri variabel, der repræsenterer et endimensionelt underrum.<br />
-(b) Løsningsmængden er en linje i <span class="arithmatex">\(\mathbb{R}^3\)</span>, da den har én fri variabel, der repræsenterer et endimensionelt underrum.<br />
-&copy; Løsningsmængden er et plan i <span class="arithmatex">\(\mathbb{R}^3\)</span>, da den har to frie variable, der repræsenterer et todimensionelt underrum.</p>
+<p>a) Løsningsmængden er en linje i <span class="arithmatex">\(\mathbb{R}^2\)</span>, da den har én fri variabel, hvilket repræsenterer et endimensionalt underrum.<br />
+b) Løsningsmængden er en linje i <span class="arithmatex">\(\mathbb{R}^3\)</span>, da den har én fri variabel, hvilket repræsenterer et endimensionalt underrum.<br />
+c) Løsningsmængden er et plan i <span class="arithmatex">\(\mathbb{R}^3\)</span>, da den har to frie variable, hvilket repræsenterer et todimensionalt underrum.</p>
 </details>
+</li>
+</ol>
 <h4 id="velse-6-liner-uafhngighed">Øvelse 6: Lineær uafhængighed<a class="headerlink" href="#velse-6-liner-uafhngighed" title="Permanent link">&para;</a></h4>
-<p>a. For <span class="arithmatex">\(\mathbf{a}_1 = 
-        \begin{bmatrix}
-            2 \\
-            3 \\
-            0
-        \end{bmatrix}\)</span>,
+<ol>
+<li>
+<p>For <span class="arithmatex">\(\mathbf{a}_1 = 
+    \begin{bmatrix}
+        2 \\
+        3 \\
+        0
+    \end{bmatrix}\)</span>,
     <span class="arithmatex">\(\mathbf{a}_2 = 
-        \begin{bmatrix}
-            1\\
-            2\\
-            -5
-        \end{bmatrix}\)</span>,
+    \begin{bmatrix}
+        1\\
+        2\\
+        -5
+    \end{bmatrix}\)</span>,
     <span class="arithmatex">\(\mathbf{a}_3 = 
-        \begin{bmatrix}
-            4\\
-            1\\
-            2
-        \end{bmatrix}\)</span>, og
+    \begin{bmatrix}
+        4\\
+        1\\
+        2
+    \end{bmatrix}\)</span>, og
     <span class="arithmatex">\(\mathbf{b} = 
-        \begin{bmatrix}
-            8\\
-            6\\
-            12
-        \end{bmatrix}\)</span> 
-bestem om <span class="arithmatex">\(\mathbf{b}\)</span> er en lineær kombination af <span class="arithmatex">\(\mathbf{a}_1,\mathbf{a}_2\)</span> og <span class="arithmatex">\(\mathbf{a}_3\)</span>.</p>
+    \begin{bmatrix}
+        8\\
+        6\\
+        12
+    \end{bmatrix}\)</span> 
+    bestem om <span class="arithmatex">\(\mathbf{b}\)</span> er en lineær kombination af <span class="arithmatex">\(\mathbf{a}_1,\mathbf{a}_2\)</span> og <span class="arithmatex">\(\mathbf{a}_3\)</span>.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
 <p>Ja, da <span class="arithmatex">\(\mathbf{b}=3\mathbf{a}_1-2\mathbf{a}_2+\mathbf{a}_3\)</span></p>
 </details>
-<p>b.
-Lad <span class="arithmatex">\(A = \begin{bmatrix}1  &amp; -2 &amp; 4 \\
-                        0  &amp; 4  &amp; -5 \\
-                        -3 &amp; 6  &amp; -12 \end{bmatrix}\)</span> og
+</li>
+<li>
+<p>Lad <span class="arithmatex">\(A = \begin{bmatrix}1 &amp; -2 &amp; 4 \\
+                0 &amp; 4 &amp; -5 \\
+                -3 &amp; 6 &amp; -12 \end{bmatrix}\)</span> og
     <span class="arithmatex">\(\mathbf{b}=\begin{bmatrix}1 \\ -4 \\ -1\end{bmatrix}\)</span> være givet.
-     Bestem om <span class="arithmatex">\(\mathbf{b}\)</span> er en lineær kombination af kolonnerne i <span class="arithmatex">\(A\)</span>.</p>
+    Bestem hvorvidt <span class="arithmatex">\(\mathbf{b}\)</span> er en lineær kombination af søjlerne i <span class="arithmatex">\(A\)</span>.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p>Nej <span class="arithmatex">\(\mathbf{b}\)</span> er ikke en lineær kombination af kolonnerne i <span class="arithmatex">\(A\)</span></p>
+<p>Nej, <span class="arithmatex">\(\mathbf{b}\)</span> er ikke en lineær kombination af søjlerne i <span class="arithmatex">\(A\)</span></p>
 </details>
-<p>c. For <span class="arithmatex">\(A = \begin{bmatrix}2  &amp; -6 &amp; 5 \\
-                        1  &amp; -5  &amp; 1 \\
-                        -2 &amp; 6  &amp; p \end{bmatrix}\)</span> og
-        <span class="arithmatex">\(\mathbf{b}= \begin{bmatrix}3 \\ 0 \\ q\end{bmatrix}\)</span> 
-    bestem værdierne af <span class="arithmatex">\(p\)</span> og <span class="arithmatex">\(q\)</span> sådan at <span class="arithmatex">\(\mathbf{b}\)</span> ikke er en lineær kombination af kolonnerne i <span class="arithmatex">\(A\)</span>.</p>
+</li>
+<li>
+<p>For <span class="arithmatex">\(A = \begin{bmatrix}2 &amp; -6 &amp; 5 \\
+            1 &amp; -5 &amp; 1 \\
+            -2 &amp; 6 &amp; p \end{bmatrix}\)</span> og
+    <span class="arithmatex">\(\mathbf{b}= \begin{bmatrix}3 \\ 0 \\ q\end{bmatrix}\)</span> 
+    bestem værdierne af <span class="arithmatex">\(p\)</span> og <span class="arithmatex">\(q\)</span> således at <span class="arithmatex">\(\mathbf{b}\)</span> ikke er en lineær kombination af søjlerne i <span class="arithmatex">\(A\)</span>.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
 <p><span class="arithmatex">\(p=-5\)</span> og <span class="arithmatex">\(q\neq-3\)</span></p>
 </details>
+</li>
+</ol>
 
 
 
