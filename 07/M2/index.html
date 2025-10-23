@@ -1649,133 +1649,237 @@ body[data-md-color-scheme] .md-content ol       { list-style-type: lower-alpha; 
 body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 </style>
 
-<h4 id="eksempel-1-ls-ligninger-vha-regneregler-for-eksponenter-og-logaritmer">Eksempel 1: Løs ligninger vha. regneregler for eksponenter og logaritmer<a class="headerlink" href="#eksempel-1-ls-ligninger-vha-regneregler-for-eksponenter-og-logaritmer" title="Permanent link">&para;</a></h4>
-<p>Løs følgende ligninger:</p>
+<h4 id="eksempel-1-echelon-og-reduceret-echelon-form">Eksempel 1: Echelon og reduceret echelon form<a class="headerlink" href="#eksempel-1-echelon-og-reduceret-echelon-form" title="Permanent link">&para;</a></h4>
+<p>Bestem hvorvidt følgende matricer er i reduceret echelon form, echelon form eller hverken:</p>
 <ol>
-<li><span class="arithmatex">\(\frac{1}{x+1}=\frac{1}{2 x}\)</span></li>
-<li><span class="arithmatex">\(\frac{y+5}{y-7}-2=-\frac{y+7}{y-5}\)</span></li>
-<li><span class="arithmatex">\(\ln \sqrt{x+2}=1\)</span></li>
-<li><span class="arithmatex">\(4 \log _{10}(x-6)=11\)</span></li>
-<li><span class="arithmatex">\(8^{-x}=2^{x-8}\)</span></li>
 <li>
-<p><span class="arithmatex">\(\left(\frac{1}{4}\right)^{x-1}=4^{2-3 x}\)</span></p>
+<p><span class="arithmatex">\(\begin{bmatrix} 1 &amp; 0 &amp; 2 &amp; 1\\ 
+                0 &amp; 1 &amp; -3 &amp; 0\end{bmatrix}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\begin{bmatrix} 1 &amp; 2 &amp; -2 &amp; 5\\
+                0 &amp; 1 &amp;  0 &amp; -1\\
+                0 &amp; 0 &amp;  1 &amp; 3 \\ 
+                0 &amp; 0 &amp;  0 &amp; 1\end{bmatrix}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\begin{bmatrix} -1 &amp; 0\\
+                0 &amp; 4\\
+                0 &amp; 0 \end{bmatrix}\)</span></p>
 <details class="answer">
 <summary>&nbsp;</summary>
 <ol>
-<li><span class="arithmatex">\(x=1\)</span></li>
-<li><span class="arithmatex">\(y=6\)</span></li>
-<li><span class="arithmatex">\(x=e^2-2\)</span></li>
-<li><span class="arithmatex">\(x=10^{\frac{11}{4}}+6\)</span></li>
-<li><span class="arithmatex">\(x=2\)</span></li>
-<li><span class="arithmatex">\(x=\frac{1}{2}\)</span></li>
+<li>
+<p><strong>Reduceret echelon form</strong> - alle pivot-elementer er 1, og der er kun nuller over og under hver pivot.</p>
+</li>
+<li>
+<p><strong>Echelon form</strong> - matrixen er i echelon form, men ikke reduceret echelon form, da der er ikke-nul elementer over pivots.</p>
+</li>
+<li>
+<p><strong>Echelon form</strong> - matrixen er i echelon form, men ikke reduceret echelon form.</p>
+</li>
 </ol>
 </details>
 </li>
 </ol>
-<h4 id="eksempel-2-isoleringsmetoden">Eksempel 2: Isoleringsmetoden<a class="headerlink" href="#eksempel-2-isoleringsmetoden" title="Permanent link">&para;</a></h4>
-<p>Den fejl, der er forbundet med statistisk usikkerhed, er givet ved</p>
+<h4 id="eksempel-2-rkkeoperationer">Eksempel 2: Rækkeoperationer<a class="headerlink" href="#eksempel-2-rkkeoperationer" title="Permanent link">&para;</a></h4>
+<p>Forklar hvilke rækkeoperationer der bruges i følgende transformationer:</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\begin{bmatrix}
+    4 &amp; -3 &amp; 1 &amp; 2 \\
+    3 &amp; 1 &amp; -5 &amp; 6 \\
+    1 &amp; 1 &amp; 2 &amp; 4 \\
+    \end{bmatrix}
+    \sim
+\begin{bmatrix}
+    1 &amp; 1 &amp; 2 &amp; 4 \\
+    3 &amp; 1 &amp; -5 &amp; 6 \\
+    4 &amp; -3 &amp; 1 &amp; 2 \\
+    \end{bmatrix}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\begin{bmatrix}
+    1 &amp; 1 &amp; 2 &amp; 4 \\
+    3 &amp; 1 &amp; -5 &amp; 6 \\
+    4 &amp; -3 &amp; 1 &amp; 2 \\
+    \end{bmatrix}
+    \sim
+    \begin{bmatrix}
+    1 &amp; 1 &amp; 2 &amp; 4 \\
+    0 &amp; -2 &amp; -11 &amp; -6 \\
+    4 &amp; -3 &amp; 1 &amp; 2 \\
+    \end{bmatrix}\)</span></p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li>
+<p><strong>Swap operation:</strong> <span class="arithmatex">\(r_1 \leftrightarrow r_3\)</span> - vi bytter om på række 1 og række 3.</p>
+</li>
+<li>
+<p><strong>Erstatning:</strong> <span class="arithmatex">\(r_2 \rightarrow r_2 - 3r_1\)</span> - vi trækker 3 gange række 1 fra række 2.</p>
+</li>
+</ol>
+</details>
+</li>
+</ol>
+<h4 id="eksempel-3-system-af-linere-ligninger">Eksempel 3: System af lineære ligninger<a class="headerlink" href="#eksempel-3-system-af-linere-ligninger" title="Permanent link">&para;</a></h4>
+<p>Givet følgende system af lineære ligninger:</p>
 <div class="arithmatex">\[
-E=Z_{1-\alpha} \frac{\sigma}{\sqrt{n}}
+\begin{aligned}
+2x_1 - 4x_2 + 6x_3 &amp;= 2 \\
+x_1 + x_3 &amp;= 3 \\
+-4x_1 + 2x_2 &amp;= 2
+\end{aligned}
 \]</div>
-<p>hvor <span class="arithmatex">\(Z_{1-\alpha}\)</span> er z-scoren forbundet med den standard normale fordeling, <span class="arithmatex">\(\sigma\)</span> er standardafvigelsen, og <span class="arithmatex">\(n\)</span> er stikprøvestørrelsen.</p>
 <ol>
 <li>
-<p>Omarranger ovenstående formel, så stikprøvestørrelsen, <span class="arithmatex">\(n\)</span> bliver subjektet:</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(n = \left(\frac{Z_{1-\alpha} \cdot \sigma}{E}\right)^2\)</span></p>
-</details>
+<p>Skriv den augmenterede matrix for systemet.</p>
 </li>
 <li>
-<p>Antag en z-score på 1,96 og en standardafvigelse på 2. Hvilken stikprøvestørrelse er nødvendig for at have en fejl på højst 0,5?</p>
+<p>Brug rækkeoperationer til at få den reducerede række-echelon form og find løsningen.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<div class="arithmatex">\[ 
-n = \left(\frac{1.96 \cdot 2}{0.5}\right)^2 = 61,47
+<ol>
+<li>
+<p><strong>Augmenteret matrix:</strong>
+<span class="arithmatex">\(\begin{bmatrix}
+2 &amp; -4 &amp; 6 &amp; 2\\
+1 &amp; 0  &amp; 1 &amp; 3\\
+-4&amp; 2  &amp; 0 &amp; 2
+\end{bmatrix}\)</span></p>
+</li>
+<li>
+<p><strong>RREF og løsning:</strong>
+<span class="arithmatex">\(\begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; 1\\
+0 &amp; 1 &amp; 0 &amp; 3\\
+0 &amp; 0 &amp; 1 &amp; 2
+\end{bmatrix}\)</span></p>
+</li>
+</ol>
+<p><strong>Løsning:</strong>
+<span class="arithmatex">\(\begin{cases}
+    x_1 = 1\\
+    x_2 = 3\\
+    x_3 = 2
+\end{cases}\)</span></p>
+</details>
+</li>
+</ol>
+<h4 id="eksempel-4-rkkereduktion-med-frie-variable">Eksempel 4: Rækkereduktion med frie variable<a class="headerlink" href="#eksempel-4-rkkereduktion-med-frie-variable" title="Permanent link">&para;</a></h4>
+<p>Løs systemet hvis augmenterede matrix er:</p>
+<p><span class="arithmatex">\(\begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; 4\\
+                4 &amp; 8 &amp; 9 &amp; 4\end{bmatrix}\)</span></p>
+<p>Skriv den generelle løsning ned.</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><strong>Rækkeoperationer:</strong>
+<span class="arithmatex">\(\begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; 4\\
+                4 &amp; 8 &amp; 9 &amp; 4\end{bmatrix}
+\sim
+\begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; 4\\
+                0 &amp; 0 &amp; -3 &amp; -12\end{bmatrix}
+\sim
+\begin{bmatrix} 1 &amp; 2 &amp; 3 &amp; 4\\
+                0 &amp; 0 &amp; 1 &amp; 4\end{bmatrix}
+\sim
+\begin{bmatrix} 1 &amp; 2 &amp; 0 &amp; -8\\
+                0 &amp; 0 &amp; 1 &amp; 4\end{bmatrix}\)</span></p>
+<p><strong>Generel løsning:</strong>
+<span class="arithmatex">\(\begin{cases}
+    x_1 = -8-2x_2\\
+    x_2 \text{ fri (frit valg)}\\
+    x_3 = 4
+\end{cases}\)</span></p>
+</details>
+<h4 id="eksempel-5-konsistens-af-systemer">Eksempel 5: Konsistens af systemer<a class="headerlink" href="#eksempel-5-konsistens-af-systemer" title="Permanent link">&para;</a></h4>
+<p>Hvilke af følgende augmenterede matricer repræsenterer inkonsistente systemer?</p>
+<ol>
+<li>
+<p><span class="arithmatex">\(\begin{bmatrix}
+    0 &amp; 3 &amp; -2 &amp; 1\\
+    0 &amp; 0  &amp; -1 &amp; 4\\
+    0 &amp; 0  &amp; 0 &amp; 0 \end{bmatrix}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\begin{bmatrix}
+    -1 &amp; 3 &amp; 1 \\
+    0 &amp; 5  &amp; 3 \\
+    0 &amp; 0  &amp; 6 \end{bmatrix}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(\begin{bmatrix}
+    7 &amp; 1 &amp; 1 \\
+    0 &amp; 2  &amp; 2 \\
+    0 &amp; 0  &amp; 3 \\
+    0 &amp; 0  &amp; 0
+\end{bmatrix}\)</span></p>
+</li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><strong>Inkonsistente systemer:</strong> 2, 3</p>
+<p><strong>Forklaring:</strong></p>
+<ol>
+<li>Konsistent - ingen pivot i højre side</li>
+<li>Inkonsistent - pivot i højre side (0x₁ + 0x₂ + 0x₃ = 6 er umuligt)</li>
+<li>Inkonsistent - pivot i højre side (0x₁ + 0x₂ + 0x₃ = 3 er umuligt)</li>
+</ol>
+</details>
+<h4 id="eksempel-6-praktisk-anvendelse-kostplanlgning">Eksempel 6: Praktisk anvendelse - Kostplanlægning<a class="headerlink" href="#eksempel-6-praktisk-anvendelse-kostplanlgning" title="Permanent link">&para;</a></h4>
+<p>En softwareudvikler vil planlægge sin kost for en uge med kun smør, æbler og havre. Næringsværdier per 100g:</p>
+<table>
+<thead>
+<tr>
+<th>Næringsværdier</th>
+<th>Smør</th>
+<th>Æble</th>
+<th>Havre</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Protein (g)</td>
+<td>0.2</td>
+<td>0.3</td>
+<td>14.0</td>
+</tr>
+<tr>
+<td>Fedt (g)</td>
+<td>82.5</td>
+<td>0.2</td>
+<td>6.9</td>
+</tr>
+<tr>
+<td>Kulhydrater (g)</td>
+<td>0.0</td>
+<td>12.1</td>
+<td>57.0</td>
+</tr>
+</tbody>
+</table>
+<p>Hvor meget af hver skal spises for at få 50g protein, 70g fedt og 260g kulhydrater per dag?</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><strong>System af ligninger:</strong></p>
+<div class="arithmatex">\[
+\begin{cases}
+0.2x_1 + 0.3x_2 + 14.0x_3 = 50 \quad \text{(protein)} \\
+82.5x_1 + 0.2x_2 + 6.9x_3 = 70 \quad \text{(fedt)} \\
+0.0x_1 + 12.1x_2 + 57.0x_3 = 260 \quad \text{(kulhydrater)}
+\end{cases}
 \]</div>
-<p>Stikprøvestørrelsen skal derfor være mindst 62 (afrundet opad).</p>
+<p>hvor <span class="arithmatex">\(x_1\)</span> = mængde smør (100g), <span class="arithmatex">\(x_2\)</span> = mængde æbler (100g), <span class="arithmatex">\(x_3\)</span> = mængde havre (100g).</p>
+<p><strong>Løsning:</strong></p>
+<div class="arithmatex">\[
+\begin{cases}
+x_1 \approx 54.7 \text{ g smør} \\
+x_2 \approx 522.8 \text{ g æbler} \\
+x_3 \approx 345.2 \text{ g havre}
+\end{cases}
+\]</div>
 </details>
-</li>
-</ol>
-<h4 id="eksempel-3-definitionsmngde-og-vrdimngde">Eksempel 3: Definitionsmængde og værdimængde<a class="headerlink" href="#eksempel-3-definitionsmngde-og-vrdimngde" title="Permanent link">&para;</a></h4>
-<p>Bestem definitionsmængden og værdimængden for hver af de reelle funktioner nedenfor. Det er en god idé at plotte funktionerne ved hjælp af software (f.eks. Geogebra, WolframAlpha osv.):</p>
-<ol>
-<li><span class="arithmatex">\(\\ f(x)=\frac{1}{x-5}\)</span></li>
-<li>
-<p><span class="arithmatex">\(g(x)=\sqrt{2 x-4}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p>a.  Definitionsmængde: <span class="arithmatex">\(\mathbb{R} \backslash\{5\}\)</span>; Værdimængde: <span class="arithmatex">\(\mathbb{R} \backslash\{0\}\)</span></p>
-<p>b.  Definitionsmængde: <span class="arithmatex">\(\mathbb{R}_{\geq 2}\)</span>; Værdimængde: <span class="arithmatex">\(\mathbb{R}_{\geq 0}\)</span></p>
-</details>
-</li>
-</ol>
-<h4 id="eksempel-4-sammensatte-funktioner">Eksempel 4: Sammensatte funktioner<a class="headerlink" href="#eksempel-4-sammensatte-funktioner" title="Permanent link">&para;</a></h4>
-<p>Find hver af de følgende sammensatte funktioner:</p>
-<ol>
-<li>
-<p><span class="arithmatex">\(\\ g \circ f\)</span> når <span class="arithmatex">\(f(x)=3 x+1\)</span> og <span class="arithmatex">\(g(x)=x^2\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=9 x^2+1+6 x\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(f \circ g\)</span> når <span class="arithmatex">\(f(x)=x^2+1\)</span> og <span class="arithmatex">\(g(x)=\frac{1}{x}\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((f \circ g)(x)=\frac{1}{x^2}+1\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\\ g \circ f\)</span> når <span class="arithmatex">\(f\)</span> og <span class="arithmatex">\(g\)</span> er defineret som i øvelse (b).</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=\frac{1}{x^2+1}\)</span></p>
-</details>
-</li>
-</ol>
-<h4 id="eksempel-5-inverse-funktioner">Eksempel 5: Inverse funktioner<a class="headerlink" href="#eksempel-5-inverse-funktioner" title="Permanent link">&para;</a></h4>
-<p>Find den inverse funktion:</p>
-<ol>
-<li>
-<p><span class="arithmatex">\(\\ f(x)=\frac{6}{5-x}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=5-\frac{6}{x}\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\\ f(x)=-\ln (1-2 x)+1\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=\left(1-e^{1-x}\right) / 2\)</span></p>
-</details>
-</li>
-</ol>
-<h4 id="eksempel-6-komplekse-logaritmeligninger">Eksempel 6: Komplekse logaritmeligninger<a class="headerlink" href="#eksempel-6-komplekse-logaritmeligninger" title="Permanent link">&para;</a></h4>
-<p>Løs ligningerne: </p>
-<ol>
-<li>
-<p><span class="arithmatex">\(\\ e^{2 x}-3 e^x+2=0\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ul>
-<li><span class="arithmatex">\(e^x=1 \Rightarrow x=0\)</span></li>
-<li><span class="arithmatex">\(e^x=2 \Rightarrow x=\ln(2)\)</span></li>
-</ul>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\\ \ln (x+3)+\ln (x+5)=0\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ul>
-<li><span class="arithmatex">\(x = -4 + \sqrt{2}\)</span></li>
-</ul>
-</details>
-</li>
-</ol>
 <h2 id="undervisning-1-videolektion">Undervisning 1: Videolektion<a class="headerlink" href="#undervisning-1-videolektion" title="Permanent link">&para;</a></h2>
 <p align="center">
     <video width="700" autoplay loop muted controls playsinline preload="metadata">
