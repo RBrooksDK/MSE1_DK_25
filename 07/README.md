@@ -1,22 +1,20 @@
 ---
 tags:
-    - Lineær algebra
-    - Vektorer
+    - Lineær Algebra
+    - Ligningssystemer
     - Matricer
-    - Lineære ligninger
-    - Gauss-elimination
-    - Lineære transformationer
-    - Vektorrum
-    - Basis
-    - Dimension
-    - Lineær uafhængighed
-    - Span
-    - Koordinatsystemer
+    - Elementære Rækkeoperationer
+    - Echelon-Form
+    - Række-Reduktion
+    - Pivot-Positioner
+    - Frie Variable
 ---
 
-<h1 align="center">Introduktion til lineær algebra</h1>
+<h1 align="center">Introduktion til Lineær Algebra</h1>
 
-Denne session introducerer de grundlæggende begreber i lineær algebra, med fokus på systemer af lineære ligninger og deres løsninger. Vi vil lære hvordan man repræsenterer disse systemer ved hjælp af koefficientmatricer og udvidede matricer, og hvordan man manipulerer dem ved hjælp af elementære rækkeoperationer. Vi vil udforske begreberne echelonformer, pivotpositioner og rækkereduktionsalgoritmen, som er essentielle for at løse lineære systemer. Ved slutningen af denne session skulle studerende være i stand til at løse lineære systemer ved hjælp af rækkereduktion og forstå den geometriske fortolkning af span i ℝ² og ℝ³.
+I denne session dykker vi ned i lineære ligningssystemer og deres fundamentale rolle i moderne softwareudvikling og datavidenskab. Vi begynder med at definere de centrale begreber for lineære ligninger og systemer og illustrerer, hvordan de danner grundlaget for at modellere komplekse problemer – fra økonomiske modeller, som Leontiefs banebrydende arbejde, til nutidens intelligente systemer.
+
+Sessionen giver en grundig gennemgang af, hvordan matricer anvendes til at repræsentere og løse lineære systemer effektivt. Vi introducerer begreber som koefficientmatricer, totalmatricer og anvendelsen af elementære rækkeoperationer til at omforme systemer til echelon-form og reduceret række-echelon-form. Der vil være særligt fokus på række-reduktions-algoritmen og fortolkningen af løsningssæt, herunder hvordan man identificerer unikke løsninger, uendeligt mange løsninger og inkonsistente systemer ved hjælp af pivot-positioner, basale variable og frie variable.
 
 
 <div class="grid cards" markdown>
