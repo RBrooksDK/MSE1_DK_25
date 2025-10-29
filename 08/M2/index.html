@@ -1649,133 +1649,115 @@ body[data-md-color-scheme] .md-content ol       { list-style-type: lower-alpha; 
 body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 </style>
 
-<h4 id="eksempel-1-ls-ligninger-vha-regneregler-for-eksponenter-og-logaritmer">Eksempel 1: Løs ligninger vha. regneregler for eksponenter og logaritmer<a class="headerlink" href="#eksempel-1-ls-ligninger-vha-regneregler-for-eksponenter-og-logaritmer" title="Permanent link">&para;</a></h4>
-<p>Løs følgende ligninger:</p>
-<ol>
-<li><span class="arithmatex">\(\frac{1}{x+1}=\frac{1}{2 x}\)</span></li>
-<li><span class="arithmatex">\(\frac{y+5}{y-7}-2=-\frac{y+7}{y-5}\)</span></li>
-<li><span class="arithmatex">\(\ln \sqrt{x+2}=1\)</span></li>
-<li><span class="arithmatex">\(4 \log _{10}(x-6)=11\)</span></li>
-<li><span class="arithmatex">\(8^{-x}=2^{x-8}\)</span></li>
-<li>
-<p><span class="arithmatex">\(\left(\frac{1}{4}\right)^{x-1}=4^{2-3 x}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<ol>
-<li><span class="arithmatex">\(x=1\)</span></li>
-<li><span class="arithmatex">\(y=6\)</span></li>
-<li><span class="arithmatex">\(x=e^2-2\)</span></li>
-<li><span class="arithmatex">\(x=10^{\frac{11}{4}}+6\)</span></li>
-<li><span class="arithmatex">\(x=2\)</span></li>
-<li><span class="arithmatex">\(x=\frac{1}{2}\)</span></li>
-</ol>
-</details>
-</li>
-</ol>
-<h4 id="eksempel-2-isoleringsmetoden">Eksempel 2: Isoleringsmetoden<a class="headerlink" href="#eksempel-2-isoleringsmetoden" title="Permanent link">&para;</a></h4>
-<p>Den fejl, der er forbundet med statistisk usikkerhed, er givet ved</p>
+<h4 id="eksempel-1-matrix-og-vektorligninger">Eksempel 1: Matrix- og vektorligninger<a class="headerlink" href="#eksempel-1-matrix-og-vektorligninger" title="Permanent link">&para;</a></h4>
+<p>For følgende system af lineære ligninger, skriv det som (i) en augmenteret matrix, (ii) en vektorligning og (iii) en matrixligning:</p>
 <div class="arithmatex">\[
-E=Z_{1-\alpha} \frac{\sigma}{\sqrt{n}}
+\begin{cases}
+2x_1 + 3x_2 - 4x_3 = 8 \\
+-x_2 + x_3 + 2x_4 = -2 \\
+-x_1 + 2x_4 = 3
+\end{cases}
 \]</div>
-<p>hvor <span class="arithmatex">\(Z_{1-\alpha}\)</span> er z-scoren forbundet med den standard normale fordeling, <span class="arithmatex">\(\sigma\)</span> er standardafvigelsen, og <span class="arithmatex">\(n\)</span> er stikprøvestørrelsen.</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><strong>(i) Augmenteret matrix:</strong></p>
+<div class="arithmatex">\[\begin{bmatrix}
+2 &amp; 3 &amp; -4 &amp; 0 &amp; 8 \\
+0 &amp; -1 &amp; 1 &amp; 2 &amp; -2 \\
+-1 &amp; 0 &amp; 0 &amp; 2 &amp; 3
+\end{bmatrix}\]</div>
+<p><strong>(ii) Vektorligning:</strong></p>
+<div class="arithmatex">\[x_1\begin{bmatrix}2\\0\\-1\end{bmatrix} + x_2\begin{bmatrix}3\\-1\\0\end{bmatrix} + x_3\begin{bmatrix}-4\\1\\0\end{bmatrix} + x_4\begin{bmatrix}0\\2\\2\end{bmatrix} = \begin{bmatrix}8\\-2\\3\end{bmatrix}\]</div>
+<p><strong>(iii) Matrixligning:</strong></p>
+<div class="arithmatex">\[\begin{bmatrix}
+2 &amp; 3 &amp; -4 &amp; 0 \\
+0 &amp; -1 &amp; 1 &amp; 2 \\
+-1 &amp; 0 &amp; 0 &amp; 2
+\end{bmatrix}
+\begin{bmatrix}x_1\\x_2\\x_3\\x_4\end{bmatrix} = \begin{bmatrix}8\\-2\\3\end{bmatrix}\]</div>
+</details>
+<h4 id="eksempel-2-linere-kombinationer">Eksempel 2: Lineære kombinationer<a class="headerlink" href="#eksempel-2-linere-kombinationer" title="Permanent link">&para;</a></h4>
+<p>Lad <span class="arithmatex">\(\mathbf{v}_1 = \begin{bmatrix}1\\-2\\4\end{bmatrix}\)</span>, <span class="arithmatex">\(\mathbf{v}_2 = \begin{bmatrix}3\\0\\2\end{bmatrix}\)</span> og <span class="arithmatex">\(\mathbf{v}_3 = \begin{bmatrix}-1\\5\\1\end{bmatrix}\)</span>.</p>
+<p>Beregn følgende lineære kombinationer:</p>
 <ol>
 <li>
-<p>Omarranger ovenstående formel, så stikprøvestørrelsen, <span class="arithmatex">\(n\)</span> bliver subjektet:</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(n = \left(\frac{Z_{1-\alpha} \cdot \sigma}{E}\right)^2\)</span></p>
-</details>
+<p><span class="arithmatex">\(2\mathbf{v}_1 + 3\mathbf{v}_2 + \mathbf{v}_3\)</span></p>
 </li>
 <li>
-<p>Antag en z-score på 1,96 og en standardafvigelse på 2. Hvilken stikprøvestørrelse er nødvendig for at have en fejl på højst 0,5?</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<div class="arithmatex">\[ 
-n = \left(\frac{1.96 \cdot 2}{0.5}\right)^2 = 61,47
-\]</div>
-<p>Stikprøvestørrelsen skal derfor være mindst 62 (afrundet opad).</p>
-</details>
+<p><span class="arithmatex">\(\mathbf{v}_1 - \mathbf{v}_3\)</span></p>
 </li>
-</ol>
-<h4 id="eksempel-3-definitionsmngde-og-vrdimngde">Eksempel 3: Definitionsmængde og værdimængde<a class="headerlink" href="#eksempel-3-definitionsmngde-og-vrdimngde" title="Permanent link">&para;</a></h4>
-<p>Bestem definitionsmængden og værdimængden for hver af de reelle funktioner nedenfor. Det er en god idé at plotte funktionerne ved hjælp af software (f.eks. Geogebra, WolframAlpha osv.):</p>
-<ol>
-<li><span class="arithmatex">\(\\ f(x)=\frac{1}{x-5}\)</span></li>
 <li>
-<p><span class="arithmatex">\(g(x)=\sqrt{2 x-4}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p>a.  Definitionsmængde: <span class="arithmatex">\(\mathbb{R} \backslash\{5\}\)</span>; Værdimængde: <span class="arithmatex">\(\mathbb{R} \backslash\{0\}\)</span></p>
-<p>b.  Definitionsmængde: <span class="arithmatex">\(\mathbb{R}_{\geq 2}\)</span>; Værdimængde: <span class="arithmatex">\(\mathbb{R}_{\geq 0}\)</span></p>
-</details>
+<p><span class="arithmatex">\(\frac{1}{2}\mathbf{v}_1 + \frac{3}{2}\mathbf{v}_2 + \mathbf{v}_3\)</span></p>
 </li>
 </ol>
-<h4 id="eksempel-4-sammensatte-funktioner">Eksempel 4: Sammensatte funktioner<a class="headerlink" href="#eksempel-4-sammensatte-funktioner" title="Permanent link">&para;</a></h4>
-<p>Find hver af de følgende sammensatte funktioner:</p>
+<details class="answer">
+<summary>&nbsp;</summary>
 <ol>
 <li>
-<p><span class="arithmatex">\(\\ g \circ f\)</span> når <span class="arithmatex">\(f(x)=3 x+1\)</span> og <span class="arithmatex">\(g(x)=x^2\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=9 x^2+1+6 x\)</span></p>
-</details>
+<p><strong><span class="arithmatex">\(2\mathbf{v}_1 + 3\mathbf{v}_2 + \mathbf{v}_3\)</span>:</strong></p>
+<div class="arithmatex">\[2\begin{bmatrix}1\\-2\\4\end{bmatrix} + 3\begin{bmatrix}3\\0\\2\end{bmatrix} + \begin{bmatrix}-1\\5\\1\end{bmatrix} = \begin{bmatrix}2\\-4\\8\end{bmatrix} + \begin{bmatrix}9\\0\\6\end{bmatrix} + \begin{bmatrix}-1\\5\\1\end{bmatrix} = \begin{bmatrix}10\\1\\15\end{bmatrix}\]</div>
 </li>
 <li>
-<p><span class="arithmatex">\(f \circ g\)</span> når <span class="arithmatex">\(f(x)=x^2+1\)</span> og <span class="arithmatex">\(g(x)=\frac{1}{x}\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((f \circ g)(x)=\frac{1}{x^2}+1\)</span></p>
-</details>
+<p><strong><span class="arithmatex">\(\mathbf{v}_1 - \mathbf{v}_3\)</span>:</strong></p>
+<div class="arithmatex">\[\begin{bmatrix}1\\-2\\4\end{bmatrix} - \begin{bmatrix}-1\\5\\1\end{bmatrix} = \begin{bmatrix}2\\-7\\3\end{bmatrix}\]</div>
 </li>
 <li>
-<p><span class="arithmatex">\(\\ g \circ f\)</span> når <span class="arithmatex">\(f\)</span> og <span class="arithmatex">\(g\)</span> er defineret som i øvelse (b).</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=\frac{1}{x^2+1}\)</span></p>
-</details>
+<p><strong><span class="arithmatex">\(\frac{1}{2}\mathbf{v}_1 + \frac{3}{2}\mathbf{v}_2 + \mathbf{v}_3\)</span>:</strong></p>
+<div class="arithmatex">\[\frac{1}{2}\begin{bmatrix}1\\-2\\4\end{bmatrix} + \frac{3}{2}\begin{bmatrix}3\\0\\2\end{bmatrix} + \begin{bmatrix}-1\\5\\1\end{bmatrix} = \begin{bmatrix}0.5\\-1\\2\end{bmatrix} + \begin{bmatrix}4.5\\0\\3\end{bmatrix} + \begin{bmatrix}-1\\5\\1\end{bmatrix} = \begin{bmatrix}4\\4\\6\end{bmatrix}\]</div>
 </li>
 </ol>
-<h4 id="eksempel-5-inverse-funktioner">Eksempel 5: Inverse funktioner<a class="headerlink" href="#eksempel-5-inverse-funktioner" title="Permanent link">&para;</a></h4>
-<p>Find den inverse funktion:</p>
-<ol>
-<li>
-<p><span class="arithmatex">\(\\ f(x)=\frac{6}{5-x}\)</span></p>
+</details>
+<h4 id="eksempel-3-parametrisk-vektorform">Eksempel 3: Parametrisk vektorform<a class="headerlink" href="#eksempel-3-parametrisk-vektorform" title="Permanent link">&para;</a></h4>
+<p>Et system er fundet at have løsningen:
+$$
+\begin{aligned}
+x_1 &amp;= 4 - x_2 \
+x_2 &amp;= x_2 \
+x_3 &amp;= -1 + 3x_2
+\end{aligned}
+$$
+hvor <span class="arithmatex">\(x_2\)</span> er en fri variabel. Skriv løsningen i parametrisk vektorform.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=5-\frac{6}{x}\)</span></p>
+<p><strong>Parametrisk vektorform:</strong></p>
+<div class="arithmatex">\[\begin{bmatrix}x_1\\x_2\\x_3\end{bmatrix} = \begin{bmatrix}4\\0\\-1\end{bmatrix} + x_2\begin{bmatrix}-1\\1\\3\end{bmatrix}\]</div>
+<p><strong>Forklaring:</strong> Løsningen består af en "partikulær løsning" <span class="arithmatex">\(\begin{bmatrix}4\\0\\-1\end{bmatrix}\)</span> plus alle mulige lineære kombinationer af "retningsvektoren" <span class="arithmatex">\(\begin{bmatrix}-1\\1\\3\end{bmatrix}\)</span> ganget med den frie parameter <span class="arithmatex">\(x_2\)</span>.</p>
 </details>
-</li>
-<li>
-<p><span class="arithmatex">\(\\ f(x)=-\ln (1-2 x)+1\)</span></p>
+<h4 id="eksempel-4-homogene-ligninger">Eksempel 4: Homogene ligninger<a class="headerlink" href="#eksempel-4-homogene-ligninger" title="Permanent link">&para;</a></h4>
+<p>Løs den homogene ligning <span class="arithmatex">\(A\mathbf{x} = \mathbf{0}\)</span> for:</p>
+<div class="arithmatex">\[A = \begin{bmatrix}4 &amp; -8\\-3 &amp; 6\end{bmatrix}\]</div>
+<p>Skriv løsningen i parametrisk vektorform.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=\left(1-e^{1-x}\right) / 2\)</span></p>
+<p><strong>Række-reduktion af <span class="arithmatex">\([A|\mathbf{0}]\)</span>:</strong></p>
+<div class="arithmatex">\[\begin{bmatrix}4 &amp; -8 &amp; 0\\-3 &amp; 6 &amp; 0\end{bmatrix} \sim \begin{bmatrix}1 &amp; -2 &amp; 0\\0 &amp; 0 &amp; 0\end{bmatrix}\]</div>
+<p><strong>Løsning:</strong></p>
+<div class="arithmatex">\[\mathbf{x} = x_2\begin{bmatrix}2\\1\end{bmatrix}\]</div>
+<p><strong>Forklaring:</strong> Da <span class="arithmatex">\(x_1 = 2x_2\)</span> og <span class="arithmatex">\(x_2\)</span> er fri, kan alle løsninger skrives som multipla af vektoren <span class="arithmatex">\(\begin{bmatrix}2\\1\end{bmatrix}\)</span>.</p>
 </details>
-</li>
-</ol>
-<h4 id="eksempel-6-komplekse-logaritmeligninger">Eksempel 6: Komplekse logaritmeligninger<a class="headerlink" href="#eksempel-6-komplekse-logaritmeligninger" title="Permanent link">&para;</a></h4>
-<p>Løs ligningerne: </p>
-<ol>
-<li>
-<p><span class="arithmatex">\(\\ e^{2 x}-3 e^x+2=0\)</span></p>
+<h4 id="eksempel-5-liner-uafhngighed">Eksempel 5: Lineær uafhængighed<a class="headerlink" href="#eksempel-5-liner-uafhngighed" title="Permanent link">&para;</a></h4>
+<p>Bestem om <span class="arithmatex">\(\mathbf{b} = \begin{bmatrix}8\\6\\12\end{bmatrix}\)</span> er en lineær kombination af:</p>
+<div class="arithmatex">\[\mathbf{a}_1 = \begin{bmatrix}2\\3\\0\end{bmatrix}, \quad \mathbf{a}_2 = \begin{bmatrix}1\\2\\-5\end{bmatrix}, \quad \mathbf{a}_3 = \begin{bmatrix}4\\1\\2\end{bmatrix}\]</div>
 <details class="answer">
 <summary>&nbsp;</summary>
-<ul>
-<li><span class="arithmatex">\(e^x=1 \Rightarrow x=0\)</span></li>
-<li><span class="arithmatex">\(e^x=2 \Rightarrow x=\ln(2)\)</span></li>
-</ul>
+<p><strong>Løs systemet <span class="arithmatex">\(x_1\mathbf{a}_1 + x_2\mathbf{a}_2 + x_3\mathbf{a}_3 = \mathbf{b}\)</span>:</strong></p>
+<p>Augmenteret matrix:</p>
+<div class="arithmatex">\[\begin{bmatrix}2 &amp; 1 &amp; 4 &amp; 8\\3 &amp; 2 &amp; 1 &amp; 6\\0 &amp; -5 &amp; 2 &amp; 12\end{bmatrix}\]</div>
+<p>RREF:</p>
+<div class="arithmatex">\[\begin{bmatrix}1 &amp; 0 &amp; 0 &amp; 3\\0 &amp; 1 &amp; 0 &amp; -2\\0 &amp; 0 &amp; 1 &amp; 1\end{bmatrix}\]</div>
+<p><strong>Løsning:</strong> Ja, <span class="arithmatex">\(\mathbf{b} = 3\mathbf{a}_1 - 2\mathbf{a}_2 + \mathbf{a}_3\)</span></p>
 </details>
-</li>
-<li>
-<p><span class="arithmatex">\(\\ \ln (x+3)+\ln (x+5)=0\)</span></p>
+<h4 id="eksempel-6-praktisk-anvendelse-computer-graphics">Eksempel 6: Praktisk anvendelse - Computer Graphics<a class="headerlink" href="#eksempel-6-praktisk-anvendelse-computer-graphics" title="Permanent link">&para;</a></h4>
+<p>I 3D-grafik bruges vektorer til at repræsentere positioner, retninger og transformationer. Et 3D-punkt kan repræsenteres som en vektor <span class="arithmatex">\(\mathbf{p} = \begin{bmatrix}x\\y\\z\end{bmatrix}\)</span>.</p>
+<p><strong>Problem:</strong> En spiludvikler vil rotere et 3D-objekt 90° omkring z-aksen. Rotationen kan beskrives som en lineær transformation <span class="arithmatex">\(T(\mathbf{v}) = A\mathbf{v}\)</span> hvor:</p>
+<div class="arithmatex">\[A = \begin{bmatrix}0 &amp; -1 &amp; 0\\1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 1\end{bmatrix}\]</div>
+<p>Hvor vil punktet <span class="arithmatex">\(\mathbf{p} = \begin{bmatrix}3\\4\\2\end{bmatrix}\)</span> blive placeret efter rotationen?</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<ul>
-<li><span class="arithmatex">\(x = -4 + \sqrt{2}\)</span></li>
-</ul>
+<p><strong>Beregning:</strong></p>
+<div class="arithmatex">\[A\mathbf{p} = \begin{bmatrix}0 &amp; -1 &amp; 0\\1 &amp; 0 &amp; 0\\0 &amp; 0 &amp; 1\end{bmatrix}\begin{bmatrix}3\\4\\2\end{bmatrix} = \begin{bmatrix}0 \cdot 3 + (-1) \cdot 4 + 0 \cdot 2\\1 \cdot 3 + 0 \cdot 4 + 0 \cdot 2\\0 \cdot 3 + 0 \cdot 4 + 1 \cdot 2\end{bmatrix} = \begin{bmatrix}-4\\3\\2\end{bmatrix}\]</div>
+<p><strong>Resultat:</strong> Punktet <span class="arithmatex">\((3,4,2)\)</span> bliver til <span class="arithmatex">\((-4,3,2)\)</span> efter 90° rotation omkring z-aksen.</p>
 </details>
-</li>
-</ol>
 <h2 id="undervisning-1-videolektion">Undervisning 1: Videolektion<a class="headerlink" href="#undervisning-1-videolektion" title="Permanent link">&para;</a></h2>
 <p align="center">
     <video width="700" autoplay loop muted controls playsinline preload="metadata">
