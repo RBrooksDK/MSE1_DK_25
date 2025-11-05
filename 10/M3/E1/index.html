@@ -1621,7 +1621,7 @@
   
 
 
-<h1 align="center">Øvelser 1:<br>Regneregler og algebraisk manipulation</h1>
+<h1 align="center">Øvelser 10:<br>Differentiering af simple funktioner</h1>
 
 <p>I skal lave øvelserne inden timerne torsdag. I kan med fordel lave dem i grupper og diskutere dem indbyrdes. Det er vigtigt, at I forstår opgaverne og kan forklare dem til hinanden. På torsdag diskuterer vi opgaverne, og I skal være klar til at præsentere dem for klassen.</p>
 <style>
@@ -1629,144 +1629,156 @@ body[data-md-color-scheme] .md-content ol       { list-style-type: lower-alpha; 
 body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 </style>
 
-<h4 id="velse-1">Øvelse 1:<a class="headerlink" href="#velse-1" title="Permanent link">&para;</a></h4>
-<p>Løs følgende ligninger:</p>
+<p>Python-løsninger vil være tilgængelige efter sessionen.</p>
+<!--**[Python]** Betyder, at det anbefales at bruge Python til at løse øvelsen. Du kan finde Python-løsningerne [her](https://github.com/RBrooksDK/MSE1_25/blob/main/10/Python_solutions_for_exercises_10.ipynb) eller downloade dem [her](Python_solutions_for_exercises_10.ipynb)-->
+
+<h4 id="velse-1-opsummering">Øvelse 1 (Opsummering)<a class="headerlink" href="#velse-1-opsummering" title="Permanent link">&para;</a></h4>
+<p><strong>[Python]</strong> Givet</p>
+<p><span class="arithmatex">\(A=\left[\begin{array}{ccc}1 &amp; 2 &amp; 3 \\ 4 &amp; 5 &amp; 6 \\ 7 &amp; 8 &amp; 9\end{array}\right]\)</span> og <span class="arithmatex">\(B=\left[\begin{array}{ccc}9 &amp; 8 &amp; 7 \\ 6 &amp; 5 &amp; 4 \\ 3 &amp; 2 &amp; 1\end{array}\right]\)</span>.</p>
+<p>Løs matrixligningen <span class="arithmatex">\(X-A=6(X+B)\)</span>.</p>
+<details class="answer">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(X=\left[\begin{array}{ccc}-11 &amp; -10 &amp; -9 \\ -8 &amp; -7 &amp; -6 \\ -5 &amp; -4 &amp; -3\end{array}\right]\)</span></p>
+</details>
+<h4 id="velse-2">Øvelse 2<a class="headerlink" href="#velse-2" title="Permanent link">&para;</a></h4>
+<p>Find grænserne for følgende funktioner:</p>
 <ol>
-<li><span class="arithmatex">\(\ 2-\frac{4 x+3}{x+x^2}=\frac{2 x}{x+1}-\frac{5}{x}\)</span></li>
-<li><span class="arithmatex">\(\ -2+2 \ln 3 x=17\)</span></li>
-<li><span class="arithmatex">\(\ \ln (x+1)^2=2\)</span></li>
-<li><span class="arithmatex">\(\ \ln \left(x^2+1\right)=8\)</span></li>
-<li><span class="arithmatex">\(\ 5^{3 x+2}=25^{x-1}\)</span></li>
-<li><span class="arithmatex">\(\ 2^{x+1}=4^{x-2}\)</span></li>
+<li><span class="arithmatex">\(\lim\limits_{x \to 0} \frac{x^4-4 x^3+x^2}{x^3+x^2+x}\)</span></li>
+<li><span class="arithmatex">\(\lim\limits_{x \to \infty} \frac{x^2+1}{x^2-1}\)</span></li>
+<li><span class="arithmatex">\(\lim\limits_{x \to 2} \frac{x-2}{x^2-3 x+2}\)</span></li>
 </ol>
 <details class="answer">
 <summary>&nbsp;</summary>
 <ol>
-<li><span class="arithmatex">\(x = -\frac{2}{3}\)</span></li>
-<li><span class="arithmatex">\(x = \frac{e^{\frac{19}{2}}}{3}\)</span></li>
-<li><span class="arithmatex">\(x = -1 \pm e\)</span></li>
-<li><span class="arithmatex">\(x = \pm \sqrt{e^8 - 1}\)</span></li>
-<li><span class="arithmatex">\(x = -4\)</span></li>
-<li><span class="arithmatex">\(x = 5\)</span></li>
+<li><span class="arithmatex">\(\lim\limits_{x \to 0} \frac{x^4-4 x^3+x^2}{x^3+x^2+x} = 0\)</span></li>
+<li><span class="arithmatex">\(\lim\limits_{x \to \infty} \frac{x^2+1}{x^2-1} = 1\)</span></li>
+<li><span class="arithmatex">\(\lim\limits_{x \to 2} \frac{x-2}{x^2-3 x+2} = 1\)</span></li>
 </ol>
 </details>
-<h4 id="velse-2">Øvelse 2:<a class="headerlink" href="#velse-2" title="Permanent link">&para;</a></h4>
-<p>Ifølge Einsteins relativitetsteori gives massen af en partikel ved:</p>
-<div class="arithmatex">\[
-m=\frac{m_0}{\sqrt{1-\left(\frac{v}{c}\right)^2}}
-\]</div>
-<p>hvor
-<span class="arithmatex">\(m_0\)</span> er massen af partiklen i hvile,
-<span class="arithmatex">\(v\)</span> er partiklens hastighed, og
-<span class="arithmatex">\(c\)</span> er lysets hastighed i vakuum.</p>
+<h4 id="velse-3-simple-afledte">Øvelse 3: Simple afledte<a class="headerlink" href="#velse-3-simple-afledte" title="Permanent link">&para;</a></h4>
+<p>Find de afledte af følgende funktioner:</p>
 <ol>
-<li>
-<p>Gør <span class="arithmatex">\(v\)</span> til subjektet i formlen givet <span class="arithmatex">\(v&gt;0\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(v=c \cdot \sqrt{1-\left(\frac{m_0}{m}\right)^2}\)</span></p>
-</details>
-</li>
-<li>
-<p>Find den hastighed, der er nødvendig for at øge massen af en partikel til tre gange dens hvilemasse. Giv værdien for <span class="arithmatex">\(v\)</span> som en brøkdel af <span class="arithmatex">\(c\)</span> (eller som en decimal).</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(v=0.943 c\)</span></p>
-</details>
-</li>
+<li><span class="arithmatex">\(f(x)=x^4\)</span></li>
+<li><span class="arithmatex">\(f(t)=t^{-\frac{1}{3}}\)</span></li>
+<li><span class="arithmatex">\(y=t^{-3.8}\)</span></li>
 </ol>
-<h4 id="velse-3">Øvelse 3<a class="headerlink" href="#velse-3" title="Permanent link">&para;</a></h4>
-<p>Bestem definitionsmængden og værdimængden for hver af de reelle funktioner nedenfor. Det er en god idé at plotte funktionerne ved hjælp af software (f.eks. Geogebra, WolframAlpha osv.):</p>
+<details class="answer">
+<summary>&nbsp;</summary>
 <ol>
-<li>
-<p><span class="arithmatex">\(\ f(x)=\frac{1}{x-7}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p>Definitionsmængde: <span class="arithmatex">\(\mathbb{R} \backslash\{7\}\)</span>;</p>
-<p>Værdimængde: <span class="arithmatex">\(\mathbb{R} \backslash\{0\}\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\ f(x)=\sqrt{x+3}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p>Definitionsmængde: <span class="arithmatex">\(\mathbb{R}_ {\geq-3}\)</span>;</p>
-<p>Værdimængde: <span class="arithmatex">\(\mathbb{R}_ {\geq 0}\)</span></p>
-</details>
-</li>
+<li><span class="arithmatex">\(f'(x)=4x^3\)</span></li>
+<li><span class="arithmatex">\(f'(t)=-\frac{1}{3}t^{-\frac{4}{3}}\)</span></li>
+<li><span class="arithmatex">\(y'=-3.8t^{-4.8}\)</span></li>
 </ol>
-<h4 id="velse-4">Øvelse 4<a class="headerlink" href="#velse-4" title="Permanent link">&para;</a></h4>
-<p>Find hver af de følgende sammensatte funktioner:</p>
+</details>
+<h4 id="velse-4-afledte-af-potenser">Øvelse 4: Afledte af potenser<a class="headerlink" href="#velse-4-afledte-af-potenser" title="Permanent link">&para;</a></h4>
+<p>Skriv følgende som potenser og differentier derefter:</p>
 <ol>
-<li>
-<p><span class="arithmatex">\(\ g \circ f\)</span> når <span class="arithmatex">\(f(x)=3 x+1\)</span> og <span class="arithmatex">\(g(x)=x^2\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=9 x^2+1+6 x\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(f \circ g\)</span> når <span class="arithmatex">\(f(x)=x^2+1\)</span> og <span class="arithmatex">\(g(x)=\frac{1}{x}\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((f \circ g)(x)=\frac{1}{x^2}+1\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\ g \circ f\)</span> når <span class="arithmatex">\(f\)</span> og <span class="arithmatex">\(g\)</span> er defineret som i øvelse (2).</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=\frac{1}{x^2+1}\)</span></p>
-</details>
-</li>
+<li><span class="arithmatex">\(\frac{1}{x^2}\)</span></li>
+<li><span class="arithmatex">\(\sqrt[3]{x}\)</span></li>
+<li><span class="arithmatex">\(\frac{1}{x \sqrt[4]{x}}\)</span></li>
+<li><span class="arithmatex">\(x^{\frac{1}{2}} \frac{\sqrt{x}}{x}\)</span></li>
 </ol>
-<h4 id="velse-5">Øvelse 5<a class="headerlink" href="#velse-5" title="Permanent link">&para;</a></h4>
-<p>Find den inverse funktion:</p>
+<details class="answer">
+<summary>&nbsp;</summary>
 <ol>
-<li>
-<p><span class="arithmatex">\(\ f(x)=\frac{6}{5-x}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=5-\frac{6}{x}\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\ f(x)=-\ln (1-2 x)+1\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=\left(1-e^{1-x}\right) / 2\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\ f(x)=2 \cdot 10^{3 x}-1\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=\frac{\log \left(\frac{x+1}{2}\right)}{3}\)</span></p>
-</details>
-</li>
+<li><span class="arithmatex">\(\frac{1}{x^2} = x^{-2}\)</span>, afledt: <span class="arithmatex">\(\frac{d}{dx}x^{-2} = -2x^{-3}\)</span></li>
+<li><span class="arithmatex">\(\sqrt[3]{x} = x^{1/3}\)</span>, afledt: <span class="arithmatex">\(\frac{d}{dx}x^{1/3} = \frac{1}{3}x^{-2/3}\)</span></li>
+<li><span class="arithmatex">\(\frac{1}{x \sqrt[4]{x}} = x^{-5/4}\)</span>, afledt: <span class="arithmatex">\(\frac{d}{dx}x^{-5/4} = -\frac{5}{4}x^{-9/4}\)</span></li>
+<li><span class="arithmatex">\(x^{\frac{1}{2}} \cdot \frac{\sqrt{x}}{x} = x^{-1/2}\)</span>, afledt: <span class="arithmatex">\(\frac{d}{dx}x^{-1/2} = -\frac{1}{2}x^{-3/2}\)</span></li>
 </ol>
-<h4 id="velse-6">Øvelse 6<a class="headerlink" href="#velse-6" title="Permanent link">&para;</a></h4>
-<p>En bakteriekultur starter med 1000 bakterier ved tiden <span class="arithmatex">\(t=0\)</span>, og antallet fordobles hver 40. minut.</p>
+</details>
+<h4 id="velse-5-afledte-af-summer-og-differencer">Øvelse 5: Afledte af summer og differencer<a class="headerlink" href="#velse-5-afledte-af-summer-og-differencer" title="Permanent link">&para;</a></h4>
+<p>Find de afledte af følgende funktioner:</p>
+<ol>
+<li><span class="arithmatex">\(y=2 x^{-7}+\frac{3}{x^2}\)</span></li>
+<li><span class="arithmatex">\(f(t)=2.5 t^{2.3}+\frac{t}{\sqrt{t}}\)</span></li>
+<li><span class="arithmatex">\(f(u)=u^{\frac{5}{3}}-3 u^{-7}\)</span></li>
+<li><span class="arithmatex">\(g(z)=8 z^{-2}-\frac{5}{z}\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li><span class="arithmatex">\(\frac{d}{dx}(2 x^{-7}+\frac{3}{x^2}) = -14x^{-8} - 6x^{-3}\)</span></li>
+<li><span class="arithmatex">\(\frac{d}{dx}(2.5 t^{2.3}+\frac{t}{\sqrt{t}}) = 5.75t^{1.3} - \frac{1}{2}t^{-1/2}\)</span></li>
+<li><span class="arithmatex">\(\frac{d}{dx}(u^{\frac{5}{3}}-3 u^{-7}) = \frac{5}{3}u^{2/3} + 21u^{-8}\)</span></li>
+<li><span class="arithmatex">\(\frac{d}{dx}(8 z^{-2}-\frac{5}{z}) = -16z^{-3} + \frac{5}{z^2}\)</span></li>
+</ol>
+</details>
+<h4 id="velse-6-afledte-af-produkter-og-kvotienter">Øvelse 6: Afledte af produkter og kvotienter<a class="headerlink" href="#velse-6-afledte-af-produkter-og-kvotienter" title="Permanent link">&para;</a></h4>
+<p>Brug produktreglen til at differentiere funktionerne nedenfor:  </p>
+<ol>
+<li><span class="arithmatex">\(f(x)=\left(4 x^3+2\right)(1-3 x)\)</span></li>
+<li><span class="arithmatex">\(g(x)=\left(x^2+x+2\right)\left(x^2+1\right)\)</span></li>
+<li><span class="arithmatex">\(h(x)=\left(3 x^3-2 x^2+8 x-5\right)\left(x^2-2 x+4\right)\)</span></li>
+<li><span class="arithmatex">\(h(x)=\frac{x^2-1}{x^3+4}\)</span></li>
+<li><span class="arithmatex">\(g(t)=\frac{t(t+6)}{t^2+3 t+1}\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li><span class="arithmatex">\(-48x^3 + 12x^2 - 6\)</span></li>
+<li><span class="arithmatex">\( 4x^3 + 3x^2 + 6x + 1\)</span></li>
+<li><span class="arithmatex">\(15 x^4-40 x^3+94 x^2-68 x+32\)</span></li>
+<li><span class="arithmatex">\(h^{\prime}(x)=\frac{-x^4+3 x^2+8 x}{\left(x^3+4\right)^2}\)</span></li>
+<li><span class="arithmatex">\(\frac{-3 t^2+2 t+6}{\left(t^2+3 t+1\right)^2}\)</span></li>
+</ol>
+</details>
+<h4 id="velse-7-afledte-ved-kdereglen">Øvelse 7: Afledte ved kædereglen<a class="headerlink" href="#velse-7-afledte-ved-kdereglen" title="Permanent link">&para;</a></h4>
+<ol>
+<li><span class="arithmatex">\((2 x+3)^2\)</span></li>
+<li><span class="arithmatex">\(\left(x^2+2 x+1\right)^{12}\)</span></li>
+<li><span class="arithmatex">\(f(t)=\sqrt{t^2-5 t+7}\)</span></li>
+<li><span class="arithmatex">\(z=\left(x+\frac{1}{x}\right)^{\frac{3}{7}}\)</span></li>
+<li><span class="arithmatex">\(\frac{x}{\sqrt{1-x^2}}\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li><span class="arithmatex">\(8 x+12\)</span></li>
+<li><span class="arithmatex">\(12(2 x+2)\left(x^2+2 x+1\right)^{11}\)</span></li>
+<li><span class="arithmatex">\(\frac{2 t-5}{2 \sqrt{t^2-5 t+7}}\)</span></li>
+<li><span class="arithmatex">\(\frac{3}{7}\left(x+\frac{1}{x}\right)^{-4 / 7}\left(1-\frac{1}{x^2}\right)\)</span></li>
+<li><span class="arithmatex">\(\frac{1}{\left(1-x^2\right)^{3 / 2}}\)</span></li>
+</ol>
+</details>
+<h4 id="velse-8-afledte-af-eksponential-og-logaritmefunktioner">Øvelse 8: Afledte af eksponential- og logaritmefunktioner<a class="headerlink" href="#velse-8-afledte-af-eksponential-og-logaritmefunktioner" title="Permanent link">&para;</a></h4>
+<ol>
+<li><span class="arithmatex">\(f(x)=\ln \left(2 x^3\right)\)</span></li>
+<li><span class="arithmatex">\(f(x)=e^{x^2+x^3}\)</span></li>
+<li><span class="arithmatex">\(f(x)=\ln \left(e^x+x^3\right)\)</span></li>
+</ol>
+<details class="answer">
+<summary>&nbsp;</summary>
+<ol>
+<li><span class="arithmatex">\(\frac{3}{x}\)</span></li>
+<li><span class="arithmatex">\(e^{x^2+x^3} (2x+3x^2)\)</span></li>
+<li><span class="arithmatex">\(\frac{e^x+3x^2}{e^x+x^3}\)</span></li>
+</ol>
+</details>
+<h4 id="velse-9-anvendelser-af-afledte">Øvelse 9: Anvendelser af afledte<a class="headerlink" href="#velse-9-anvendelser-af-afledte" title="Permanent link">&para;</a></h4>
+<p>Hastighed er ændringshastigheden af position i forhold til tid.</p>
+<p>Acceleration er ændringshastigheden af hastighed i forhold til tid.</p>
 <ol>
 <li>
-<p>Find et funktionelt udtryk for antallet af bakterier ved tiden <span class="arithmatex">\(t\)</span> (målt i minutter).</p>
+<p>Givet positionsfunktionen for en bil <span class="arithmatex">\(s(t) = 5t^2 + 2t + 1\)</span>, hvor <span class="arithmatex">\(t\)</span> er i sekunder og <span class="arithmatex">\(s(t)\)</span> er i meter, find hastighedsfunktionen.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f(t)=1000 \cdot 2^{t / 40}\)</span></p>
+<p>Hastighedsfunktion: <span class="arithmatex">\(v(t) = 10t + 2\)</span> m/s        </p>
 </details>
 </li>
 <li>
-<p>Find antallet af bakterier efter en time.</p>
+<p>Idet acceleration er den afledte af hastighed, find accelerationsfunktionen.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f(60) \approx 2828\)</span></p>
+<p>Accelerationsfunktion: <span class="arithmatex">\(a(t) = 10\)</span> m/s²</p>
 </details>
 </li>
 <li>
-<p>Efter hvor mange minutter vil der være 50000 bakterier?</p>
+<p>Beregn bilens hastighed og acceleration ved <span class="arithmatex">\(t = 3\)</span> sekunder.</p>
 <details class="answer">
 <summary>&nbsp;</summary>
-<p>ca. 225.75 minutter</p>
+<p>Hastighed ved <span class="arithmatex">\(t = 3\)</span> sekunder: <span class="arithmatex">\(v(3) = 32\)</span> m/s</p>
+<p>Acceleration ved <span class="arithmatex">\(t = 3\)</span> sekunder: <span class="arithmatex">\(a(3) = 10\)</span> m/s²</p>
 </details>
 </li>
 </ol>
