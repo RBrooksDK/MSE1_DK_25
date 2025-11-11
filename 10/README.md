@@ -9,7 +9,6 @@ tags:
     - Potensreglen
     - Eksponentialfunktioner
     - Logaritmefunktioner
-    - Trigonometriske funktioner
     - Tangentlinjer
     - Hældninger
 ---
@@ -18,7 +17,7 @@ tags:
 
 I denne session introducerer vi differentiering og dens fundamentale betydning for matematisk analyse og softwareudvikling. Vi starter med at definere den afledte funktion og dens geometriske betydning som hældningen af tangentlinjen, som er essentiel for optimeringsproblemer og algoritme-analyse.
 
-Sessionen omfatter en grundig gennemgang af differentieringsregler inklusive kædereglen, produktreglen og kvotientreglen. Vi introducerer desuden differentiering af eksponential-, logaritme- og trigonometriske funktioner. Der er særlig fokus på anvendelse af differentiering i praktiske problemer, da disse spiller en central rolle i machine learning, optimering og numeriske metoder.
+Sessionen omfatter en grundig gennemgang af differentieringsregler inklusive kædereglen, produktreglen og kvotientreglen. Vi introducerer desuden differentiering af eksponential-, og logaritmefunktioner. Der er særlig fokus på anvendelse af differentiering i praktiske problemer, da disse spiller en central rolle i machine learning, optimering og numeriske metoder.
 
 
 <div class="grid cards" markdown>
