@@ -1761,7 +1761,7 @@
   
 
 
-<h1 align="center">Øvelser 1:<br>Regneregler og algebraisk manipulation</h1>
+<h1 align="center">Øvelser 11:<br>Gradienter og partiel afledte</h1>
 
 <p>I skal lave øvelserne inden timerne torsdag. I kan med fordel lave dem i grupper og diskutere dem indbyrdes. Det er vigtigt, at I forstår opgaverne og kan forklare dem til hinanden. På torsdag diskuterer vi opgaverne, og I skal være klar til at præsentere dem for klassen.</p>
 <style>
@@ -1769,147 +1769,87 @@ body[data-md-color-scheme] .md-content ol       { list-style-type: lower-alpha; 
 body[data-md-color-scheme] .md-content ol li    { padding-left: 10px; }
 </style>
 
-<h4 id="velse-1">Øvelse 1:<a class="headerlink" href="#velse-1" title="Permanent link">&para;</a></h4>
-<p>Løs følgende ligninger:</p>
+<h4 id="velse-1-opsummering-afledte">Øvelse 1 (opsummering): Afledte<a class="headerlink" href="#velse-1-opsummering-afledte" title="Permanent link">&para;</a></h4>
+<p>Find afledte af følgende funktioner:</p>
 <ol>
-<li><span class="arithmatex">\(\ 2-\frac{4 x+3}{x+x^2}=\frac{2 x}{x+1}-\frac{5}{x}\)</span></li>
-<li><span class="arithmatex">\(\ -2+2 \ln 3 x=17\)</span></li>
-<li><span class="arithmatex">\(\ \ln (x+1)^2=2\)</span></li>
-<li><span class="arithmatex">\(\ \ln \left(x^2+1\right)=8\)</span></li>
-<li><span class="arithmatex">\(\ 5^{3 x+2}=25^{x-1}\)</span></li>
-<li><span class="arithmatex">\(\ 2^{x+1}=4^{x-2}\)</span></li>
+<li><span class="arithmatex">\(\frac{1}{\left(1+e^{2 x}\right)^3}\)</span></li>
+<li><span class="arithmatex">\((2 x+5)^7\left(3 x^4-8\right)^5\)</span></li>
 </ol>
-<details class="answer">
+<details class="svar">
 <summary>&nbsp;</summary>
 <ol>
-<li><span class="arithmatex">\(x = -\frac{2}{3}\)</span></li>
-<li><span class="arithmatex">\(x = \frac{e^{\frac{19}{2}}}{3}\)</span></li>
-<li><span class="arithmatex">\(x = -1 \pm e\)</span></li>
-<li><span class="arithmatex">\(x = \pm \sqrt{e^8 - 1}\)</span></li>
-<li><span class="arithmatex">\(x = -4\)</span></li>
-<li><span class="arithmatex">\(x = 5\)</span></li>
+<li>
+<p><span class="arithmatex">\(-\frac{6 e^{2 x}}{\left(1+e^{2 x}\right)^4}\)</span></p>
+</li>
+<li>
+<p><span class="arithmatex">\(14(2 x+5)^6\left(3 x^4-8\right)^5+60 x^3(2 x+5)^7\left(3 x^4-8\right)^4\)</span></p>
+</li>
 </ol>
 </details>
-<h4 id="velse-2">Øvelse 2:<a class="headerlink" href="#velse-2" title="Permanent link">&para;</a></h4>
-<p>Ifølge Einsteins relativitetsteori gives massen af en partikel ved:</p>
+<h4 id="velse-2-anden-ordens-afledningstest">Øvelse 2: Anden ordens afledningstest<a class="headerlink" href="#velse-2-anden-ordens-afledningstest" title="Permanent link">&para;</a></h4>
+<p>Find alle stationære punkter, beregn anden afledte i disse punkter, og klassificer dem som maksimum eller minimum ved brug af anden afledningstest.</p>
+<ol>
+<li><span class="arithmatex">\(f(x)=6 x-x^2\)</span></li>
+<li><span class="arithmatex">\(f(x)=-(x-5)^2\)</span></li>
+</ol>
+<details class="svar">
+<summary>&nbsp;</summary>
+<ol>
+<li>Stationært punkt: <span class="arithmatex">\(x=3\)</span>. <span class="arithmatex">\(f''(x)=-2\Rightarrow f''(3)&lt;0\)</span> ⇒ lokalt maksimum.</li>
+<li>Stationært punkt: <span class="arithmatex">\(x=5\)</span>. <span class="arithmatex">\(f''(x)=-2\Rightarrow f''(5)&lt;0\)</span> ⇒ lokalt maksimum.</li>
+</ol>
+</details>
+<h4 id="velse-3-stationre-punkter">Øvelse 3: Stationære punkter<a class="headerlink" href="#velse-3-stationre-punkter" title="Permanent link">&para;</a></h4>
+<p>Find alle stationære punkter (maksima, minima eller vendepunkter), og intervaller for konkavitet for funktionen:</p>
 <div class="arithmatex">\[
-m=\frac{m_0}{\sqrt{1-\left(\frac{v}{c}\right)^2}}
+f(x)=x^3-12 x
 \]</div>
-<p>hvor
-<span class="arithmatex">\(m_0\)</span> er massen af partiklen i hvile,
-<span class="arithmatex">\(v\)</span> er partiklens hastighed, og
-<span class="arithmatex">\(c\)</span> er lysets hastighed i vakuum.</p>
+<details class="svar">
+<summary>&nbsp;</summary>
+<p><span class="arithmatex">\(f'(x)=3x^2-12=0 \Rightarrow x=\pm 2\)</span>.
+<span class="arithmatex">\(f''(x)=6x\)</span>.
+Ved <span class="arithmatex">\(x=-2:\ f''(-2)=-12&lt;0\)</span> ⇒ lokalt maksimum <span class="arithmatex">\(f(-2)=16\)</span>.
+Ved <span class="arithmatex">\(x=2:\ f''(2)=12&gt;0\)</span> ⇒ lokalt minimum <span class="arithmatex">\(f(2)=-16\)</span>.
+Konkavitet: konkav nedad for <span class="arithmatex">\(x&lt;0\)</span>, konkav opad for <span class="arithmatex">\(x&gt;0\)</span>.</p>
+</details>
+<h4 id="velse-4-funktioner-af-to-variable">Øvelse 4: Funktioner af to variable<a class="headerlink" href="#velse-4-funktioner-af-to-variable" title="Permanent link">&para;</a></h4>
+<p>Find definitionsmængde og værdimængde for funktionen <span class="arithmatex">\(f(x, y)=\sqrt{36-9 x^2-9 y^2}\)</span> og skitsér definitionsmængden.</p>
+<details class="svar">
+<summary>&nbsp;</summary>
+<p>Definitionsmængde: <span class="arithmatex">\(\{(x,y)\in\mathbb{R}^2\mid x^2+y^2\le 4\}\)</span> (lukket skive med radius 2).
+Værdimængde: <span class="arithmatex">\([0,6]\)</span>.</p>
+</details>
+<h4 id="velse-5-partielle-afledte">Øvelse 5: Partielle afledte<a class="headerlink" href="#velse-5-partielle-afledte" title="Permanent link">&para;</a></h4>
+<p>Beregn <span class="arithmatex">\(\partial f/\partial x\)</span> og <span class="arithmatex">\(\partial f/\partial y\)</span> for følgende funktioner:</p>
 <ol>
-<li>
-<p>Gør <span class="arithmatex">\(v\)</span> til subjektet i formlen givet <span class="arithmatex">\(v&gt;0\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(v=c \cdot \sqrt{1-\left(\frac{m_0}{m}\right)^2}\)</span></p>
-</details>
-</li>
-<li>
-<p>Find den hastighed, der er nødvendig for at øge massen af en partikel til tre gange dens hvilemasse. Giv værdien for <span class="arithmatex">\(v\)</span> som en brøkdel af <span class="arithmatex">\(c\)</span> (eller som en decimal).</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(v=0.943 c\)</span></p>
-</details>
-</li>
+<li><span class="arithmatex">\(f(x, y)=x^2-3 x y+2 y^2-4 x+5 y-12\)</span></li>
+<li><span class="arithmatex">\(f(x, y)=x^2 y^3-2 x^3 y^2+3 x y-4\)</span></li>
 </ol>
-<h4 id="velse-3">Øvelse 3<a class="headerlink" href="#velse-3" title="Permanent link">&para;</a></h4>
-<p>Bestem definitionsmængden og værdimængden for hver af de reelle funktioner nedenfor. Det er en god idé at plotte funktionerne ved hjælp af software (f.eks. Geogebra, WolframAlpha osv.):</p>
+<details class="svar">
+<summary>&nbsp;</summary>
 <ol>
-<li>
-<p><span class="arithmatex">\(\ f(x)=\frac{1}{x-7}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p>Definitionsmængde: <span class="arithmatex">\(\mathbb{R} \backslash\{7\}\)</span>;</p>
-<p>Værdimængde: <span class="arithmatex">\(\mathbb{R} \backslash\{0\}\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\ f(x)=\sqrt{x+3}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p>Definitionsmængde: <span class="arithmatex">\(\mathbb{R}_ {\geq-3}\)</span>;</p>
-<p>Værdimængde: <span class="arithmatex">\(\mathbb{R}_ {\geq 0}\)</span></p>
-</details>
-</li>
+<li><span class="arithmatex">\(\partial f/\partial x = 2x-3y-4\)</span>, <span class="arithmatex">\(\partial f/\partial y = -3x+4y+5\)</span>.</li>
+<li><span class="arithmatex">\(\partial f/\partial x = 2x y^3-6x^2 y^2+3y\)</span>, <span class="arithmatex">\(\partial f/\partial y = 3x^2 y^2-4x^3 y+3x\)</span>.</li>
 </ol>
-<h4 id="velse-4">Øvelse 4<a class="headerlink" href="#velse-4" title="Permanent link">&para;</a></h4>
-<p>Find hver af de følgende sammensatte funktioner:</p>
+</details>
+<h4 id="velse-6-gradienter">Øvelse 6: Gradienter<a class="headerlink" href="#velse-6-gradienter" title="Permanent link">&para;</a></h4>
+<p>Lad</p>
+<div class="arithmatex">\[
+f(x, y)=x^2+4 y^2-3 x y .
+\]</div>
 <ol>
-<li>
-<p><span class="arithmatex">\(\ g \circ f\)</span> når <span class="arithmatex">\(f(x)=3 x+1\)</span> og <span class="arithmatex">\(g(x)=x^2\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=9 x^2+1+6 x\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(f \circ g\)</span> når <span class="arithmatex">\(f(x)=x^2+1\)</span> og <span class="arithmatex">\(g(x)=\frac{1}{x}\)</span>.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((f \circ g)(x)=\frac{1}{x^2}+1\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\ g \circ f\)</span> når <span class="arithmatex">\(f\)</span> og <span class="arithmatex">\(g\)</span> er defineret som i øvelse (2).</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\((g \circ f)(x)=\frac{1}{x^2+1}\)</span></p>
-</details>
-</li>
+<li>Beregn gradienten <span class="arithmatex">\(\nabla f(x,y)\)</span>.</li>
+<li>Evaluer gradienten i punktet <span class="arithmatex">\((1,2)\)</span>.</li>
+<li>Forklar, hvad gradientvektoren i det punkt fortæller om funktionens adfærd.</li>
 </ol>
-<h4 id="velse-5">Øvelse 5<a class="headerlink" href="#velse-5" title="Permanent link">&para;</a></h4>
-<p>Find den inverse funktion:</p>
+<details class="svar">
+<summary>&nbsp;</summary>
 <ol>
-<li>
-<p><span class="arithmatex">\(\ f(x)=\frac{6}{5-x}\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=5-\frac{6}{x}\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\ f(x)=-\ln (1-2 x)+1\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=\left(1-e^{1-x}\right) / 2\)</span></p>
-</details>
-</li>
-<li>
-<p><span class="arithmatex">\(\ f(x)=2 \cdot 10^{3 x}-1\)</span></p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f^{-1}(x)=\frac{\log \left(\frac{x+1}{2}\right)}{3}\)</span></p>
-</details>
-</li>
+<li><span class="arithmatex">\(\nabla f(x,y)=\langle 2x-3y,\ 8y-3x\rangle = \begin{bmatrix}2x-3y\\8y-3x\end{bmatrix}\)</span>.</li>
+<li><span class="arithmatex">\(\nabla f(1,2)=\begin{bmatrix}-4\\13\end{bmatrix}\)</span>.</li>
+<li>Gradientvektoren angiver den retning, hvor funktionen stiger hurtigst. I punktet <span class="arithmatex">\((1,2)\)</span> peger vektoren <span class="arithmatex">\((-4,13)\)</span> i den retning med størst vækst.</li>
 </ol>
-<h4 id="velse-6">Øvelse 6<a class="headerlink" href="#velse-6" title="Permanent link">&para;</a></h4>
-<p>En bakteriekultur starter med 1000 bakterier ved tiden <span class="arithmatex">\(t=0\)</span>, og antallet fordobles hver 40. minut.</p>
-<ol>
-<li>
-<p>Find et funktionelt udtryk for antallet af bakterier ved tiden <span class="arithmatex">\(t\)</span> (målt i minutter).</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f(t)=1000 \cdot 2^{t / 40}\)</span></p>
 </details>
-</li>
-<li>
-<p>Find antallet af bakterier efter en time.</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p><span class="arithmatex">\(f(60) \approx 2828\)</span></p>
-</details>
-</li>
-<li>
-<p>Efter hvor mange minutter vil der være 50000 bakterier?</p>
-<details class="answer">
-<summary>&nbsp;</summary>
-<p>ca. 225.75 minutter</p>
-</details>
-</li>
-</ol>
 
 
 
