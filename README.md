@@ -43,6 +43,7 @@ Kurset fokuserer på anvendelsen af matematiske begreber og metoder i softwareud
 
 - **Aritmetik**: Grundlæggende aritmetiske operationer og deres anvendelse.
 - **Funktioner**: Forståelse af funktioner, inkl. domæne, værdimængde og grafisk repræsentation.
+- **Talsystemer**: Forståelse af talsystemer, inkl. binære, oktale, decimal og hexadecimal.
 - **Mængdelære**: Introduktion til mængder, inkl. union, snit og komplement samt de Morgan's love.
 - **Kombinatorik:** Grundlæggende principper for tælling, inkl. permutationer og kombinationer.
 - **Sandsynlighed**: Grundlæggende sandsynlighedsteori, inkl. betinget sandsynlighed og uafhængighed.
