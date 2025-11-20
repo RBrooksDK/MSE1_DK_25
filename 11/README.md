@@ -5,20 +5,18 @@ tags:
     - Flervariable funktioner
     - Retningsafledte
     - Gradientvektor
-    - Hessian matrix
     - Kritiske punkter
     - Lokale ekstrema
     - Sadelpunkter
     - Optimering
     - Gradient descent
-    - Lagrange multiplikatorer
 ---
 
 <h1 align="center">Gradienter og partiel afledte</h1>
 
 I denne session udforsker vi gradienter og partiel afledte og deres fundamentale betydning for flervariable funktioner og optimeringsproblemer. Vi starter med at definere partiel afledte og gradientvektoren, som er essentielle for forståelsen af funktioner af flere variable og deres anvendelse i machine learning og optimering.
 
-Sessionen omfatter en grundig gennemgang af retningsafledte, Hessian-matricen og kritiske punkter. Vi introducerer desuden begreber som lokale ekstrema, sadelpunkter og gradient descent. Der er særlig fokus på anvendelse af gradienter i praktiske optimeringsproblemer, da disse spiller en central rolle i machine learning-algoritmer, neural networks og numeriske optimeringsmetoder.
+Vi introducerer desuden begreber som lokale ekstrema, sadelpunkter og gradient descent. Der er særlig fokus på anvendelse af gradienter i praktiske optimeringsproblemer, da disse spiller en central rolle i machine learning-algoritmer, neural networks og numeriske optimeringsmetoder.
 
 
 <div class="grid cards" markdown>
